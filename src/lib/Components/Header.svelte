@@ -1,23 +1,26 @@
 <script>
 	let isOpen = $state(false);
+	let closeTimeout = $state();
 
 	function toggleDropdown() {
-		isOpen = !isOpen;
+		clearTimeout(closeTimeout); // Zruš zavírání při najetí zpět
+		isOpen = true;
 	}
 
 	function closeDropdown() {
-		isOpen = false;
+		closeTimeout = setTimeout(() => {
+			isOpen = false;
+		}, 200); // zpoždění 200ms
 	}
 </script>
 
 <header>
-	<h1 class="site-title">Maturita</h1>
+	<a style="text-decoration: none;" href="/"><h1 class="site-title">Maturita</h1></a>
 	<nav class="nav-header">
-		<a href="/All_Matriculation_Subjects">Maturitní předměty</a>
+		<!-- Celý blok obalený pro hover logiku -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div class="dropdown-container" onmouseenter={toggleDropdown} onmouseleave={closeDropdown}>
-			<!-- svelte-ignore a11y_invalid_attribute -->
-			<a href="#" class="dropdown-trigger">Předměty ▼</a>
+			<a href="/All_Matriculation_Subjects" class="dropdown-trigger">Maturitní předměty ▼</a>
 			{#if isOpen}
 				<div class="dropdown">
 					<a href="/All_Matriculation_Subjects/Applied_software_in_practice">Aplikovaný software v praxi</a>
@@ -30,28 +33,40 @@
 				</div>
 			{/if}
 		</div>
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <div class="dropdown-container" onmouseenter={toggleDropdown} onmouseleave={closeDropdown}>
+            <a href="/Documents_For_Download">Dokumenty ▼</a>
+            {#if isOpen}
+                <div class="dropdown">
+                    <a href="/Documents_For_Download/Czech_Documents">Český jazyk</a>
+                    <a href="/Documents_For_Download/English_Documents">Anglický jazyk</a>
+                    <a href="/Documents_For_Download/Hardware_Documents">Hardware</a>
+                </div>
+            {/if}
+        </div>
 	</nav>
 </header>
 
 <style>
 	header {
 		background-color: #f8f9fa;
-		padding: 1rem 2rem;
+		padding: 16px 32px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	.site-title {
-		font-size: 1.8rem;
+	.site-title  {
+		font-size: 29px;
 		color: #2c3e50;
 		margin: 0;
+        text-decoration: none;
 	}
 
 	.nav-header {
 		display: flex;
-		gap: 2rem;
+		gap: 32px;
 		align-items: center;
 	}
 
@@ -74,29 +89,30 @@
 	.dropdown-trigger {
 		cursor: pointer;
 		user-select: none;
+		display: inline-block;
 	}
 
 	.dropdown {
 		position: absolute;
-		top: calc(100% + 0.5rem);
-		left: 0;
+		top: calc(100% + 8px);
+		right: 0;
 		background: white;
-		border-radius: 0.5rem;
+		border-radius: 8px;
 		border: 1px solid #ddd;
 		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 		display: flex;
 		flex-direction: column;
 		min-width: 200px;
 		z-index: 100;
-		padding: 0.5rem;
+		padding: 8px;
 	}
 
 	.dropdown a {
-		padding: 0.5rem 1rem;
+		padding: 8px 16px;
 		color: #333;
 		text-decoration: none;
 		transition: background 0.2s ease;
-		border-radius: 0.3rem;
+		border-radius: 4px;
 	}
 
 	.dropdown a:hover {
