@@ -1,27 +1,41 @@
 <script>
-	let isOpen = $state(false);
-	let closeTimeout = $state();
+	let isSubjectsOpen = $state(false);
+	let isDocsOpen = $state(false);
 
-	function toggleDropdown() {
-		clearTimeout(closeTimeout); // Zruš zavírání při najetí zpět
-		isOpen = true;
+	let closeSubjectsTimeout = $state();
+	let closeDocsTimeout = $state();
+
+	function openSubjects() {
+		clearTimeout(closeSubjectsTimeout);
+		isSubjectsOpen = true;
 	}
 
-	function closeDropdown() {
-		closeTimeout = setTimeout(() => {
-			isOpen = false;
-		}, 200); // zpoždění 200ms
+	function closeSubjects() {
+		closeSubjectsTimeout = setTimeout(() => {
+			isSubjectsOpen = false;
+		}, 200);
+	}
+
+	function openDocs() {
+		clearTimeout(closeDocsTimeout);
+		isDocsOpen = true;
+	}
+
+	function closeDocs() {
+		closeDocsTimeout = setTimeout(() => {
+			isDocsOpen = false;
+		}, 200);
 	}
 </script>
 
 <header>
 	<a style="text-decoration: none;" href="/"><h1 class="site-title">Maturita</h1></a>
 	<nav class="nav-header">
-		<!-- Celý blok obalený pro hover logiku -->
+		<!-- Dropdown: Maturitní předměty -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<div class="dropdown-container" onmouseenter={toggleDropdown} onmouseleave={closeDropdown}>
+		<div class="dropdown-container" onmouseenter={openSubjects} onmouseleave={closeSubjects}>
 			<a href="/All_Matriculation_Subjects" class="dropdown-trigger">Maturitní předměty ▼</a>
-			{#if isOpen}
+			{#if isSubjectsOpen}
 				<div class="dropdown">
 					<a href="/All_Matriculation_Subjects/Applied_software_in_practice">Aplikovaný software v praxi</a>
 					<a href="/All_Matriculation_Subjects/Computer_Network(PSI)">Počítačové sítě</a>
@@ -33,17 +47,17 @@
 				</div>
 			{/if}
 		</div>
-        <!-- svelte-ignore a11y_no_static_element_interactions -->
-        <div class="dropdown-container" onmouseenter={toggleDropdown} onmouseleave={closeDropdown}>
-            <a href="/Documents_For_Download">Dokumenty ▼</a>
-            {#if isOpen}
-                <div class="dropdown">
-                    <a href="/Documents_For_Download/Czech_Documents">Český jazyk</a>
-                    <a href="/Documents_For_Download/English_Documents">Anglický jazyk</a>
-                    <a href="/Documents_For_Download/Hardware_Documents">Hardware</a>
-                </div>
-            {/if}
-        </div>
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
+		<div class="dropdown-container" onmouseenter={openDocs} onmouseleave={closeDocs}>
+			<a href="/Documents_For_Download" class="dropdown-trigger">Dokumenty ▼</a>
+			{#if isDocsOpen}
+				<div class="dropdown">
+					<a href="/Documents_For_Download/Czech_Documents">Český jazyk</a>
+					<a href="/Documents_For_Download/English_Documents">Anglický jazyk</a>
+					<a href="/Documents_For_Download/Hardware_Docuemnts">Hardware</a>
+				</div>
+			{/if}
+		</div>
 	</nav>
 </header>
 
@@ -57,11 +71,11 @@
 		align-items: center;
 	}
 
-	.site-title  {
+	.site-title {
 		font-size: 29px;
 		color: #2c3e50;
 		margin: 0;
-        text-decoration: none;
+		text-decoration: none;
 	}
 
 	.nav-header {
