@@ -38,21 +38,23 @@
 	<button class="hamburger" onclick={toggleMenu} aria-label="Menu">☰</button>
 
 	<nav class="nav-header {isMenuOpen ? 'open' : ''}">
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div class="dropdown-container" onmouseenter={openSubjects} onmouseleave={closeSubjects}>
 			<a href="/All_Matriculation_Subjects" class="dropdown-trigger">Maturitní předměty ▼</a>
 			{#if isSubjectsOpen}
 				<div class="dropdown">
-					<a href="/All_Matriculation_Subjects/Applied_software_in_practice">Aplikovaný software</a>
+					<a href="/All_Matriculation_Subjects/Applied_software_in_practice">Aplikovaný software v praxi</a>
 					<a href="/All_Matriculation_Subjects/Computer_Network(PSI)">Počítačové sítě</a>
 					<a href="/All_Matriculation_Subjects/Czech_Language">Český jazyk</a>
 					<a href="/All_Matriculation_Subjects/English_Language">Anglický jazyk</a>
 					<a href="/All_Matriculation_Subjects/Hardware">Hardware</a>
 					<a href="/All_Matriculation_Subjects/Operating_system">Operační systémy</a>
-					<a href="/All_Matriculation_Subjects/Web_Creating">Tvorba webu</a>
+					<a href="/All_Matriculation_Subjects/Web_Creating">Tvorba webových stránek</a>
 				</div>
 			{/if}
 		</div>
 
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div class="dropdown-container" onmouseenter={openDocs} onmouseleave={closeDocs}>
 			<a href="/Documents_For_Download" class="dropdown-trigger">Dokumenty ▼</a>
 			{#if isDocsOpen}
