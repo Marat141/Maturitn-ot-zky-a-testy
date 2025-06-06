@@ -158,7 +158,13 @@
 		<Navigation {headings} />
 		<div class="content">
 			<div class="Aplikacni-protokoly">
-				<h1>Aplikační protokoly</h1>
+				<div class="header-with-button">
+					<h1>Aplikační protokoly</h1>
+					<a
+						href="/All_Matriculation_Subjects/Operating_system/Aplikacni-protokoly/Exam_Aplikacni-protokoly"
+						class="ButtonExam">Napsat si test</a
+					>
+				</div>
 				<p>
 					Aplikační protokoly jsou pravidla, podle kterých spolu komunikují programy (aplikace) přes
 					síť. Umožňují například prohlížeči načíst webovou stránku (pomocí HTTP) nebo e-mailové
@@ -272,5 +278,32 @@
 
 	.protocol-table tr:hover {
 		background-color: #eef2ff;
+	}
+
+	.header-with-button {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 16px;
+	}
+
+	.header-with-button h1 {
+		margin: 0;
+	}
+
+	.ButtonExam {
+		display: inline-block;
+		color: #ffffff;
+		background-color: #2563eb;
+		padding: 8px 16px;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+		font-size: 15px;
+	}
+
+	.ButtonExam:hover {
+		background-color: #1d4ed8;
 	}
 </style>
