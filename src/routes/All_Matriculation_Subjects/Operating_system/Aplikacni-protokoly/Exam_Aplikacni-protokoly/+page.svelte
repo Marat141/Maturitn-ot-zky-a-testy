@@ -325,7 +325,6 @@
 			<div class="nav-right">
 				<button
 					class="evaluate-button"
-					disabled={currentIndex !== questions.length - 1}
 					onclick={evaluate}
 				>
 					Vyhodnotit test
@@ -363,13 +362,11 @@
 			</div>
 		{/each}
 
-		<button onclick={GoHome}>Zpět na úvod</button>
+		<button class="GoHome" onclick={GoHome}>Zpět na úvod</button>
 	{/if}
 </main>
 
 <style>
-	/* Stylování exam komponenty (Svelte 5 scoped) */
-
 	main {
 		font-family: system-ui, sans-serif;
 		background: #ffffff;
@@ -381,21 +378,18 @@
 		color: #2c3e50;
 	}
 
-	/* Nadpis */
 	h1 {
 		font-size: 2rem;
 		text-align: center;
 		margin-bottom: 1.5rem;
 	}
 
-	/* Otázka */
 	p {
 		font-size: 1.1rem;
 		margin: 1rem 0;
 		line-height: 1.6;
 	}
 
-	/* Odpovědi */
 	label {
 		display: block;
 		padding: 0.6rem 1rem;
@@ -468,7 +462,6 @@
 		cursor: not-allowed;
 	}
 
-	/* Výsledkový blok */
 	.result-block {
 		background: #f1f6fa;
 		padding: 1rem;
@@ -485,5 +478,9 @@
 		border: none;
 		border-top: 1px solid #dcdcdc;
 		margin: 1rem 0;
+	}
+
+	.GoHome {
+		margin-top: 10px;
 	}
 </style>

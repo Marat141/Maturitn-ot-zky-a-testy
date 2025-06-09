@@ -110,7 +110,7 @@
 		{
 			name: 'DHCP',
 			description:
-				'Protokol pro automatické přidělování IP adres a dalších síťových nastavení klientům v síti.',
+				'Protokol pro automatické přidělování IP adres a dalších síťových nastavení klientům v síti. ',
 			port: '67(klient), 68(server)'
 		},
 		{
