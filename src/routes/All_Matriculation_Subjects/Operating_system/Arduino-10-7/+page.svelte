@@ -9,50 +9,24 @@
 		path?: string;
 	}
 
-	let headings: Heading[] = [
+	let headings: Heading[] = $state([
 		{ id: 1, level: 1, text: 'Úvod do OS', path: '/All_Matriculation_Subjects/Operating_system' },
 		{ id: 2, level: 1, text: 'IT3B PDF soubory' },
-		{
-			id: 3,
-			level: 2,
-			text: 'Aplikační protokoly',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Aplikacni-protokoly'
-		},
-		{
-			id: 4,
-			level: 2,
-			text: 'Arduino 1-15-1 pohyb přerušení',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Arduino-1_15'
-		},
-		{
-			id: 5,
-			level: 2,
-			text: 'Arduino 10 7 segment 4 digits s DHT11',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Arduino-10-7'
-		},
-		{
-			id: 6,
-			level: 2,
-			text: 'GDPR souhrn',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/GDPR_Souhrn'
-		}
-	];
+		{ id: 3, level: 2, text: 'Aplikační protokoly', parent: 2, path: '/All_Matriculation_Subjects/Operating_system/Aplikacni-protokoly' },
+		{ id: 4, level: 2, text: 'Arduino 1-15-1 pohyb přerušení', parent: 2, path: '/All_Matriculation_Subjects/Operating_system/Arduino-1_15' },
+		{ id: 5, level: 2, text: 'Arduino 10 7 segment 4 digits s DHT11', parent: 2, path: '/All_Matriculation_Subjects/Operating_system/Arduino-10-7' },
+		{ id: 6, level: 2, text: 'GDPR souhrn', parent: 2, path: '/All_Matriculation_Subjects/Operating_system/GDPR_Souhrn' }
+	]);
 </script>
 
 <main>
 	<div class="layout">
 		<Navigation {headings} />
+
 		<div class="content">
 			<div class="header-with-button">
 				<h1>Arduino: 4místný 7segmentový displej s čidlem DHT11</h1>
-				<a
-					href="/All_Matriculation_Subjects/Operating_system/Arduino-10-7/Exam_Arduino-10-7"
-					class="ButtonExam"
-				>
+				<a href="/All_Matriculation_Subjects/Operating_system/Arduino-10-7/Exam_Arduino-10-7" class="ButtonExam">
 					Napsat si test
 				</a>
 			</div>
@@ -61,8 +35,7 @@
 				<h2>📟 Cíl projektu</h2>
 				<p>
 					Zobrazit aktuální teplotu ze senzoru <strong>DHT11</strong> na
-					<strong>4místném 7segmentovém displeji</strong> pomocí Arduina. Displej zobrazuje čísla střídavě
-					pomocí multiplexování.
+					<strong>4místném 7segmentovém displeji</strong> pomocí Arduina.
 				</p>
 			</section>
 
@@ -73,7 +46,7 @@
 				<ul>
 					<li><strong>Typ:</strong> společná katoda</li>
 					<li><strong>Napětí:</strong> 1.8–2.2 V</li>
-					<li><strong>Omezení proudu:</strong> rezistory 330Ω na každý segment</li>
+					<li><strong>Rezistory:</strong> 330Ω na každý segment</li>
 				</ul>
 
 				<h4>Piny pro číslice:</h4>
@@ -109,10 +82,7 @@
 				<ul>
 					<li class="Arduino-DHT">
 						<strong>DHT Sensor Library:</strong>
-						<a
-							href="https://www.arduino.cc/reference/en/libraries/dht-sensor-library/"
-							target="_blank">Arduino DHT</a
-						>
+						<a href="https://www.arduino.cc/reference/en/libraries/dht-sensor-library/" target="_blank">Arduino DHT</a>
 					</li>
 					<li>
 						<strong>SevSeg:</strong>
@@ -134,26 +104,26 @@ DHT dht(DHTPIN, DHTTYPE);
 SevSeg sevseg;
 
 void setup() &#123;
-    byte numDigits = 4;
-    byte digitPins[] = &#123;12, 9, 8, 6&#125;;
-    byte segmentPins[] = &#123;11, 7, 4, 3, A1, A2, A3, A4&#125;;
+	byte numDigits = 4;
+	byte digitPins[] = &#123;12, 9, 8, 6&#125;;
+	byte segmentPins[] = &#123;11, 7, 4, 3, A1, A2, A3, A4&#125;;
 
-    bool resistorsOnSegments = true;
-    byte hardwareConfig = COMMON_CATHODE;
+	bool resistorsOnSegments = true;
+	byte hardwareConfig = COMMON_CATHODE;
 
-    sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
-    sevseg.setBrightness(90);
+	sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
+	sevseg.setBrightness(90);
 
-    dht.begin();
+	dht.begin();
 &#125;
 
 void loop() &#123;
-    float teplota = dht.readTemperature();
-    sevseg.setNumber(teplota, 1); // zobrazí např. 23.1
-    sevseg.refreshDisplay();
-    delay(500);
+	float teplota = dht.readTemperature();
+	sevseg.setNumber(teplota, 1); // zobrazí např. 23.1
+	sevseg.refreshDisplay();
+	delay(500);
 &#125;
-</code></pre>
+				</code></pre>
 			</section>
 
 			<section>
