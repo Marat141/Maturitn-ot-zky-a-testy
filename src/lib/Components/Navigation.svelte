@@ -42,23 +42,73 @@
 
 <style>
 	.nav {
-		width: 200px;
-		background: #f9f9f9;
+		width: 220px;
+		background: #fff;
 		padding: 16px;
+		border: 1px solid #ddd;
+		border-radius: 6px;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		font-family: system-ui, sans-serif;
 	}
+
 	.heading {
 		cursor: pointer;
-		margin-bottom: 8px;
-		font-weight: bold;
+		margin-bottom: 12px;
+		font-weight: 600;
+		color: #222;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 6px 8px;
+		border-radius: 4px;
+		transition: background-color 0.2s ease;
+		user-select: none;
 	}
+
+	.heading:hover {
+		background-color: #f0f0f0;
+	}
+
 	.arrow {
 		margin-left: 8px;
-		font-size: 12.8px;
+		font-size: 14px;
+		color: #666;
+		flex-shrink: 0;
+		transition: transform 0.2s ease;
 	}
+
+	/* Když je otevřeno, šipka se otočí dolů */
+	.heading .arrow.open {
+		transform: rotate(90deg);
+		color: #007acc;
+	}
+
 	.subheadings {
-		padding-left: 16px;
+		padding-left: 20px;
+		border-left: 2px solid #ddd;
+		margin-top: 4px;
 	}
+
 	.sub {
-		font-weight: normal;
+		font-weight: 400;
+		margin-bottom: 6px;
+		padding: 4px 8px;
+		border-radius: 3px;
+		color: #444;
+		transition: background-color 0.15s ease;
+	}
+
+	.sub:hover {
+		background-color: #e6f0ff;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		flex-grow: 1;
+	}
+
+	a:hover {
+		text-decoration: underline;
 	}
 </style>
