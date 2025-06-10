@@ -10,7 +10,7 @@
 	}
 
 	let headings: Heading[] = [
-		{ id: 1, level: 1, text: 'Úvod do OS', path: './Operating_system' },
+		{ id: 1, level: 1, text: 'Úvod do OS', path: '/All_Matriculation_Subjects/Operating_system' },
 		{ id: 2, level: 1, text: 'IT3B PDF soubory' },
 		{
 			id: 3,

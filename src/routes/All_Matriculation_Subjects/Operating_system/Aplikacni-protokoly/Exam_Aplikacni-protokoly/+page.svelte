@@ -160,8 +160,8 @@
 		{
 			id: 21,
 			type: 'input',
-			question: 'Jaký protokol slouží pro překlad doménových jmen na IP adresy?',
-			answer: 'DNS'
+			question: 'Jaký protokol se používá pro přenos souborů přes zabezpečené spojení?',
+			answer: 'SFTP'
 		},
 		{
 			id: 22,
@@ -214,7 +214,55 @@
 				'Sdílení tiskáren'
 			],
 			answer: 1
-		}
+		},
+		{
+			id: 29,
+			type: 'input',
+			question: 'Jaký protokol umožňuje správu adresářových služeb a běží na portu 389?',
+			answer: 'LDAP'
+		},
+		{
+			id: 30,
+			type: 'choice',
+			question: 'Který protokol používá port 110?',
+			options: ['POP3', 'IMAP', 'SMTP'],
+			answer: 0
+		},
+		{
+			id: 31,
+			type: 'multi',
+			question: 'Které protokoly jsou vhodné pro použití v prostředí IoT?',
+			options: ['MQTT', 'CoAP', 'HTTP', 'SMTP'],
+			answers: [0, 1]
+		},
+		{
+			id: 32,
+			type: 'choice',
+			question: 'Na jakém portu běží protokol CoAP?',
+			options: ['5683', '161', '80'],
+			answer: 0
+		},
+		{
+			id: 33,
+			type: 'input',
+			question: 'K čemu slouží protokol VNC a jaký port obvykle používá?',
+			answer: 'Vzdálený přístup k desktopům, port 5900'
+		},
+		{
+			id: 34,
+			type: 'choice',
+			question: 'Který protokol je určen pro přístup a správu síťových zařízení?',
+			options: ['SNMP', 'DHCP', 'NTP'],
+			answer: 0
+		},
+		{
+			id: 35,
+			type: 'multi',
+			question: 'Které protokoly používají port 443?',
+			options: ['HTTPS', 'WebDav', 'FTP', 'SMTP'],
+			answers: [0, 1]
+		},
+		
 	];
 
 	let questions: Question[] = shuffle([...originalQuestions]);
@@ -323,12 +371,7 @@
 			</div>
 
 			<div class="nav-right">
-				<button
-					class="evaluate-button"
-					onclick={evaluate}
-				>
-					Vyhodnotit test
-				</button>
+				<button class="evaluate-button" onclick={evaluate}> Vyhodnotit test </button>
 			</div>
 		</div>
 	{:else}
