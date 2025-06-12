@@ -2,57 +2,57 @@
 	let questions = $state([
 		{
 			id: 1,
-			text: 'Jaký shell je výchozí v macOS od verze Catalina?',
+			text: 'Co je hlavním úkolem ovladače zařízení?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'zsh' },
-				{ id: 'c', text: 'fish' }
+				{ id: 'a', text: 'Spouštět operační systém' },
+				{ id: 'b', text: 'Překládat příkazy OS pro hardware' },
+				{ id: 'c', text: 'Zajišťovat přístup k internetu' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 2,
-			text: 'Jaký příkaz zobrazí aktuální pracovní adresář v terminálu?',
+			text: 'Jak otevřít Správce zařízení ve Windows pomocí klávesové zkratky?',
 			options: [
-				{ id: 'a', text: 'ls' },
-				{ id: 'b', text: 'pwd' },
-				{ id: 'c', text: 'cd' }
+				{ id: 'a', text: 'Ctrl + Shift + Esc' },
+				{ id: 'b', text: 'Alt + F4' },
+				{ id: 'c', text: 'Win + R → devmgmt.msc' }
 			],
-			correct: 'b',
+			correct: 'c',
 			answer: null as string | null
 		},
 		{
 			id: 3,
-			text: 'K čemu slouží příkaz "grep"?',
+			text: 'Co značí žlutý trojúhelník s vykřičníkem ve Správci zařízení?',
 			options: [
-				{ id: 'a', text: 'K odstranění souboru' },
-				{ id: 'b', text: 'K zobrazení manuálových stránek' },
-				{ id: 'c', text: 'K vyhledávání textu ve výstupech nebo souborech' }
+				{ id: 'a', text: 'Zastaralé zařízení' },
+				{ id: 'b', text: 'Zařízení je správně nainstalované' },
+				{ id: 'c', text: 'Problém s ovladačem nebo zařízením' }
 			],
 			correct: 'c',
 			answer: null as string | null
 		},
 		{
 			id: 4,
-			text: 'Co provede příkaz "sudo nano /etc/hosts"?',
+			text: 'K čemu slouží nástroj Driver Verifier Manager?',
 			options: [
-				{ id: 'a', text: 'Zobrazí IP adresy v síti' },
-				{ id: 'b', text: 'Otevře konfigurační soubor hosts s právy správce' },
-				{ id: 'c', text: 'Spustí ping na localhost' }
+				{ id: 'a', text: 'Kontrola aktualizací systému' },
+				{ id: 'b', text: 'Ověření a testování ovladačů' },
+				{ id: 'c', text: 'Zálohování systému' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 5,
-			text: 'Který příkaz spustí nový shell Zsh?',
+			text: 'Který příkaz lze použít ke spuštění Správce zařízení z CMD?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'chsh -s /bin/zsh' },
-				{ id: 'c', text: 'zsh' }
+				{ id: 'a', text: 'device.run' },
+				{ id: 'b', text: 'control hdwwiz.cpl' },
+				{ id: 'c', text: 'system.mgr' }
 			],
-			correct: 'c',
+			correct: 'b',
 			answer: null as string | null
 		}
 	]);
@@ -70,7 +70,7 @@
 
 <main>
 	<div class="exam-container">
-		<h1>🧠 Test – Mac OS Terminál</h1>
+		<h1>🧠 Test – Správce zařízení (Device Manager)</h1>
 
 		{#each questions as q}
 			<section class="question">

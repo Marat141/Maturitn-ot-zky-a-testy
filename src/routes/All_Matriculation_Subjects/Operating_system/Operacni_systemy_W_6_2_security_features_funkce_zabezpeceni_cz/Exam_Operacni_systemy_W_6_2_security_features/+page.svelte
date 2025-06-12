@@ -2,57 +2,57 @@
 	let questions = $state([
 		{
 			id: 1,
-			text: 'Jaký shell je výchozí v macOS od verze Catalina?',
+			text: 'Co je hlavním účelem funkce Windows Defender Antivirus?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'zsh' },
-				{ id: 'c', text: 'fish' }
+				{ id: 'a', text: 'Optimalizace výkonu systému' },
+				{ id: 'b', text: 'Zálohování dat' },
+				{ id: 'c', text: 'Ochrana proti virům a malwaru' }
 			],
-			correct: 'b',
+			correct: 'c',
 			answer: null as string | null
 		},
 		{
 			id: 2,
-			text: 'Jaký příkaz zobrazí aktuální pracovní adresář v terminálu?',
+			text: 'Jaká technologie umožňuje šifrování celého disku ve Windows?',
 			options: [
-				{ id: 'a', text: 'ls' },
-				{ id: 'b', text: 'pwd' },
-				{ id: 'c', text: 'cd' }
+				{ id: 'a', text: 'Firewall' },
+				{ id: 'b', text: 'BitLocker' },
+				{ id: 'c', text: 'Defender Guard' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 3,
-			text: 'K čemu slouží příkaz "grep"?',
+			text: 'Co dělá funkce Secure Boot?',
 			options: [
-				{ id: 'a', text: 'K odstranění souboru' },
-				{ id: 'b', text: 'K zobrazení manuálových stránek' },
-				{ id: 'c', text: 'K vyhledávání textu ve výstupech nebo souborech' }
+				{ id: 'a', text: 'Zrychluje start systému' },
+				{ id: 'b', text: 'Zabraňuje spuštění neautorizovaného softwaru při startu' },
+				{ id: 'c', text: 'Zálohuje boot sektor' }
 			],
-			correct: 'c',
+			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 4,
-			text: 'Co provede příkaz "sudo nano /etc/hosts"?',
+			text: 'K čemu slouží Windows Hello?',
 			options: [
-				{ id: 'a', text: 'Zobrazí IP adresy v síti' },
-				{ id: 'b', text: 'Otevře konfigurační soubor hosts s právy správce' },
-				{ id: 'c', text: 'Spustí ping na localhost' }
+				{ id: 'a', text: 'Ochrana e-mailu' },
+				{ id: 'b', text: 'Biometrické přihlašování' },
+				{ id: 'c', text: 'Antivirový systém' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 5,
-			text: 'Který příkaz spustí nový shell Zsh?',
+			text: 'Jak funguje Windows Sandbox?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'chsh -s /bin/zsh' },
-				{ id: 'c', text: 'zsh' }
+				{ id: 'a', text: 'Virtuální desktop pro bezpečné testování' },
+				{ id: 'b', text: 'Zálohovací systém' },
+				{ id: 'c', text: 'Skener hrozeb' }
 			],
-			correct: 'c',
+			correct: 'a',
 			answer: null as string | null
 		}
 	]);
@@ -70,7 +70,7 @@
 
 <main>
 	<div class="exam-container">
-		<h1>🧠 Test – Mac OS Terminál</h1>
+		<h1>🧠 Test – Windows Funkce zabezpečení</h1>
 
 		{#each questions as q}
 			<section class="question">

@@ -2,55 +2,44 @@
 	let questions = $state([
 		{
 			id: 1,
-			text: 'Jaký shell je výchozí v macOS od verze Catalina?',
+			text: 'Který systém sloužil jako základ pro první verze Windows?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'zsh' },
-				{ id: 'c', text: 'fish' }
+				{ id: 'a', text: 'Linux' },
+				{ id: 'b', text: 'MS-DOS' },
+				{ id: 'c', text: 'Mac OS' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 2,
-			text: 'Jaký příkaz zobrazí aktuální pracovní adresář v terminálu?',
+			text: 'K čemu slouží DLL knihovny ve Windows?',
 			options: [
-				{ id: 'a', text: 'ls' },
-				{ id: 'b', text: 'pwd' },
-				{ id: 'c', text: 'cd' }
+				{ id: 'a', text: 'K ukládání dokumentů' },
+				{ id: 'b', text: 'K sdílení kódu mezi aplikacemi' },
+				{ id: 'c', text: 'K připojení k internetu' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 3,
-			text: 'K čemu slouží příkaz "grep"?',
+			text: 'Jakou novinku přinesl Windows 95?',
 			options: [
-				{ id: 'a', text: 'K odstranění souboru' },
-				{ id: 'b', text: 'K zobrazení manuálových stránek' },
-				{ id: 'c', text: 'K vyhledávání textu ve výstupech nebo souborech' }
-			],
-			correct: 'c',
-			answer: null as string | null
-		},
-		{
-			id: 4,
-			text: 'Co provede příkaz "sudo nano /etc/hosts"?',
-			options: [
-				{ id: 'a', text: 'Zobrazí IP adresy v síti' },
-				{ id: 'b', text: 'Otevře konfigurační soubor hosts s právy správce' },
-				{ id: 'c', text: 'Spustí ping na localhost' }
+				{ id: 'a', text: 'Rozpoznávání hlasu' },
+				{ id: 'b', text: 'Tlačítko Start a 32bitové aplikace' },
+				{ id: 'c', text: 'Dark mode' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
-			id: 5,
-			text: 'Který příkaz spustí nový shell Zsh?',
+			id: 4,
+			text: 'Který systém jako první použil grafické rozhraní od Microsoftu?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'chsh -s /bin/zsh' },
-				{ id: 'c', text: 'zsh' }
+				{ id: 'a', text: 'Windows XP' },
+				{ id: 'b', text: 'Windows 3.1' },
+				{ id: 'c', text: 'Windows 1.0' }
 			],
 			correct: 'c',
 			answer: null as string | null
@@ -58,11 +47,9 @@
 	]);
 
 	let showResults = $state(false);
-
 	function evaluate() {
 		showResults = true;
 	}
-
 	function GoBack() {
 		window.history.back();
 	}
@@ -70,7 +57,7 @@
 
 <main>
 	<div class="exam-container">
-		<h1>🧠 Test – Mac OS Terminál</h1>
+		<h1>🧠 Test – Správce zařízení (Device Manager)</h1>
 
 		{#each questions as q}
 			<section class="question">

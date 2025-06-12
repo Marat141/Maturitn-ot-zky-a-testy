@@ -2,55 +2,55 @@
 	let questions = $state([
 		{
 			id: 1,
-			text: 'Jaký shell je výchozí v macOS od verze Catalina?',
+			text: 'Jaký je rozdíl mezi interním a externím příkazem v cmd?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'zsh' },
-				{ id: 'c', text: 'fish' }
+				{ id: 'a', text: 'Interní potřebuje internet, externí nikoliv' },
+				{ id: 'b', text: 'Interní je součást shellu, externí je samostatný program' },
+				{ id: 'c', text: 'Interní se týká síťových nastavení, externí disku' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 2,
-			text: 'Jaký příkaz zobrazí aktuální pracovní adresář v terminálu?',
+			text: 'Jak vytvoříš globální proměnnou prostředí dostupnou i po restartu?',
 			options: [
-				{ id: 'a', text: 'ls' },
-				{ id: 'b', text: 'pwd' },
-				{ id: 'c', text: 'cd' }
+				{ id: 'a', text: 'set mojePromenna=hodnota' },
+				{ id: 'b', text: 'setx mojePromenna "hodnota"' },
+				{ id: 'c', text: 'echo mojePromenna=hodnota' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 3,
-			text: 'K čemu slouží příkaz "grep"?',
+			text: 'Co znamená příkaz: echo %USERNAME% ?',
 			options: [
-				{ id: 'a', text: 'K odstranění souboru' },
-				{ id: 'b', text: 'K zobrazení manuálových stránek' },
-				{ id: 'c', text: 'K vyhledávání textu ve výstupech nebo souborech' }
-			],
-			correct: 'c',
-			answer: null as string | null
-		},
-		{
-			id: 4,
-			text: 'Co provede příkaz "sudo nano /etc/hosts"?',
-			options: [
-				{ id: 'a', text: 'Zobrazí IP adresy v síti' },
-				{ id: 'b', text: 'Otevře konfigurační soubor hosts s právy správce' },
-				{ id: 'c', text: 'Spustí ping na localhost' }
+				{ id: 'a', text: 'Vypíše název proměnné %USERNAME%' },
+				{ id: 'b', text: 'Zobrazí aktuální uživatelské jméno' },
+				{ id: 'c', text: 'Vytvoří nového uživatele' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
-			id: 5,
-			text: 'Který příkaz spustí nový shell Zsh?',
+			id: 4,
+			text: 'K čemu slouží znak | (pipe) v cmd?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'chsh -s /bin/zsh' },
-				{ id: 'c', text: 'zsh' }
+				{ id: 'a', text: 'Oddělení příkazů' },
+				{ id: 'b', text: 'Zkombinování více proměnných' },
+				{ id: 'c', text: 'Předání výstupu jednoho příkazu jako vstup druhému' }
+			],
+			correct: 'c',
+			answer: null as string | null
+		},
+		{
+			id: 5,
+			text: 'Jaký příkaz zobrazí historii příkazů v aktuální relaci?',
+			options: [
+				{ id: 'a', text: 'history' },
+				{ id: 'b', text: 'cmd /history' },
+				{ id: 'c', text: 'doskey /history' }
 			],
 			correct: 'c',
 			answer: null as string | null
@@ -58,11 +58,9 @@
 	]);
 
 	let showResults = $state(false);
-
 	function evaluate() {
 		showResults = true;
 	}
-
 	function GoBack() {
 		window.history.back();
 	}
@@ -70,7 +68,7 @@
 
 <main>
 	<div class="exam-container">
-		<h1>🧠 Test – Mac OS Terminál</h1>
+		<h1>🧠 Test – Správce zařízení (Device Manager)</h1>
 
 		{#each questions as q}
 			<section class="question">

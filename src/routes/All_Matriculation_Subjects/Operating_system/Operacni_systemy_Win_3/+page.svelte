@@ -40,10 +40,162 @@
 </script>
 
 <main>
-    <div class="layout">
-        <Navigation {headings} />
-        <div class="content">
+	<div class="layout">
+		<Navigation {headings} />
+		<div class="content">
+			<div class="header-with-button">
+				<h1>Windows – část 3: Příkazový řádek (CMD)</h1>
+				<a
+					href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_3/Exam-Operacni_systemy_Win_3"
+					class="ButtonExam"
+				>
+					Napsat si test
+				</a>
+			</div>
 
-        </div>
-    </div>
+			<section class="note">
+				<h2>📟 Základy CMD</h2>
+				<ul>
+					<li>Příkazový řádek (cmd.exe) je textové rozhraní pro zadávání příkazů</li>
+					<li>Interní příkazy (např. <code>cd</code>, <code>dir</code>, <code>echo</code>)</li>
+					<li>Externí příkazy (např. <code>ping</code>, <code>ipconfig</code>, <code>notepad</code>)</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🧾 Argumenty a volby (options)</h2>
+				<ul>
+					<li>Argumenty specifikují vstup (např. <code>copy zdroj cíl</code>)</li>
+					<li>Options mění chování příkazu – např. <code>dir /w</code>, <code>ping /n 4</code></li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔁 Historie a aliasy</h2>
+				<ul>
+					<li>Šipkami nahoru/dolů lze procházet předchozí příkazy</li>
+					<li><code>doskey /history</code> zobrazí všechny příkazy</li>
+					<li><code>doskey alias=prikaz</code> vytvoří alias (např. <code>doskey dirlist=dir /B</code>)</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📦 Proměnné a PATH</h2>
+				<ul>
+					<li><strong>Místní proměnné</strong>: platí jen pro aktuální relaci – <code>set Jmeno=Hodnota</code></li>
+					<li><strong>Proměnné prostředí</strong>: globální (např. <code>PATH</code>, <code>USERNAME</code>)</li>
+					<li><code>setx</code> vytvoří globální proměnnou dostupnou i po restartu</li>
+					<li><code>echo %PATH%</code> – zobrazí systémové cesty</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>⚙️ Speciální znaky v cmd</h2>
+				<ul>
+					<li><strong>"</strong> – uvozovky pro cesty s mezerami (<code>cd "C:\Program Files"</code>)</li>
+					<li><strong>%</strong> – pro proměnné (<code>echo %USERNAME%</code>)</li>
+					<li><strong>|</strong> – propojení příkazů (<code>dir | find "soubor"</code>)</li>
+					<li><strong>&gt;, &gt;&gt;</strong> – přesměrování výstupu do souboru</li>
+					<li><strong>&amp;&amp;, ||</strong> – podmíněné vykonání příkazů</li>
+					<li><strong>^</strong> – escape znak pro speciální znaky</li>
+				</ul>
+			</section>
+
+			<a href="/PDF/Operacni_systemy_Win_3.pdf" class="ButtonExam" download>
+				📄 Stáhnout PDF
+			</a>
+		</div>
+	</div>
 </main>
+
+<style>
+	/* stejné styly jako v předchozím kódu */
+	.layout {
+		display: flex;
+		gap: 32px;
+		background-color: #f9fafb;
+		min-height: 100vh;
+	}
+	.content {
+		flex: 1;
+		padding: 32px;
+		background: #ffffff;
+		border-radius: 16px;
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+		font-family: 'Inter', system-ui, sans-serif;
+		color: #1f2937;
+		transition: all 0.3s ease;
+	}
+	.content h1,
+	.content h2 {
+		color: #2563eb;
+		margin-top: 0;
+	}
+	.content ul {
+		padding-left: 24px;
+		list-style-type: disc;
+		margin-bottom: 24px;
+	}
+	.content li {
+		margin-bottom: 10px;
+		line-height: 1.6;
+	}
+	.content a {
+		display: inline-block;
+		color: #2563eb;
+		background-color: #f0f9ff;
+		padding: 8px 12px;
+		margin: 4px 0;
+		border-radius: 6px;
+		text-decoration: none;
+		transition:
+			background-color 0.25s,
+			color 0.25s;
+		font-size: 15px;
+	}
+	.content a:hover {
+		background-color: #dbeafe;
+		color: #1d4ed8;
+	}
+	.ButtonExam {
+		display: inline-block;
+		color: #ffffff;
+		background-color: #2563eb;
+		padding: 8px 16px;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+		font-size: 15px;
+	}
+	.ButtonExam:hover {
+		background-color: #1d4ed8;
+	}
+	.header-with-button {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 24px;
+	}
+	.note {
+		background-color: #f3f4f6;
+		border-left: 4px solid #9ca3af;
+		padding: 16px 24px;
+		border-radius: 8px;
+		margin-bottom: 24px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+		transition: background-color 0.3s ease;
+	}
+	.note:hover {
+		background-color: #e5e7eb;
+	}
+	@media (max-width: 768px) {
+		.layout {
+			flex-direction: column;
+			gap: 24px;
+		}
+		.content {
+			padding: 24px;
+		}
+	}
+</style>

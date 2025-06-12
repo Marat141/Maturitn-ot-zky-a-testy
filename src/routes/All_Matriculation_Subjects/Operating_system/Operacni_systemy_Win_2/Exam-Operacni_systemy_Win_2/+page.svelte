@@ -2,67 +2,87 @@
 	let questions = $state([
 		{
 			id: 1,
-			text: 'Jaký shell je výchozí v macOS od verze Catalina?',
+			text: 'Co je hlavním účelem nabídky Start ve Windows?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'zsh' },
-				{ id: 'c', text: 'fish' }
+				{ id: 'a', text: 'Spouštění BIOSu' },
+				{ id: 'b', text: 'Přístup k aplikacím a nastavením' },
+				{ id: 'c', text: 'Otevírání webových stránek' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 2,
-			text: 'Jaký příkaz zobrazí aktuální pracovní adresář v terminálu?',
+			text: 'Jaká je funkce jádra operačního systému?',
 			options: [
-				{ id: 'a', text: 'ls' },
-				{ id: 'b', text: 'pwd' },
-				{ id: 'c', text: 'cd' }
+				{ id: 'a', text: 'Zajišťuje komunikaci mezi hardwarem a softwarem' },
+				{ id: 'b', text: 'Zobrazuje ikony na ploše' },
+				{ id: 'c', text: 'Odesílá e-maily' }
 			],
-			correct: 'b',
+			correct: 'a',
 			answer: null as string | null
 		},
 		{
 			id: 3,
-			text: 'K čemu slouží příkaz "grep"?',
+			text: 'Jak lze otevřít Příkazový řádek (CMD)?',
 			options: [
-				{ id: 'a', text: 'K odstranění souboru' },
-				{ id: 'b', text: 'K zobrazení manuálových stránek' },
-				{ id: 'c', text: 'K vyhledávání textu ve výstupech nebo souborech' }
+				{ id: 'a', text: 'Win + R → cmd' },
+				{ id: 'b', text: 'Ctrl + Alt + Del' },
+				{ id: 'c', text: 'F12' }
 			],
-			correct: 'c',
+			correct: 'a',
 			answer: null as string | null
 		},
-		{
+        {
 			id: 4,
-			text: 'Co provede příkaz "sudo nano /etc/hosts"?',
+			text: 'K čemu slouží nástroj BitLocker?',
 			options: [
-				{ id: 'a', text: 'Zobrazí IP adresy v síti' },
-				{ id: 'b', text: 'Otevře konfigurační soubor hosts s právy správce' },
-				{ id: 'c', text: 'Spustí ping na localhost' }
+				{ id: 'a', text: 'Zrychlení počítače' },
+				{ id: 'b', text: 'Šifrování disků a ochrana dat' },
+				{ id: 'c', text: 'Aktualizace systému' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 5,
-			text: 'Který příkaz spustí nový shell Zsh?',
+			text: 'Co ukládá Windows Hello při rozpoznání obličeje?',
 			options: [
-				{ id: 'a', text: 'bash' },
-				{ id: 'b', text: 'chsh -s /bin/zsh' },
-				{ id: 'c', text: 'zsh' }
+				{ id: 'a', text: 'Fotografii obličeje' },
+				{ id: 'b', text: 'Šifrovaný biometrický profil' },
+				{ id: 'c', text: 'Heslo uživatele' }
 			],
-			correct: 'c',
+			correct: 'b',
+			answer: null as string | null
+		},
+		{
+			id: 6,
+			text: 'Jak se chrání data u přihlášení pomocí PINu?',
+			options: [
+				{ id: 'a', text: 'PIN je uložen v cloudu' },
+				{ id: 'b', text: 'PIN je propojen s konkrétním zařízením a uložen lokálně' },
+				{ id: 'c', text: 'PIN se odesílá Microsoftu' }
+			],
+			correct: 'b',
+			answer: null as string | null
+		},
+		{
+			id: 7,
+			text: 'Který nástroj chrání před phishingem a malwarem?',
+			options: [
+				{ id: 'a', text: 'Windows Paint' },
+				{ id: 'b', text: 'SmartScreen' },
+				{ id: 'c', text: 'Windows Update' }
+			],
+			correct: 'b',
 			answer: null as string | null
 		}
 	]);
 
 	let showResults = $state(false);
-
 	function evaluate() {
 		showResults = true;
 	}
-
 	function GoBack() {
 		window.history.back();
 	}
@@ -70,7 +90,7 @@
 
 <main>
 	<div class="exam-container">
-		<h1>🧠 Test – Mac OS Terminál</h1>
+		<h1>🧠 Test – Správce zařízení (Device Manager)</h1>
 
 		{#each questions as q}
 			<section class="question">
