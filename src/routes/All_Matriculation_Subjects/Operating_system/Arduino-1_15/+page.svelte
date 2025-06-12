@@ -272,7 +272,9 @@ sevseg.setNumber(casOdPoslednihoPohybu);
 					</tbody>
 				</table>
 			</section>
-			<a href="/PDF/Arduino_1-15_1_pohyb_preruseni_HC-SR501_7Seg.pdf" class="ButtonExam" download> 📄 Stáhnout PDF </a>
+			<a href="/PDF/Arduino_1-15_1_pohyb_preruseni_HC-SR501_7Seg.pdf" class="ButtonExam" download>
+				📄 Stáhnout PDF
+			</a>
 		</div>
 	</div>
 </main>
@@ -359,6 +361,24 @@ sevseg.setNumber(casOdPoslednihoPohybu);
 		margin: 0;
 	}
 
+	.content a {
+		display: inline-block;
+		color: #2563eb;
+		background-color: #f0f9ff;
+		padding: 8px 12px;
+		margin: 4px 0;
+		border-radius: 6px;
+		text-decoration: none;
+		transition:
+			background-color 0.25s,
+			color 0.25s;
+		font-size: 15px;
+	}
+
+	.content a:hover {
+		background-color: #dbeafe;
+		color: #1d4ed8;
+	}
 	.ButtonExam {
 		display: inline-block;
 		color: #ffffff;
@@ -373,5 +393,16 @@ sevseg.setNumber(casOdPoslednihoPohybu);
 
 	.ButtonExam:hover {
 		background-color: #1d4ed8;
+	}
+
+	@media (max-width: 768px) {
+		.layout {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		.content {
+			padding: 24px;
+		}
 	}
 </style>

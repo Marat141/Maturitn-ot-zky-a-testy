@@ -321,7 +321,9 @@ void loop() &#123;
 					</tbody>
 				</table>
 			</section>
-			<a href="/PDF/Arduino_10_7_segment_4_digits_s_DHT11.pdf" class="ButtonExam" download> 📄 Stáhnout PDF </a>
+			<a href="/PDF/Arduino_10_7_segment_4_digits_s_DHT11.pdf" class="ButtonExam" download>
+				📄 Stáhnout PDF
+			</a>
 		</div>
 	</div>
 </main>
@@ -369,37 +371,59 @@ void loop() &#123;
 		border: 1px solid #ccc;
 		text-align: left;
 	}
-	.content a {
-		color: #2563eb;
-		background-color: #f0f9ff;
-		padding: 8px 12px;
-		margin: 4px 0;
-		border-radius: 6px;
-		text-decoration: none;
-		transition: background-color 0.25s;
-	}
-	.content a:hover {
-		background-color: #dbeafe;
-	}
 	.header-with-button {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 16px;
 	}
+
+	.Arduino-DHT {
+		margin-bottom: 20px;
+	}
+
+	.content a {
+		display: inline-block;
+		color: #2563eb;
+		background-color: #f0f9ff;
+		padding: 8px 12px;
+		margin: 4px 0;
+		border-radius: 6px;
+		text-decoration: none;
+		transition:
+			background-color 0.25s,
+			color 0.25s;
+		font-size: 15px;
+	}
+
+	.content a:hover {
+		background-color: #dbeafe;
+		color: #1d4ed8;
+	}
 	.ButtonExam {
+		display: inline-block;
 		color: #ffffff;
 		background-color: #2563eb;
 		padding: 8px 16px;
 		border-radius: 6px;
 		text-decoration: none;
 		font-weight: 500;
+		transition: background-color 0.3s ease;
+		font-size: 15px;
 	}
+
 	.ButtonExam:hover {
 		background-color: #1d4ed8;
 	}
 
-	.Arduino-DHT {
-		margin-bottom: 20px;
+	@media (max-width: 768px) {
+		.layout {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		.content {
+			padding: 24px;
+		}
 	}
 </style>

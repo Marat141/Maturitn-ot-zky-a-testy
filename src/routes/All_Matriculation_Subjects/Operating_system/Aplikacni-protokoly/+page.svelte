@@ -370,25 +370,6 @@
 		font-size: 16px;
 	}
 
-	.content a {
-		display: inline-block;
-		color: #2563eb;
-		background-color: #f0f9ff;
-		padding: 8px 12px;
-		margin: 4px 0;
-		border-radius: 6px;
-		text-decoration: none;
-		transition:
-			background-color 0.25s,
-			color 0.25s;
-		font-size: 15px;
-	}
-
-	.content a:hover {
-		background-color: #dbeafe;
-		color: #1d4ed8;
-	}
-
 	.protocol-table {
 		width: 100%;
 		border-collapse: collapse;
@@ -432,6 +413,24 @@
 		margin: 0;
 	}
 
+	.content a {
+		display: inline-block;
+		color: #2563eb;
+		background-color: #f0f9ff;
+		padding: 8px 12px;
+		margin: 4px 0;
+		border-radius: 6px;
+		text-decoration: none;
+		transition:
+			background-color 0.25s,
+			color 0.25s;
+		font-size: 15px;
+	}
+
+	.content a:hover {
+		background-color: #dbeafe;
+		color: #1d4ed8;
+	}
 	.ButtonExam {
 		display: inline-block;
 		color: #ffffff;
@@ -446,5 +445,16 @@
 
 	.ButtonExam:hover {
 		background-color: #1d4ed8;
+	}
+
+	@media (max-width: 768px) {
+		.layout {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		.content {
+			padding: 24px;
+		}
 	}
 </style>
