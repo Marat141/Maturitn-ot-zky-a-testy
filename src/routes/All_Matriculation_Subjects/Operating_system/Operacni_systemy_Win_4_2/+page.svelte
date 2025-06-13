@@ -40,10 +40,141 @@
 </script>
 
 <main>
-    <div class="layout">
-        <Navigation {headings} />
-        <div class="content">
+	<div class="layout">
+		<Navigation {headings} />
+		<div class="content">
+			<div class="header-with-button">
+				<h1>Windows – část 4: PowerShell – zástupné znaky</h1>
+				<a
+					href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_4_2/Exam-Operacni_systemy_Win_4_2"
+					class="ButtonExam"
+				>
+					Napsat si test
+				</a>
+			</div>
 
-        </div>
-    </div>
+			<section class="note">
+				<h2>🔡 Zástupné znaky v PowerShellu</h2>
+				<ul>
+					<li><strong>*</strong> – libovolný počet znaků (<code>Get-ChildItem -Path *.txt</code>)</li>
+					<li><strong>?</strong> – jeden libovolný znak (<code>Get-ChildItem -Path ?????.txt</code>)</li>
+					<li><strong>[]</strong> – jeden znak z množiny (<code>Get-ChildItem -Path ?[abc]*.txt</code>)</li>
+					<li><strong>[! ] nebo [^ ]</strong> – negace, znak který <em>není</em> ve specifikované množině (<code>Get-ChildItem -Path ??[!xy]*.txt</code>)</li>
+					<li><strong>`</strong> – escape znak (<code>Get-ChildItem -Path "Data`[2024`].txt"</code>)</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔁 Kombinace zástupných znaků</h2>
+				<ul>
+					<li><code>Get-ChildItem -Path "*2023*.txt", "*2024*.txt"</code> – více vzorů</li>
+					<li><code>Get-ChildItem -Path "Report?.docx"</code> – libovolný znak mezi</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>⚙️ Wildcardy v parametrech cmdletů</h2>
+				<ul>
+					<li><code>Get-ChildItem -Path "C:\Logs\*.log" -Recurse</code> – hledání včetně podadresářů</li>
+					<li><code>Select-String -Path "C:\Logs\*.log" -Pattern "Error"</code> – hledání textu ve více souborech</li>
+				</ul>
+			</section>
+
+			<a href="/PDF/Operacni_systemy_Win_4_2.pdf" class="ButtonExam" download>
+				📄 Stáhnout PDF
+			</a>
+		</div>
+	</div>
 </main>
+
+<style>
+	/* stejné styly jako v předchozím kódu */
+	.layout {
+		display: flex;
+		gap: 32px;
+		background-color: #f9fafb;
+		min-height: 100vh;
+	}
+	.content {
+		flex: 1;
+		padding: 32px;
+		background: #ffffff;
+		border-radius: 16px;
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+		font-family: 'Inter', system-ui, sans-serif;
+		color: #1f2937;
+		transition: all 0.3s ease;
+	}
+	.content h1,
+	.content h2 {
+		color: #2563eb;
+		margin-top: 0;
+	}
+	.content ul {
+		padding-left: 24px;
+		list-style-type: disc;
+		margin-bottom: 24px;
+	}
+	.content li {
+		margin-bottom: 10px;
+		line-height: 1.6;
+	}
+	.content a {
+		display: inline-block;
+		color: #2563eb;
+		background-color: #f0f9ff;
+		padding: 8px 12px;
+		margin: 4px 0;
+		border-radius: 6px;
+		text-decoration: none;
+		transition:
+			background-color 0.25s,
+			color 0.25s;
+		font-size: 15px;
+	}
+	.content a:hover {
+		background-color: #dbeafe;
+		color: #1d4ed8;
+	}
+	.ButtonExam {
+		display: inline-block;
+		color: #ffffff;
+		background-color: #2563eb;
+		padding: 8px 16px;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+		font-size: 15px;
+	}
+	.ButtonExam:hover {
+		background-color: #1d4ed8;
+	}
+	.header-with-button {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 24px;
+	}
+	.note {
+		background-color: #f3f4f6;
+		border-left: 4px solid #9ca3af;
+		padding: 16px 24px;
+		border-radius: 8px;
+		margin-bottom: 24px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+		transition: background-color 0.3s ease;
+	}
+	.note:hover {
+		background-color: #e5e7eb;
+	}
+	@media (max-width: 768px) {
+		.layout {
+			flex-direction: column;
+			gap: 24px;
+		}
+		.content {
+			padding: 24px;
+		}
+	}
+</style>
