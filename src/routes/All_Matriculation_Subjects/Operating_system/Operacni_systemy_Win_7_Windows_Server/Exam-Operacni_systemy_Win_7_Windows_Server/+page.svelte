@@ -2,55 +2,55 @@
 	let questions = $state([
 		{
 			id: 1,
-			text: 'Co je úkolem serveru v síti?',
+			text: 'K čemu slouží role Active Directory?',
 			options: [
-				{ id: 'a', text: 'Blokovat internet' },
-				{ id: 'b', text: 'Poskytovat služby klientům' },
-				{ id: 'c', text: 'Vyhledávat viry' }
+				{ id: 'a', text: 'Instalace Windows' },
+				{ id: 'b', text: 'Správa uživatelů, skupin a zdrojů' },
+				{ id: 'c', text: 'Tisk dokumentů' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 2,
-			text: 'K čemu slouží DHCP?',
+			text: 'Co je hlavní výhodou Storage Spaces Direct (S2D)?',
 			options: [
-				{ id: 'a', text: 'Překládá doménová jména' },
-				{ id: 'b', text: 'Přiděluje IP adresy automaticky' },
-				{ id: 'c', text: 'Zabezpečuje síť' }
+				{ id: 'a', text: 'Záloha BIOSu' },
+				{ id: 'b', text: 'Vytvoření škálovatelného softwarového úložiště' },
+				{ id: 'c', text: 'Zvýšení výkonu grafické karty' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 3,
-			text: 'Jaký je rozdíl mezi IPv4 a IPv6?',
+			text: 'K čemu slouží Windows Deployment Services (WDS)?',
 			options: [
-				{ id: 'a', text: 'IPv4 je rychlejší' },
-				{ id: 'b', text: 'IPv6 má více adres a pokročilejší funkce' },
-				{ id: 'c', text: 'IPv4 je bezdrátový' }
+				{ id: 'a', text: 'Aktualizace ovladačů' },
+				{ id: 'b', text: 'Hromadná instalace OS po síti' },
+				{ id: 'c', text: 'Záloha tiskových front' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 4,
-			text: 'Jakým příkazem nastavíš IP adresu staticky pomocí netsh?',
+			text: 'Jakou roli hraje Just Enough Administration (JEA)?',
 			options: [
-				{ id: 'a', text: 'netsh set static ip' },
-				{ id: 'b', text: 'netsh interface ip set address ...' },
-				{ id: 'c', text: 'ipconfig /set' }
+				{ id: 'a', text: 'Umožňuje přímý přístup root uživatele' },
+				{ id: 'b', text: 'Bezpečné delegování jen potřebných oprávnění' },
+				{ id: 'c', text: 'Restartuje server po výpadku' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 5,
-			text: 'Který příkaz vypne bránu firewall pro všechny profily?',
+			text: 'Který příkaz použijeme k instalaci role přes PowerShell?',
 			options: [
-				{ id: 'a', text: 'netsh firewall disable' },
-				{ id: 'b', text: 'netsh advfirewall set allprofiles state off' },
-				{ id: 'c', text: 'netsh stop firewall' }
+				{ id: 'a', text: 'Add-WindowsRole -Name "DHCP"' },
+				{ id: 'b', text: 'Install-WindowsFeature -Name Web-Server' },
+				{ id: 'c', text: 'Enable-Server -Name IIS' }
 			],
 			correct: 'b',
 			answer: null as string | null
@@ -68,7 +68,7 @@
 
 <main>
 	<div class="exam-container">
-		<h1>🧠 Test – Konfigurace sítě</h1>
+		<h1>🧠 Test – Windows Server: role a vlastnosti</h1>
 
 		{#each questions as q}
 			<section class="question">

@@ -2,55 +2,55 @@
 	let questions = $state([
 		{
 			id: 1,
-			text: 'Co je úkolem serveru v síti?',
+			text: 'Co testuje příkaz ping?',
 			options: [
-				{ id: 'a', text: 'Blokovat internet' },
-				{ id: 'b', text: 'Poskytovat služby klientům' },
-				{ id: 'c', text: 'Vyhledávat viry' }
+				{ id: 'a', text: 'Rychlost pevného disku' },
+				{ id: 'b', text: 'Dostupnost síťového zařízení a latenci' },
+				{ id: 'c', text: 'Počet spuštěných programů' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 2,
-			text: 'K čemu slouží DHCP?',
+			text: 'Jaký parametr příkazu ping zajistí nepřetržité odesílání paketů?',
 			options: [
-				{ id: 'a', text: 'Překládá doménová jména' },
-				{ id: 'b', text: 'Přiděluje IP adresy automaticky' },
-				{ id: 'c', text: 'Zabezpečuje síť' }
+				{ id: 'a', text: '-w' },
+				{ id: 'b', text: '-d' },
+				{ id: 'c', text: '-t' }
 			],
-			correct: 'b',
+			correct: 'c',
 			answer: null as string | null
 		},
 		{
 			id: 3,
-			text: 'Jaký je rozdíl mezi IPv4 a IPv6?',
+			text: 'K čemu slouží příkaz tracert?',
 			options: [
-				{ id: 'a', text: 'IPv4 je rychlejší' },
-				{ id: 'b', text: 'IPv6 má více adres a pokročilejší funkce' },
-				{ id: 'c', text: 'IPv4 je bezdrátový' }
+				{ id: 'a', text: 'Změří RAM paměť' },
+				{ id: 'b', text: 'Ukáže cestu paketu skrz síť (hops)' },
+				{ id: 'c', text: 'Zobrazí seznam spuštěných služeb' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 4,
-			text: 'Jakým příkazem nastavíš IP adresu staticky pomocí netsh?',
+			text: 'Jaký význam má TTL ve výstupu ping nebo tracert?',
 			options: [
-				{ id: 'a', text: 'netsh set static ip' },
-				{ id: 'b', text: 'netsh interface ip set address ...' },
-				{ id: 'c', text: 'ipconfig /set' }
+				{ id: 'a', text: 'Označuje čas spuštění testu' },
+				{ id: 'b', text: 'Počet skoků, které paket ještě může vykonat' },
+				{ id: 'c', text: 'Velikost paketu v bajtech' }
 			],
 			correct: 'b',
 			answer: null as string | null
 		},
 		{
 			id: 5,
-			text: 'Který příkaz vypne bránu firewall pro všechny profily?',
+			text: 'Co dělá parametr <code>-d</code> v příkazu tracert?',
 			options: [
-				{ id: 'a', text: 'netsh firewall disable' },
-				{ id: 'b', text: 'netsh advfirewall set allprofiles state off' },
-				{ id: 'c', text: 'netsh stop firewall' }
+				{ id: 'a', text: 'Zastaví trasování po 5 skocích' },
+				{ id: 'b', text: 'Zrychlí trasování vynecháním překladu DNS' },
+				{ id: 'c', text: 'Změří odezvu v DNS protokolu' }
 			],
 			correct: 'b',
 			answer: null as string | null
@@ -68,7 +68,7 @@
 
 <main>
 	<div class="exam-container">
-		<h1>🧠 Test – Konfigurace sítě</h1>
+		<h1>🧠 Test – Diagnostika sítě: Ping a Tracert</h1>
 
 		{#each questions as q}
 			<section class="question">
