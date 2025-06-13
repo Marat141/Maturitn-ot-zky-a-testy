@@ -117,3 +117,94 @@
 	</div>
 </main>
 
+<style>
+	/* stejné styly jako v předchozím kódu */
+	.layout {
+		display: flex;
+		gap: 32px;
+		background-color: #f9fafb;
+		min-height: 100vh;
+	}
+	.content {
+		flex: 1;
+		padding: 32px;
+		background: #ffffff;
+		border-radius: 16px;
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+		font-family: 'Inter', system-ui, sans-serif;
+		color: #1f2937;
+		transition: all 0.3s ease;
+	}
+	.content h1,
+	.content h2 {
+		color: #2563eb;
+		margin-top: 0;
+	}
+	.content ul {
+		padding-left: 24px;
+		list-style-type: disc;
+		margin-bottom: 24px;
+	}
+	.content li {
+		margin-bottom: 10px;
+		line-height: 1.6;
+	}
+	.content a {
+		display: inline-block;
+		color: #2563eb;
+		background-color: #f0f9ff;
+		padding: 8px 12px;
+		margin: 4px 0;
+		border-radius: 6px;
+		text-decoration: none;
+		transition:
+			background-color 0.25s,
+			color 0.25s;
+		font-size: 15px;
+	}
+	.content a:hover {
+		background-color: #dbeafe;
+		color: #1d4ed8;
+	}
+	.ButtonExam {
+		display: inline-block;
+		color: #ffffff;
+		background-color: #2563eb;
+		padding: 8px 16px;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+		font-size: 15px;
+	}
+	.ButtonExam:hover {
+		background-color: #1d4ed8;
+	}
+	.header-with-button {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 24px;
+	}
+	.note {
+		background-color: #f3f4f6;
+		border-left: 4px solid #9ca3af;
+		padding: 16px 24px;
+		border-radius: 8px;
+		margin-bottom: 24px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+		transition: background-color 0.3s ease;
+	}
+	.note:hover {
+		background-color: #e5e7eb;
+	}
+	@media (max-width: 768px) {
+		.layout {
+			flex-direction: column;
+			gap: 24px;
+		}
+		.content {
+			padding: 24px;
+		}
+	}
+</style>
