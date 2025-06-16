@@ -10,7 +10,7 @@
 			<ul>
 				<li>Část aplikace, kterou <strong>vidí a používá uživatel</strong></li>
 				<li>Zahrnuje <strong>grafické rozhraní</strong>, obsah a interakce</li>
-				<li>Funguje v <strong>prohlížeči uživatele</strong> – nezávisle na serveru</li>
+				<li>Funguje v <strong>prohlížeči uživatele</strong></li>
 				<li>
 					Odpovídá za:
 					<ul>
@@ -24,7 +24,7 @@
 				<li><strong>HTML</strong> – kostra a obsah stránky</li>
 				<li><strong>CSS</strong> – stylování vzhledu</li>
 				<li><strong>JavaScript</strong> – chování a dynamika</li>
-				<li><strong>Svelte, React, Vue, Angular</strong> – moderní frameworky</li>
+				<li><strong>SvelteKit, Vue, Angular</strong> – moderní frameworky</li>
 			</ul>
 		</div>
 
@@ -39,7 +39,8 @@
 						<li>Ukládání, čtení a úpravu dat</li>
 						<li>Autentizaci uživatelů</li>
 						<li>Bezpečnost a oprávnění</li>
-						<li>Komunikaci s frontendem (např. přes API)</li>
+						<li>Komunikace přes API</li>
+						<li><strong>API(Application Programming Interface)</strong> umožňuje aplikacím vzájemně se "bavit" a sdílet informace nebo provádět akce.</li>
 					</ul>
 				</li>
 			</ul>
