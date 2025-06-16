@@ -10,12 +10,18 @@
 	}
 
 	let headings: Heading[] = $state([
-		{ id: 1, text: 'Český jazyk', level: 1, path: '/All_Matriculation_Subjects/Czech_Language' },
+		{ id: 1, text: 'Český jazyk literatura', level: 1, path: '/All_Matriculation_Subjects/Czech_Language' },
 		{
 			id: 2,
 			text: 'Maturitní knížky',
 			level: 1,
 			path: '/All_Matriculation_Subjects/Czech_Language/Maturitni_knizky'
+		},
+		{
+			id: 3,
+			text: 'Český jazyk mluvnice',
+			level: 1,
+			path: '/All_Matriculation_Subjects/Czech_Language/Czech_Language_grammar'
 		}
 	]);
 

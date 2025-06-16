@@ -16,6 +16,12 @@
 			text: 'Maturitní knížky',
 			level: 1,
 			path: '/All_Matriculation_Subjects/Czech_Language/Maturitni_knizky'
+		},
+		{
+			id: 3,
+			text: 'Český jazyk mluvnice',
+			level: 1,
+			path: '/All_Matriculation_Subjects/Czech_Language/Czech_Language_grammar'
 		}
 	]);
 </script>
