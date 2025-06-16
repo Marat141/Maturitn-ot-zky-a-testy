@@ -45,19 +45,18 @@
                 </ul>
                 <h2>IT2B zápisky</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="/CJ-Documents/4 - Anglický realismus - ES2, RS2.pptx">Anglický realismus</a></li>
+                    <li><a href="/CJ-Documents/Národní obrození - 1. fáze - IT2.pptx">Národní obrození 1.fáze</a></li>
+                    <li><a href="/CJ-Documents/4 - Národní obrození - 3. fáze - IT2.pptx">Národní obrození 3.fáze</a></li>
+                    <li><a href="/CJ-Documents/5 - Národní obrození - 4. fáze - IT2.pptx"></a></li>
+                    <li><a href="/CJ-Documents/Karel Hynek Mácha - IT1.pptx"></a></li>
+                    <li><a href="/CJ-Documents/Klasicismus, osvícenství, preromantismus - IT1 (2).pptx"></a></li>
+                    <li><a href="/CJ-Documents/Literární teorie - IT1.pptx"></a></li>
+                    <li><a href="/CJ-Documents/Národní obrození - IT2.pptx"></a></li>
+                    <li><a href="/CJ-Documents/Romantismus.pptx"></a></li>
+                    <li><a href="/CJ-Documents/Sloh.pptx"></a></li>
+                    <li><a href="/CJ-Documents/Jan_Neruda_Povidky_Malostranske.docx"></a></li>
+
                 </ul>
 			</div>
 		</div>
