@@ -1,0 +1,118 @@
+[
+{
+  "slug": "pamet",
+  "title": "Paměť – souhrn",
+  "category": "hardware",
+  "pdfPath": "/PDF/996_Pamet.pdf",
+  "sections": [
+    {
+      "heading": "💾 Typy pamětí",
+      "bullets": [
+        "ROM – pouze pro čtení, nelze přepsat",
+        "PROM – programovatelná jednorázově",
+        "EPROM – mazatelná UV zářením, opakovatelně programovatelná",
+        "EEPROM – mazatelná elektrickým impulsem",
+        "Flash EEPROM – přepisování po blocích, rychlá"
+      ]
+    },
+    {
+      "heading": "🔁 RWM paměti",
+      "bullets": [
+        "Statické (SRAM) – rychlé, malá kapacita, více součástek",
+        "Dynamické (DRAM) – větší kapacita, pomalejší, vyžaduje obnovování (refresh)"
+      ]
+    },
+    {
+      "heading": "⚙️ Způsob přístupu",
+      "bullets": [
+        "SAM – sériový přístup, pomalý (např. pásky)",
+        "RAM – náhodný přístup, rychlý"
+      ]
+    },
+    {
+      "heading": "📐 Vlastnosti paměti",
+      "bullets": [
+        "Vybavovací doba – rychlost čtení/zápisu [ns]",
+        "Kapacita – KiB, MiB, GiB, TiB…",
+        "Energetická závislost – vymazání po vypnutí",
+        "Možnost přepisu – ROM vs RWM"
+      ]
+    },
+    {
+      "heading": "📏 Jednotky kapacity",
+      "bullets": [
+        "1 KiB = 1024 B",
+        "1 MiB = 1 048 576 B",
+        "1 GiB = 1 073 741 824 B",
+        "1 TiB = 1 099 511 627 776 B"
+      ]
+    },
+    {
+      "heading": "🔋 CMOS paměti",
+      "bullets": [
+        "Vyrobeny technologií CMOS – nízká spotřeba",
+        "Napájeny z baterie i po vypnutí",
+        "Používají se např. pro nastavení BIOSu"
+      ]
+    },
+    {
+      "heading": "⚡️ DRAM a Refresh",
+      "bullets": [
+        "Informace držena jako náboj na kapacitě",
+        "Po čase se vybíjí – nutný refresh",
+        "Typy refresh: blokový, rozložený, transparentní"
+      ]
+    },
+    {
+      "heading": "🔄 SDRAM & DDR",
+      "bullets": [
+        "SDRAM – synchronní s taktovací sběrnicí",
+        "DDR – přenos na náběžné i sestupné hraně = dvojnásobná propustnost",
+        "Nižší napětí, rychlejší čipy, práce více modulů najednou"
+      ]
+    },
+    {
+      "heading": "📦 Paměťové moduly",
+      "bullets": [
+        "DIMM – standardní paměť pro PC",
+        "SO-DIMM – menší verze pro notebooky",
+        "ECC – samoopravný kód pro servery",
+        "Registered – s bufferem pro vyšší spolehlivost"
+      ]
+    },
+    {
+      "heading": "⚡ Vlastnosti operační paměti",
+      "bullets": [
+        "Informace držena jen při napájení",
+        "Nejmenší adresovatelná jednotka je Byte",
+        "Typy konstrukce: SRAM, DRAM, SDRAM, DDR, DDR2/3/4"
+      ]
+    },
+    {
+      "heading": "📊 Latence a rychlost",
+      "bullets": [
+        "Latence CAS – kolik cyklů potřebuje paměť pro reakci",
+        "Nižší CAS znamená rychlejší přístup",
+        "Rychlost paměti [MHz] ovlivňuje datovou propustnost"
+      ]
+    },
+    {
+      "heading": "🚀 Cache a zásobníky",
+      "bullets": [
+        "Cache – rychlá paměť, která ukládá okolní bloky dat",
+        "Zvyšuje výkon díky přednačítání",
+        "Zásobníková paměť – rychlejší paměť uvnitř modulu"
+      ]
+    },
+    {
+      "heading": "📥 Buffer a virtuální paměť",
+      "bullets": [
+        "Buffer – vyrovnává rozdíly v rychlosti zařízení",
+        "Virtuální paměť – rozdělená na stránky",
+        "Stránkovací soubor – část paměti odložena na disk"
+      ]
+    }
+  ]
+}
+
+]
