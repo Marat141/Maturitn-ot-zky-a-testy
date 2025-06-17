@@ -189,7 +189,7 @@
 			port: '80/443'
 		},
 		{
-			name: 'FTP',
+			name: 'FTP (File Transfer Protocol)',
 			description: 'Protokol pro přenos souborů mezi počítači.',
 			port: '20(data), 21(řízení)'
 		},
@@ -200,12 +200,12 @@
 			port: '990'
 		},
 		{
-			name: 'SMB',
+			name: 'SMB (Server Message Block)',
 			description: 'Protokol pro sdílení souborů a tiskáren v síti, běžně používaný ve Windows.',
 			port: '445'
 		},
 		{
-			name: 'NFS',
+			name: 'NFS (Network File System)',
 			description: 'Protokol pro sdílení souborů v Unix/Linux systémech.',
 			port: '2049'
 		},
@@ -220,7 +220,7 @@
 			port: '873'
 		},
 		{
-			name: 'iSCSI',
+			name: 'iSCSI (Internet Small Computer Systems Interface)',
 			description:
 				'Připojení vzdalených disku. iSCSI umožňuje připojit vzdálené úložiště jako lokální disk.',
 			port: '3260'
@@ -243,7 +243,7 @@
 			port: '23'
 		},
 		{
-			name: 'SSH',
+			name: 'SSH (Secure Shell)',
 			description: 'Zabezpečený protokol pro vzdálený přístup a správu serverů.',
 			port: '22'
 		},
@@ -254,33 +254,33 @@
 			port: '67(klient), 68(server)'
 		},
 		{
-			name: 'SNMP',
+			name: 'SNMP (Simple Network Management Protocol)',
 			description: 'Protokol pro správu a monitorování síťových zařízení.',
 			port: '161'
 		},
 		{
-			name: 'NTP',
+			name: 'NTP (Network Time Protocol)',
 			description: 'Protokol pro synchronizaci času mezi počítači v síti.',
 			port: '123'
 		},
 		{
-			name: 'RDP',
+			name: 'RDP (Remote Desktop Protocol)',
 			description: 'Protokol pro vzdálený přístup k desktopům, běžně používaný ve Windows.',
 			port: '3389'
 		},
 		{
-			name: 'LDAP',
+			name: 'LDAP (Lightweight Directory Access Protocol)',
 			description: 'Protokol pro přístup a správu adresářových služeb.',
 			port: '389'
 		},
 		{
-			name: 'MQTT',
+			name: 'MQTT (MQ Telemetry Transport)',
 			description:
 				'Protokol pro lehkou komunikaci mezi zařízeními, často používaný v IoT aplikacích.',
 			port: '1883'
 		},
 		{
-			name: 'CoAP',
+			name: 'CoAP (Constrained Application Protocol)',
 			description:
 				'Protokol pro komunikaci mezi zařízeními v IoT, optimalizovaný pro nízkou spotřebu energie.',
 			port: '5683'
