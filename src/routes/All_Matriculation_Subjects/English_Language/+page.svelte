@@ -10,8 +10,25 @@
 	}
 
 	let headings: Heading[] = $state([
-		{ id: 1, text: 'Anglický jazyk', level: 1, path: '/All_Matriculation_Subjects/English_Language' },
-        { id: 2, text: 'Maturita Anglický jazyk', level: 1, path: '/All_Matriculation_Subjects/English_Language/Maturita_AJ' },
+		{
+			id: 1,
+			text: 'Anglický jazyk',
+			level: 1,
+			path: '/All_Matriculation_Subjects/English_Language'
+		},
+		{
+			id: 2,
+			text: 'Maturita Anglický jazyk',
+			level: 1,
+			path: '/All_Matriculation_Subjects/English_Language/Maturita_AJ'
+		},
+		{
+			id: 3,
+			text: 'Info Maturita',
+			level: 2,
+			parent: 2,
+			path: '/All_Matriculation_Subjects/English_Language/Info-Maturita'
+		}
 	]);
 </script>
 
@@ -21,15 +38,26 @@
 		<div class="content">
 			<h1>Anglický jazyk</h1>
 			<p>
-				Anglický jazyk — zde najdete různé věci od <em>past continuous</em> až po základy, slovíčka a další. Přidávám také odkazy na další weby s angličtinou — pro jistotu, kdybych to tu úplně nedotáhl. 😄
+				Anglický jazyk — zde najdete různé věci od <em>past continuous</em> až po základy, slovíčka a
+				další. Přidávám také odkazy na další weby s angličtinou — pro jistotu, kdybych to tu úplně nedotáhl.
+				😄
 			</p>
 
 			<div class="note">
 				<p>Užitečné odkazy:</p>
 				<ul>
 					<li><a href="https://www.umimeanglicky.cz/" target="_blank">Umíme anglicky</a></li>
-					<li><a href="https://anglina.unas.cz/easy-english/anglictina-procvicovani-vasich-znalosti/" target="_blank">Angličtina - procvičování</a></li>
-					<li><a href="https://www.jazyky-online.info/anglictina/procvicovani.php" target="_blank">Jazyky online</a></li>
+					<li>
+						<a
+							href="https://anglina.unas.cz/easy-english/anglictina-procvicovani-vasich-znalosti/"
+							target="_blank">Angličtina - procvičování</a
+						>
+					</li>
+					<li>
+						<a href="https://www.jazyky-online.info/anglictina/procvicovani.php" target="_blank"
+							>Jazyky online</a
+						>
+					</li>
 				</ul>
 			</div>
 		</div>
