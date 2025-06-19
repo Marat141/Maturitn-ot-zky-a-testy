@@ -22,7 +22,7 @@
 			id: 4,
 			text: 'JavaScript',
 			level: 1,
-			path: '/All_Matriculation_Subjects/Web_Creating/JavaScript-Notes'
+			path: '/All_Matriculation_Subjects/Web_Creating/Javascript-Notes'
 		},
 		{ id: 5, text: 'Svelte', level: 1, path: '/All_Matriculation_Subjects/Web_Creating/PHP-Notes' }
 	]);
