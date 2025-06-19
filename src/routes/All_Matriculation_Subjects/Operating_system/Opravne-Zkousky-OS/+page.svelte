@@ -192,66 +192,27 @@
 <main>
 	<div class="layout">
 		<Navigation {headings} />
-
 		<div class="content">
-			<div class="Welcome-to-Operating-Systems">
-				<h1>Vítejte v sekci o operačních systémech</h1>
-				<p>
-					Tato sekce obsahuje materiály a informace týkající se operačních systémů, které jsou
-					součástí maturitních předmětů.
-				</p>
-				<div class="What-it-is">
-					<h2>Co to je?</h2>
-					<p>
-						Operační systémy jsou základní software, který řídí hardware počítače a poskytuje služby
-						pro programy. Umožňují uživatelům interagovat s počítačem a spouštět aplikace.
-					</p>
-				</div>
-			</div>
-			<div class="PDF-files">
-				<h1>Zápisky z hodin</h1>
-				<p>
-					Zde buď můžete stáhnout pdf soubor nebo si to jenom procvičit na webu je jenom na vás.
-				</p>
-				<a href="/PDF/Aplikacni_protokoly_2.pdf" download>Aplikační protokoly</a>
-				<a href="/PDF/Arduino_1-15_1_pohyb_preruseni_HC-SR501_7Seg.pdf" download
-					>Arduino_1-15_1_pohyb_preruseni</a
-				>
-				<a href="/PDF/Arduino_10_7_segment_4_digits_s_DHT11.pdf" download
-					>Arduino_10_7_segment_4_digits_s_DHT11</a
-				>
-				<a href="/PDF/GDPR_souhrn.pdf">GDPR souhrn</a>
-				<a href="/PDF/GDPR-Technicka_opatreni.pdf">GDPR Technicka opatreni</a>
-				<a href="/PDF/Operacni_systemy_All_13_Operacni_system.pdf"
-					>Operační systemy All 13 Operacni system</a
-				>
-				<a href="/PDF/Operacni_systemy_MAC_1_1.pdf">Operační systemy MAC_1_1</a>
-				<a href="/PDF/Operacni_systemy_MAC_1_2.pdf">Operační systemy MAC_1_2</a>
-				<a href="/PDF/Operacni_systemy_MAC_1_4_Mail.pdf">Operační systemy MAC_1_4_Mail</a>
-				<a href="/PDF/Operacni_systemy_MAC_1_7_Terminal.pdf">Operační systemy MAC_1_7_Terminal</a>
-				<a href="/PDF/Operacni_systemy_W_6_2_security_features_funkce_zabezpeceni_cz.pdf"
-					>Operační systemy W_6_2_security_features_funkce_zabezpeceni_cz</a
-				>
-				<a href="/PDF/Operacni_systemy_W10_6_1_device_manager.pdf"
-					>Operační systemy_W10_6_1_device_manager</a
-				>
-				<a href="/PDF/Operacni_systemy_Win_1.pdf">Operační systemy Win_1</a>
-				<a href="/PDF/Operacni_systemy_Win_2.pdf">Operační systemy Win_2</a>
-				<a href="/PDF/Operacni_systemy_Win_3.pdf">Operační systemy Win_3</a>
-				<a href="/PDF/Operacni_systemy_Win_4_2.pdf">Operační systemy Win_4_2</a>
-				<a href="/PDF/Operacni_systemy_Win_4.pdf">Operační systemy Win_4</a>
-				<a href="/PDF/Operacni_systemy_Win_5_MMC.pdf">Operační systemy Win_5_MMC</a>
-				<a href="/PDF/Operacni_systemy_Win_7_1_sit_1_cz.pdf">Operační systemy Win_7_1_sit_1_cz</a>
-				<a href="/PDF/Operacni_systemy_Win_7_1_sit_3_cz.pdf">Operační systemy Win_7_1_sit_3_cz</a>
-				<a href="/PDF/Operacni_systemy_Win_7_Windows_Server.pdf"
-					>Operační systemy Win_7_Windows_Server</a
-				>
-				<a href="/PDF/Operacni_systemy_Win_8_Sprava_aplikaci_1.pdf"
-					>Operační systemy Win_8_Sprava_aplikaci_1</a
-				>
-				<a href="/PDF/Operacni_systemy_Win_9_1_Firewall.pdf">Operační systemy Win_9_1_Firewall</a>
-				<a href="/PDF/Souborove_systemy_1_Windows.pdf">Souborove systemy 1_Windows</a>
-			</div>
+			<h1>Opravné zkoušky</h1>
+			<h2>Rozpis opravných zkoušek</h2>
+			<ul>
+				<li><strong>Šedivec</strong> — 21. 8. v 8:00</li>
+				<li><strong>Polan</strong> — 21. 8. v 8:15</li>
+				<li><strong>Piksa</strong> — 21. 8. v 8:30</li>
+				<li><strong>Nguyen</strong> — 21. 8. v 8:45</li>
+				<li><strong>Koukolík</strong> — 21. 8. v 9:00</li>
+				<li><strong>Kirpal</strong> — 21. 8. v 9:15</li>
+				<li><strong>Fedorov</strong> — 21. 8. v 9:30</li>
+			</ul>
+
+			<p><strong>Místo:</strong> učebna B104</p>
+
+			<h3>Témata k přípravě:</h3>
+			<ol>
+				<li>Operační systém Microsoft Windows – učivo 1. a 2. pololetí 2024–2025</li>
+				<li>MacOS – učivo 2. pololetí 2024–2025</li>
+				<li>Síťové služby – učivo 1. a 2. pololetí 2024–2025</li>
+			</ol>
 		</div>
 	</div>
 </main>
@@ -259,15 +220,10 @@
 <style>
 	.layout {
 		display: flex;
-		gap: 32px;
-	}
-
-	.content {
-		flex: 1;
-		padding: 32px;
-		background: rgba(255, 255, 255, 0.85);
-		border-radius: 16px;
-		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+		flex-wrap: wrap;
+		gap: 2rem;
+		padding: 2rem;
+		background-color: #f9fafb;
 		font-family:
 			'Inter',
 			system-ui,
@@ -276,47 +232,37 @@
 			Roboto,
 			sans-serif;
 		color: #1f2937;
-		transition: all 0.3s ease;
 	}
 
-	.content h1 {
-		font-size: 32px;
-		margin-bottom: 16px;
+	.content {
+		flex: 1;
+		padding: 2rem;
+		background: #ffffffcc; /* poloprůhledná bílá */
+		border-radius: 1rem;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
+	}
+
+	.content:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
 		color: #111827;
 	}
 
-	.content h2 {
-		font-size: 24px;
-		margin-top: 32px;
-		margin-bottom: 12px;
-		color: #1d4ed8;
-		border-left: 4px solid #1d4ed8;
-		padding-left: 12px;
-	}
-
-	.content p {
+	h3 {
+		font-size: 1rem;
 		line-height: 1.6;
-		color: #374151;
-		margin: 8px 0 20px;
-		font-size: 16px;
-	}
-
-	.content a {
-		display: inline-block;
-		color: #2563eb;
-		background-color: #f0f9ff;
-		padding: 8px 12px;
-		margin: 4px 0;
-		border-radius: 6px;
-		text-decoration: none;
-		transition:
-			background-color 0.25s,
-			color 0.25s;
-		font-size: 15px;
-	}
-
-	.content a:hover {
-		background-color: #dbeafe;
-		color: #1d4ed8;
+		white-space: pre-line;
+		background-color: #f3f4f6;
+		padding: 1rem;
+		border-left: 4px solid #3b82f6;
+		border-radius: 0.5rem;
 	}
 </style>

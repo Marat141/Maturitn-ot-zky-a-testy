@@ -70,7 +70,7 @@
 
 <style>
 	header {
-		background-color: #f8f9fa;
+		background-color: #00000036;
 		padding: 16px 32px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 		display: flex;
