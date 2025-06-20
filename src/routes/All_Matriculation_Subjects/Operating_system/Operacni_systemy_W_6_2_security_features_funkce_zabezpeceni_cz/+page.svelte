@@ -201,17 +201,21 @@
 				<h2>🛡️ Windows Defender Antivirus</h2>
 				<ul>
 					<li>Integrovaná antivirová ochrana ve Windows 10/11</li>
-					<li>Reálný čas, cloudová ochrana, automatické aktualizace</li>
-					<li>Možnosti nastavení: výjimky, plánování, úroveň ochrany</li>
+					<li>Poskytuje ochranu v reálném čase proti virům, malwaru a dalším škodlivým softwarům</li>
+					<li>Ochrana v reálném čase: Neustálé monitorování systému pro detekci hrozeb</li>
+					<li>Cloudová ochrana: Využívá cloudové služby pro rychlejší detekci nových hrozeb</li>
+					<li>Automatické aktualizace: Pravidelně aktualizuje definice virů a malwaru.</li>
+					<li>Možnosti nastavení: pravidelné skenování, výjimky, plánování, úroveň ochrany</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🔥 Windows Firewall</h2>
 				<ul>
-					<li>Filtrace síťového provozu dle pravidel</li>
+					<li>Integrovaný firewall, který pomáhá zabránit neoprávněnému přístupu k systému přes síť nebo internet.</li>
+					<li>Filtrace příchozího a odchozího provozu: Kontroluje data vstupující a opouštějící systém na základě předdefinovaných pravidel</li>
 					<li>Profily: soukromá, veřejná, doménová síť</li>
-					<li>Pokročilá konfigurace přes rozhraní nebo GPO</li>
+					<li>Pokročilá konfigurace přes rozhraní nebo GPO (Group Policy Object) </li>
 				</ul>
 			</section>
 
