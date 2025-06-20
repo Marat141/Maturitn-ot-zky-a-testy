@@ -190,7 +190,7 @@
 			<div class="header-with-button">
 				<h1>Windows – část 6.2: Funkce zabezpečení</h1>
 				<a
-					href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W_6_2_security_features_funkce_zabezpeceni_cz/Exam_Operacni_systemy_W_6_2_security_features_funkce_zabezpeceni_cz"
+					href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W_6_2_security_features_funkce_zabezpeceni_cz/Exam_Operacni_systemy_W_6_2_security_features"
 					class="ButtonExam"
 				>
 					Napsat si test
@@ -202,10 +202,16 @@
 				<ul>
 					<li>Integrovaná antivirová ochrana ve Windows 10/11</li>
 					<li>Poskytuje ochranu v reálném čase proti virům, malwaru a dalším škodlivým softwarům</li>
-					<li>Ochrana v reálném čase: Neustálé monitorování systému pro detekci hrozeb</li>
-					<li>Cloudová ochrana: Využívá cloudové služby pro rychlejší detekci nových hrozeb</li>
-					<li>Automatické aktualizace: Pravidelně aktualizuje definice virů a malwaru.</li>
-					<li>Možnosti nastavení: pravidelné skenování, výjimky, plánování, úroveň ochrany</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Ochrana v reálném čase: Neustálé monitorování systému pro detekci hrozeb</li>
+						<li>Cloudová ochrana: Využívá cloudové služby pro rychlejší detekci nových hrozeb</li>
+						<li>Automatické aktualizace: Pravidelně aktualizuje definice virů a malwaru.</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Uživatelé mohou naplánovat pravidelné skenování, vyloučit určité soubory nebo složky a konfigurovat úroveň ochrany</li>
+					</ul>
 				</ul>
 			</section>
 
@@ -213,9 +219,13 @@
 				<h2>🔥 Windows Firewall</h2>
 				<ul>
 					<li>Integrovaný firewall, který pomáhá zabránit neoprávněnému přístupu k systému přes síť nebo internet.</li>
-					<li>Filtrace příchozího a odchozího provozu: Kontroluje data vstupující a opouštějící systém na základě předdefinovaných pravidel</li>
-					<li>Profily: soukromá, veřejná, doménová síť</li>
-					<li>Pokročilá konfigurace přes rozhraní nebo GPO (Group Policy Object) </li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Filtrace příchozího a odchozího provozu: Kontroluje data vstupující a opouštějící systém na základě předefinovaných pravidel</li>
+						<li>Profily: soukromá, veřejná, doménová síť</li>
+						<li>Pokročilá konfigurace přes rozhraní nebo GPO (Group Policy Object) </li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong> Přístupné přes Windows Security nebo Windows Defender Firewall s pokročilým zabezpečením pro detailní konfiguraci</li>
 				</ul>
 			</section>
 
@@ -224,16 +234,33 @@
 				<ul>
 					<li>Ochrana před neautorizovanými změnami systému</li>
 					<li>Vyžaduje potvrzení pro akce s vyššími oprávněními</li>
-					<li>Nastavení: Účty > Možnosti přihlášení nebo Ovládací panely</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Prevence nežádoucích změn: Upozorňuje uživatele, když aplikace nebo procesy chtějí provést změny vyžadující vyšší oprávnění</li>
+						<li>Ochrana proti malware: Snižuje riziko, že malware získá administrátorská práva bez vědomí uživatele</li>	
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong> Účty > Možnosti přihlášení nebo Ovládací panely</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🔒 BitLocker</h2>
 				<ul>
-					<li>Šifrování celých disků i externích jednotek</li>
-					<li>Podpora TPM, BitLocker To Go</li>
-					<li>Možnosti záloh klíčů, ověřování PIN/heslo</li>
+					<li>Šifrování celých disků i externích jednotek  před neoprávněným přístupem v případě ztráty nebo krádeže zařízení</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Šifrování disků: Umožňuje šifrovat systémové i datové disky</li>
+						<li>TPM integrace: Využívá Trusted Platform Module (TPM) pro bezpečné ukládání šifrovacích klíčů</li>
+						<ul>
+							<li style="font-size: 15px; text-decoration:underline">Trusted Platform Module (TPM) je bezpečnostní čip v počítači, který slouží k uchovávání kryptografických klíčů a ověřování integrity systému. Chrání data tím, že umožňuje šifrování disku, bezpečné přihlašování a ověřování, že systém nebyl změněn škodlivým softwarem</li>
+						</ul>
+						<li>BitLocker to go: Šifrování externích disků a USB flash disků</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Přístupné přes Ovládací panely > Šifrování jednotky BitLocker</li>
+						<li>Umožňuje zálohovat obnovovací klíče a nastavit metody ověřování (PIN, heslo)</li>
+					</ul>
 				</ul>
 			</section>
 
@@ -241,35 +268,212 @@
 				<h2>👁️ Windows Hello</h2>
 				<ul>
 					<li>Biometrické přihlašování (obličej, otisk, duhovka)</li>
-					<li>Vyžaduje kompatibilní HW</li>
-					<li>Nastavení: Účty > Možnosti přihlášení</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Biometrická autentizace: Nahrazuje tradiční hesla bezpečnějšími metodami</li>
+						<li>Komfort a rychlost: Umožňuje rychlé přihlášení bez potřeby pamatovat si hesla</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Účty > Možnosti přihlášení</li>
+						<li>Vyžaduje kompatibilní hardware</li>
+					</ul>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🔐 Secure Boot</h2>
 				<ul>
-					<li>Zajišťuje spuštění pouze důvěryhodného softwaru</li>
-					<li>Konfigurace v BIOS/UEFI</li>
-					<li>Chrání před boot malwarem</li>
+					<li>Bezpečnostní standard UEFI, který pomáhá zajistit, že počítač spustí pouze důvěryhodný software při startu systému</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Ochrana před malware při startu: Zabraňuje načtení škodlivého kódu při bootování</li>
+						<li>Digitální podepisování: Vyžaduje, aby firmware a ovladače byly digitálně podepsány</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong> Konfigurace v BIOS/UEFI</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🧪 Sandbox, Application & Credential Guard</h2>
+				<h2>🧪 Windows Defender Application Guard</h2>
 				<ul>
-					<li>Sandbox: izolované prostředí pro testování</li>
-					<li>Application Guard: virtualizace pro izolaci prohlížeče</li>
-					<li>Credential Guard: ochrana přihlašovacích údajů pomocí Hyper-V</li>
+					<li>Izoluje nedůvěryhodné webové stránky a aplikace v bezpečném kontejneru</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Izolace: Spouští Edge nebo aplikace v izolovaném prostředí pomocí virtualizace</li>
+						<li>Ochrana před útoky: Zabraňuje škodlivému kódu z izolovaného prostředí ovlivnit hostitelský systém</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Konfigurace přes Windows Security > Virus & threat protection > Manage settings</li>
+						<li>Pokročilá nastavení pomocí Group Policy nebo System Center Configuration Manager</li>
+					</ul>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🧰 Další funkce</h2>
+				<h2>🔐 Windows Defender Credential Guard</h2>
 				<ul>
-					<li>Exploit Guard, SmartScreen, Windows Update</li>
-					<li>Skupinové politiky, AppLocker, Dynamic Lock</li>
-					<li>Microsoft Defender for Endpoint, Device Guard</li>
+					<li>Chrání přihlašovací údaje ukládáním ve virtualizovaném prostředí</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Ochrana pověřovacích údajů: Izolace LSA procesů, prevence útoků jako Pass-the-Hash</li>
+						<li>Virtualizace: Využívá Hyper-V pro vytvoření bezpečného prostředí</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Vyžaduje Windows 10/11 Enterprise a podporu virtualizace v hardware</li>
+						<li>Konfigurace přes Group Policy nebo Registry Editor</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🛡️ Windows Defender Exploit Guard</h2>
+				<ul>
+					<li>Funkce pro prevenci exploitů, kontrolu přístupu a chování aplikací</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Attack surface reduction: Omezuje oblasti napadnutelnosti</li>
+						<li>Network protection: Blokuje nebezpečné odchozí připojení</li>
+						<li>Controlled folder access: Chrání soubory a složky před neoprávněnými změnami</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Konfigurace přes Windows Security > Virus & threat protection > Manage settings</li>
+						<li>Pokročilá nastavení pomocí Group Policy nebo System Center Configuration Manager</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🧠 Windows Defender SmartScreen</h2>
+				<ul>
+					<li>Filtrace škodlivých webových stránek a souborů ke stažení</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Webová ochrana: Varuje před nebezpečnými weby v Microsoft Edge</li>
+						<li>Ochrana při stahování: Blokuje škodlivé soubory</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Nastavení v Windows Security > App & browser control</li>
+						<li>Uživatelé mohou povolit, zakázat nebo upravit úroveň varování</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔄 Windows Update</h2>
+				<ul>
+					<li>Zajišťuje aktuálnost systému pomocí bezpečnostních aktualizací a oprav</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Automatické aktualizace: Pravidelné stahování a instalace</li>
+						<li>Možnosti odložení: Kontrola nad nasazením aktualizací</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Nastavení v Nastavení > Aktualizace a zabezpečení > Windows Update</li>
+						<li>Pokročilá správa pomocí Windows Server Update Services (WSUS) nebo Microsoft Endpoint Configuration Manager</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📦 Windows Sandbox</h2>
+				<ul>
+					<li>Bezpečné spouštění nedůvěryhodných aplikací v izolovaném prostředí</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Izolované prostředí: Každé spuštění je čistá instalace Windows</li>
+						<li>Automatické odstranění: Po zavření se obsah trvale odstraní</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Dostupné v edicích Windows 10/11 Pro a Enterprise</li>
+						<li>Lze povolit přes Windows Features</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🏢 Skupinové Politiky a Active Directory</h2>
+				<ul>
+					<li>Centrální správa a konfigurace nastavení v síti</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Centrální správa: Politiky pro OU v Active Directory</li>
+						<li>Bezpečnostní nastavení: Hesla, přístupová práva, firewall atd.</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Správa přes Group Policy Management Console (GPMC)</li>
+						<li>Umožňuje detailní kontrolu nad téměř všemi aspekty systému</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🧳 Windows Information Protection</h2>
+				<ul>
+					<li>Ochrana firemních dat před únikem na osobní zařízení nebo aplikace</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Oddělení dat: Firemní vs. osobní data na jednom zařízení</li>
+						<li>Kontrola přístupu: Které aplikace mají přístup k firemním datům</li>
+						<li>Šifrování: Automatické šifrování firemních dat</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Konfigurace pomocí Intune, System Center Configuration Manager nebo Group Policy</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🛡️ Microsoft Defender for Endpoint</h2>
+				<ul>
+					<li>Podnikové řešení pro pokročilou ochranu koncových zařízení</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Endpoint Detection and Response (EDR): Detekce a reakce na hrozby</li>
+						<li>Threat & Vulnerability Management: Identifikace a oprava zranitelností</li>
+						<li>Automatizovaná Reakce: Automatizace reakcí na incidenty</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Spravováno přes Microsoft 365 Defender portál</li>
+						<li>Vyžaduje předplatné Microsoft 365 E5 nebo samostatné licence</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🖥️ Device Guard</h2>
+				<ul>
+					<li>Ochrana před spuštěním nedůvěryhodného kódu</li>
+					<li><strong>Klíčové Funkce:</strong></li>
+					<ul>
+						<li>Code Integrity Policies: Pouze důvěryhodný kód</li>
+						<li>Virtualization-Based Security: Ochrana kritických procesů pomocí virtualizace</li>
+					</ul>
+					<li><strong>Možnosti Nastavení:</strong></li>
+					<ul>
+						<li>Konfigurace přes Group Policy a PowerShell</li>
+						<li>Konfigurace přes Group Policy a PowerShell Konfigurace přes Group Policy a PowerShell</li>
+					</ul>
+				</ul>
+			</section>
+			<section class="note">
+				<h2>🧠 Další Bezpečnostní Funkce</h2>
+				<ul>
+					<li><strong>AppLocker:</strong> Umožňuje kontrolovat, které aplikace a soubory mohou být spuštěny</li>
+					<li><strong>Controlled Folder Access:</strong> Chrání důležité složky před neoprávněnými změnami, zejména před ransomwarem</li>
+					<li><strong>Windows Defender Firewall s pokročilým zabezpečením:</strong> Poskytuje detailní nastavení pravidel firewallu a IPSec</li>
+					<li><strong>Encrypting File System (EFS):</strong> Umožňuje šifrovat jednotlivé soubory a složky</li>
+					<li><strong>Credential Manager:</strong> Bezpečně ukládá přihlašovací údaje a hesla</li>
+					<li><strong>Dynamic Lock:</strong> Automaticky uzamkne počítač, když se uživatel vzdálí (např. pomocí Bluetooth spárovaného zařízení)</li>
 				</ul>
 			</section>
 
