@@ -200,45 +200,193 @@
 			<section class="note">
 				<h2>🔧 Ovladače zařízení</h2>
 				<ul>
-					<li>Ovladač je software, který umožňuje OS komunikaci s hardwarem</li>
-					<li>Překládá příkazy z OS na instrukce pro zařízení (např. WRITE SECTOR)</li>
-					<li>Zajišťuje správu zdrojů a kompatibilitu se systémem</li>
+					<li>
+						Ovladač zařízení (device driver) je softwarová komponenta umožňující operačnímu systému
+						Windows komunikovat s fyzickým hardwarem.
+					</li>
+					<li>
+						Funguje jako prostředník mezi OS a zařízením – překládá příkazy operačního systému na
+						nízkoúrovňové instrukce, kterým zařízení rozumí (např. WRITE SECTOR).
+					</li>
+					<li>
+						Bez správného ovladače není zařízení funkční, nebo může fungovat špatně či omezeně.
+					</li>
+					<li>
+						<strong>Funkce:</strong>
+						<ul>
+							<li>
+								<strong>Komunikace mezi OS a Hardwarem:</strong> Ovladače umožňují operačnímu systému
+								přistupovat k funkcím a datům zařízení bez nutnosti znát detaily jeho fungování.
+							</li>
+							<li>
+								<strong>Překlad Příkazů:</strong> Převádějí vysokou úroveň příkazů z operačního systému
+								na nízkoúrovňové instrukce, které zařízení rozumí.
+							</li>
+							<li>
+								<strong>Správa Zdrojů:</strong> Pomáhají při správě systémových zdrojů, jako je paměť,
+								procesorový čas a přerušení, které zařízení využívá.
+							</li>
+							<li>
+								<strong>Zajištění Kompatibility:</strong> Umožňují, aby starší zařízení fungovala s novějšími
+								verzemi operačního systému a naopak
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🧩 Příklady zařízení a ovladačů</h2>
 				<ul>
-					<li>Pevný disk – zápis dat přes ovladač disku</li>
-					<li>Síťová karta – převod dat na pakety, přenos přes Wi-Fi/LAN</li>
-					<li>Grafická karta – vykreslování obrazu přes GPU ovladač</li>
+					<li>
+						<strong>Přenos Dat na Pevný disk:</strong>
+						<ol>
+							<li>Aplikace požaduje zápis dat pomocí API (např. WriteFile).</li>
+							<li>OS předá požadavek ovladači disku.</li>
+							<li>Ovladač překládá příkaz na nízkoúrovňové instrukce typu WRITE SECTOR.</li>
+							<li>Diskový řadič vykonává instrukce a zapisuje data na pevný disk.</li>
+							<li>Diskový řadič potvrzuje operaci ovladači.</li>
+							<li>Ovladač disku informuje operační systém o úspěšném zápisu.</li>
+							<li>Operační systém informuje aplikaci o dokončení operace</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Síťová karta / Síťový Adaptér:</strong>
+						<ol>
+							<li>Aplikace odešle data pomocí socketu.</li>
+							<li>Ovladač vytvoří síťové pakety (např. TCP/IP), přidá hlavičky.</li>
+							<li>Přes fyzické médium (Wi-Fi, Ethernet) dojde k přenosu.</li>
+							<li>Řadič potvrdí přenos ovladači.</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Grafická karta:</strong>
+						<ol>
+							<li>Aplikace (např. hra) kreslí obraz.</li>
+							<li>Ovladač převádí instrukce na specifické GPU příkazy.</li>
+							<li>GPU zpracuje a vykreslí obraz, informuje zpět ovladač a OS.</li>
+						</ol>
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔗 API (Application Programming Interface)</h2>
+				<ul>
+					<li>API je rozhraní, které umožňuje komunikaci mezi různými softwarovými částmi – například mezi aplikací a operačním systémem, nebo mezi dvěma programy.</li>
+					<li><strong>Představ si API jako:</strong>
+						<ul>
+							<li>Jídelní lístek v restauraci – ty si vybereš jídlo (požadavek), číšník (API) předá objednávku kuchyni (programu) a přinese ti jídlo (odpověď).</li>
+							<li>Most mezi tím, co chceš, a tím, co to skutečně vykoná.</li>
+						</ul>
+					</li>
+
+					<li><strong>Příklad ve Windows:</strong>
+						<ul>
+							<li>Když program chce zapsat data na disk, nekomunikuje přímo s hardwarem, ale použije API operačního systému (např. WriteFile).</li>
+							<li>OS pak předá příkaz ovladači disku, který zapíše data.</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🧪 Možné Nízkouúrovňové Instrukce</h2>
+				<ul>
+					<li>
+						<strong>WRITE SECTOR:</strong> Instrukce pro zápis dat do konkrétního sektoru na disku.
+					</li>
+					<li>
+						<strong>READ SECTOR:</strong> Instrukce pro čtení dat z konkrétního sektoru na disku.
+					</li>
+					<li>
+						<strong>SEND PACKET:</strong> Instrukce pro odeslání síťového paketu prostřednictvím síťového
+						adaptéru.
+					</li>
+					<li>
+						<strong>RECEIVE PACKET:</strong> Instrukce pro příjem síťového paketu prostřednictvím síťového
+						adaptéru
+					</li>
+					<li>
+						<strong>DRAW PIXEL:</strong> Instrukce pro vykreslení jednotlivého pixelu na obrazovku pomocí
+						grafické karty.
+					</li>
+					<li><strong>LOAD TEXTURE:</strong> Instrukce pro načtení textury do paměti GPU.</li>
+					<li><strong>EXECUTE SHADER:</strong> Instrukce pro spuštění shader programu na GPU.</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>📋 Správce zařízení</h2>
 				<ul>
-					<li>Centrální přehled a správa veškerého hardwaru v systému</li>
-					<li>Zobrazuje informace o stavu zařízení a nainstalovaných ovladačích</li>
-					<li>Lze spustit pomocí devmgmt.msc nebo přes grafické prostředí</li>
+					<li>
+						Správce zařízení je nástroj ve Windows, který zobrazuje a spravuje všechna zařízení a
+						ovladače v systému.
+					</li>
+					<li>
+						Je součástí Microsoft Management Console (MMC) – poskytuje centralizovaný a organizovaný
+						přehled o hardwaru nainstalovaném v počítači.
+					</li>
+					<li>
+						<strong>Zobrazuje informace jako:</strong>
+						<ul>
+							<li>Typ zařízení</li>
+							<li>Stav zařízení</li>
+							<li>Výrobce a specifické vlastnosti</li>
+							<li>Informace o ovladači zařízení</li>
+						</ul>
+					</li>
+					<li><strong>Umožňuje:</strong>
+						<ul>
+							<li>Konfigurovat hardware</li>
+							<li>Aktualizovat, zakazovat nebo odinstalovat ovladače</li>
+							<li>Řešit konflikty mezi zařízeními</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Spuštění:</strong>
+						<ul>
+							<li><code>devmgmt.msc</code> (Win + R)</li>
+							<li>Pravý klik na "Tento počítač" → Spravovat → Správce zařízení</li>
+							<li>Win + X → Správce zařízení</li>
+						</ul>
+					</li>
+					<li>
+						Lze jej chápat jako základní přehled všech zařízení, kterým Windows rozumí – veškerý
+						hardware lze spravovat z tohoto místa.
+					</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🛠️ Funkce Správce zařízení</h2>
 				<ul>
-					<li>Aktualizace, přeinstalace, zakázání nebo odinstalace ovladačů</li>
-					<li>Zobrazení skrytých zařízení</li>
-					<li>Diagnostika – žlutý trojúhelník značí problém s ovladačem</li>
+					<li>Aktualizace ovladačů (vyhledání online nebo ruční výběr).</li>
+					<li>Přeinstalace nebo vrácení ovladače na starší verzi.</li>
+					<li>Dočasné zakázání nebo úplné odinstalování ovladače.</li>
+					<li>Zobrazení skrytých zařízení, jako jsou systémové ovladače.</li>
+					<li>Identifikace problémů – zařízení s chybou je označeno žlutým trojúhelníkem.</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🧪 Driver Verifier Manager</h2>
 				<ul>
-					<li>Nástroj pro ověření stability ovladačů a detekci chyb</li>
-					<li>Možnosti: výběr podezřelých, nepodepsaných nebo všech ovladačů</li>
-					<li>Nutný restart, zobrazuje podrobnosti o ověřovaných ovladačích</li>
+					<li>
+						Pokročilý nástroj pro testování ovladačů – slouží k detekci nestability nebo chyb.
+					</li>
+					<li>
+						Spuštění pomocí <code>verifier</code> v dialogu Spustit nebo přes příkazový řádek jako administrátor.
+					</li>
+					<li>
+						Možnosti výběru:
+						<ul>
+							<li>Automaticky vybrat nepodepsané ovladače.</li>
+							<li>Ovladače určené pro starší verze Windows.</li>
+							<li>Všechny ovladače v systému.</li>
+						</ul>
+					</li>
+					<li>Po nastavení vyžaduje restart a začne sledovat chování ovladačů v reálném čase.</li>
 				</ul>
 			</section>
 

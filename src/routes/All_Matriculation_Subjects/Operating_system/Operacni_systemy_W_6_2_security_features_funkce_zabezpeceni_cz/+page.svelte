@@ -403,7 +403,7 @@
 					<li>Centrální správa a konfigurace nastavení v síti</li>
 					<li><strong>Klíčové Funkce:</strong></li>
 					<ul>
-						<li>Centrální správa: Politiky pro OU v Active Directory</li>
+						<li>Centrální správa: Politiky pro OU (Organizational Unit (česky organizační jednotka)) v Active Directory</li>
 						<li>Bezpečnostní nastavení: Hesla, přístupová práva, firewall atd.</li>
 					</ul>
 					<li><strong>Možnosti Nastavení:</strong></li>
