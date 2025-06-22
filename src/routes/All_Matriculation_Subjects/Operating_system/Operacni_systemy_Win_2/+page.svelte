@@ -196,15 +196,29 @@
 					Napsat si test
 				</a>
 			</div>
+			<section class="note">
+				<h2>🔑 Klíčové pojmy</h2>
+				<ul>
+					<li>Navigace v prostředí Windows</li>
+					<li>Příkazový řádek CLI a PowerShell</li>
+					<li>Jádro operačního systému</li>
+					<li>Serverové aplikace</li>
+					<li>Nástroje ochrany osobních údajů ve Windows</li>
+					<li>Windows Hello</li>
+					<li>Šifrování zařízení (BitLocker)</li>
+					<li>Ochrana osobních údajů při online aktivitách</li>
+					<li>Správa diagnostických dat</li>
+				</ul>
+			</section>
 
 			<section class="note">
 				<h2>🧭 Navigace ve Windows</h2>
 				<ul>
-					<li>Pracovní plocha: výchozí obrazovka s ikonami a složkami</li>
-					<li>Nabídka Start: přístup k aplikacím, souborům a nastavení</li>
-					<li>Průzkumník souborů: prohlížení a správa souborového systému</li>
-					<li>Hlavní panel: rychlý přístup ke spuštěným programům a notifikacím</li>
-					<li>Centrum akcí: ovládání notifikací a důležitých nastavení</li>
+					<li><strong>Pracovní plocha:</strong> výchozí obrazovka s ikonami a složkami</li>
+					<li><strong>Nabídka Start:</strong> přístup k aplikacím, souborům a nastavení</li>
+					<li><strong>Průzkumník souborů:</strong> prohlížení a správa souborového systému</li>
+					<li><strong>Hlavní panel:</strong> rychlý přístup ke spuštěným programům a notifikacím</li>
+					<li><strong>Centrum akcí:</strong> ovládání notifikací a důležitých nastavení</li>
 				</ul>
 			</section>
 
