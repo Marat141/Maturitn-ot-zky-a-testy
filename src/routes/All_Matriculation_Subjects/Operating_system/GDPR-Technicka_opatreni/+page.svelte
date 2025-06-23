@@ -22,163 +22,155 @@
 		{
 			id: 4,
 			level: 2,
-			text: 'Arduino 1-15-1 pohyb přerušení',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Arduino-1_15'
-		},
-		{
-			id: 5,
-			level: 2,
-			text: 'Arduino 10 7 segment 4 digits s DHT11',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Arduino-10-7'
-		},
-		{
-			id: 6,
-			level: 2,
 			text: 'GDPR souhrn',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/GDPR_Souhrn'
 		},
 		{
-			id: 7,
+			id: 5,
 			level: 2,
 			text: 'GDPR Technická opatření',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/GDPR-Technicka_opatreni'
 		},
 		{
-			id: 8,
+			id: 6,
 			level: 2,
 			text: 'Operační systémy základní součásti operačního systému',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_All_13_Operacni_system'
 		},
 		{
-			id: 9,
+			id: 7,
 			level: 2,
 			text: 'Mac OS část 1',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_1'
 		},
 		{
-			id: 10,
+			id: 8,
 			level: 2,
 			text: 'Mac OS část 1.2',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_2'
 		},
 		{
-			id: 11,
+			id: 9,
 			level: 2,
 			text: 'Mac OS část 1.4',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_4_Mail'
 		},
 		{
-			id: 12,
+			id: 10,
 			level: 2,
 			text: 'Mac OS část 1.7',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_7_Terminal'
 		},
 		{
-			id: 13,
+			id: 11,
 			level: 2,
 			text: 'Operační systémy Windows 6.2 Funkce zabezpečení ve Windows – přehled',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W_6_2_security_features_funkce_zabezpeceni_cz'
 		},
 		{
-			id: 14,
+			id: 12,
 			level: 2,
 			text: 'Operační systémy Windows Ovladače zařízení',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W10_6_1_device_manager'
 		},
 		{
-			id: 15,
+			id: 13,
 			level: 2,
 			text: 'Operační systémy Win_1',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_1'
 		},
 		{
-			id: 16,
+			id: 14,
 			level: 2,
 			text: 'Operační systémy Win_2',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_2'
 		},
 		{
-			id: 17,
+			id: 15,
 			level: 2,
 			text: 'Operační systémy Win_3',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_3'
 		},
 		{
-			id: 18,
+			id: 16,
 			level: 2,
 			text: 'Operační systémy Win_4_2',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_4_2'
 		},
 		{
-			id: 19,
+			id: 17,
 			level: 2,
 			text: 'Operační systémy Win_4',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_4'
 		},
 		{
-			id: 20,
+			id: 18,
 			level: 2,
 			text: 'Operační systémy Win_5_MMC',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_5_MMC'
 		},
 		{
-			id: 21,
+			id: 19,
 			level: 2,
 			text: 'Operační systémy Win_7_1_sit_1_cz',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_7_1_sit_1_cz'
 		},
 		{
-			id: 22,
+			id: 20,
 			level: 2,
 			text: 'Operační systémy Win_7_1_sit_3_cz',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_7_1_sit_3_cz'
 		},
 		{
-			id: 23,
+			id: 21,
 			level: 2,
 			text: 'Operační systémy Win_7_Windows_Server',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_7_Windows_Server'
 		},
 		{
-			id: 24,
+			id: 22,
 			level: 2,
 			text: 'Operační systémy Win_8_Sprava_aplikaci_1',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_8_Sprava_aplikaci_1'
 		},
 		{
-			id: 25,
+			id: 23,
 			level: 2,
 			text: 'Operační systémy Win_9_1_Firewall',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_9_1_Firewall'
 		},
 		{
-			id: 26,
+			id: 24,
 			level: 2,
 			text: 'Souborove systemy 1_Windows',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Souborove_systemy_1_Windows'
+		},
+		{
+			id: 25,
+			level: 1,
+			text: 'Opravné zkoušky',
+			path: '/All_Matriculation_Subjects/Operating_system/Opravne-Zkousky-OS'
 		}
 	]);
 	// Experiment

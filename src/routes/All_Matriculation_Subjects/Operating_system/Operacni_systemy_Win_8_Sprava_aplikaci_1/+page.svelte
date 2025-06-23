@@ -22,163 +22,155 @@
 		{
 			id: 4,
 			level: 2,
-			text: 'Arduino 1-15-1 pohyb přerušení',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Arduino-1_15'
-		},
-		{
-			id: 5,
-			level: 2,
-			text: 'Arduino 10 7 segment 4 digits s DHT11',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Arduino-10-7'
-		},
-		{
-			id: 6,
-			level: 2,
 			text: 'GDPR souhrn',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/GDPR_Souhrn'
 		},
 		{
-			id: 7,
+			id: 5,
 			level: 2,
 			text: 'GDPR Technická opatření',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/GDPR-Technicka_opatreni'
 		},
 		{
-			id: 8,
+			id: 6,
 			level: 2,
 			text: 'Operační systémy základní součásti operačního systému',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_All_13_Operacni_system'
 		},
 		{
-			id: 9,
+			id: 7,
 			level: 2,
 			text: 'Mac OS část 1',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_1'
 		},
 		{
-			id: 10,
+			id: 8,
 			level: 2,
 			text: 'Mac OS část 1.2',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_2'
 		},
 		{
-			id: 11,
+			id: 9,
 			level: 2,
 			text: 'Mac OS část 1.4',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_4_Mail'
 		},
 		{
-			id: 12,
+			id: 10,
 			level: 2,
 			text: 'Mac OS část 1.7',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_7_Terminal'
 		},
 		{
-			id: 13,
+			id: 11,
 			level: 2,
 			text: 'Operační systémy Windows 6.2 Funkce zabezpečení ve Windows – přehled',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W_6_2_security_features_funkce_zabezpeceni_cz'
 		},
 		{
-			id: 14,
+			id: 12,
 			level: 2,
 			text: 'Operační systémy Windows Ovladače zařízení',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W10_6_1_device_manager'
 		},
 		{
-			id: 15,
+			id: 13,
 			level: 2,
 			text: 'Operační systémy Win_1',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_1'
 		},
 		{
-			id: 16,
+			id: 14,
 			level: 2,
 			text: 'Operační systémy Win_2',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_2'
 		},
 		{
-			id: 17,
+			id: 15,
 			level: 2,
 			text: 'Operační systémy Win_3',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_3'
 		},
 		{
-			id: 18,
+			id: 16,
 			level: 2,
 			text: 'Operační systémy Win_4_2',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_4_2'
 		},
 		{
-			id: 19,
+			id: 17,
 			level: 2,
 			text: 'Operační systémy Win_4',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_4'
 		},
 		{
-			id: 20,
+			id: 18,
 			level: 2,
 			text: 'Operační systémy Win_5_MMC',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_5_MMC'
 		},
 		{
-			id: 21,
+			id: 19,
 			level: 2,
 			text: 'Operační systémy Win_7_1_sit_1_cz',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_7_1_sit_1_cz'
 		},
 		{
-			id: 22,
+			id: 20,
 			level: 2,
 			text: 'Operační systémy Win_7_1_sit_3_cz',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_7_1_sit_3_cz'
 		},
 		{
-			id: 23,
+			id: 21,
 			level: 2,
 			text: 'Operační systémy Win_7_Windows_Server',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_7_Windows_Server'
 		},
 		{
-			id: 24,
+			id: 22,
 			level: 2,
 			text: 'Operační systémy Win_8_Sprava_aplikaci_1',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_8_Sprava_aplikaci_1'
 		},
 		{
-			id: 25,
+			id: 23,
 			level: 2,
 			text: 'Operační systémy Win_9_1_Firewall',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_9_1_Firewall'
 		},
 		{
-			id: 26,
+			id: 24,
 			level: 2,
 			text: 'Souborove systemy 1_Windows',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Souborove_systemy_1_Windows'
+		},
+		{
+			id: 25,
+			level: 1,
+			text: 'Opravné zkoušky',
+			path: '/All_Matriculation_Subjects/Operating_system/Opravne-Zkousky-OS'
 		}
 	]);
 </script>
@@ -191,117 +183,105 @@
 				<h1>Windows – část 8: AppLocker</h1>
 				<a
 					href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_7_Windows_Server/Exam-Operacni_systemy_Win_7_Windows_Server"
-					class="ButtonExam">Napsat si test</a
-				>
+					class="ButtonExam">Napsat si test</a>
 			</div>
 
 			<section class="note">
 				<h2>📌 Co je AppLocker</h2>
 				<p>
-					AppLocker je bezpečnostní nástroj Windows, který umožňuje administrátorům řídit, které
-					aplikace mohou být spouštěny na počítačích v síti. Pravidla lze tvořit na základě:
+					AppLocker je bezpečnostní nástroj integrovaný ve Windows, který slouží k řízení, jaké aplikace smí být spuštěny na konkrétních počítačích. Pravidla lze vytvořit na základě:
 				</p>
 				<ul>
-					<li><strong>Vydavatele (Publisher)</strong></li>
-					<li><strong>Cesty ke spustitelnému souboru</strong></li>
-					<li><strong>Hash souboru</strong></li>
+					<li><strong>Publisher (vydavatel):</strong> podle digitálního podpisu aplikace</li>
+					<li><strong>Cesta:</strong> podle umístění souboru v systému</li>
+					<li><strong>Hash:</strong> podle kontrolního součtu souboru (vhodné pro nepodepsané aplikace)</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🛠️ Požadavky pro použití AppLockeru</h2>
 				<ul>
-					<li><strong>Verze Windows:</strong> Pouze Pro, Enterprise, Education</li>
-					<li><strong>Oprávnění:</strong> Administrátorská práva</li>
-					<li>
-						<strong>igitální podpis:</strong>D Aplikace musí být podepsaná (např. Mozilla
-						Thunderbird)
+					<li><strong>Windows edice:</strong> pouze Pro, Enterprise, Education</li>
+					<li><strong>Oprávnění:</strong> je potřeba být administrátor</li>
+					<li><strong>Digitální podpis:</strong> aplikace musí být podepsaná certifikátem vydavatele</li>
+					<li><strong>AppLocker musí být aktivní:</strong> služba <code>Application Identity</code> musí být spuštěná</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔧 Nastavení AppLocker pravidel (GUI)</h2>
+				<ol>
+					<li>Spusť <code>gpmc.msc</code> (pro doménu) nebo <code>secpol.msc</code> (pro lokální PC)</li>
+					<li>Najdi cestu: <code>Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Application Control Policies &gt; AppLocker</code></li>
+					<li>Spusť <strong>Configure rule enforcement</strong> a aktivuj typy pravidel (Executable, Script, Installer, Packaged apps)</li>
+				</ol>
+			</section>
+
+			<section class="note">
+				<h2>✅ Pravidlo Allow – Mozilla Thunderbird</h2>
+				<ol>
+					<li><code>Executable Rules → Create New Rule</code></li>
+					<li>Akce: <strong>Allow</strong></li>
+					<li>Skupina: <strong>Everyone</strong> nebo konkrétní skupina</li>
+					<li>Podmínka: <strong>Publisher</strong></li>
+					<li>Vyber <code>thunderbird.exe</code> (např. <code>C:\Program Files\Mozilla Thunderbird</code>)</li>
+					<li>Zkontroluj vydavatele (Mozilla Corporation)</li>
+					<li>Volitelně přidej výjimky</li>
+					<li>Pojmenuj pravidlo např. <code>Allow Mozilla Thunderbird</code></li>
+				</ol>
+			</section>
+
+			<section class="note">
+				<h2>⛔ Pravidlo Deny – zakázání jiných aplikací</h2>
+				<ul>
+					<li>Vytvoř nové pravidlo s akcí <strong>Deny</strong></li>
+					<li>Skupina: např. <strong>Everyone</strong></li>
+					<li>Podmínka: <strong>Publisher</strong> (jiný než Mozilla)</li>
+					<li>Zvol libovolný spustitelný soubor od jiného vydavatele</li>
+					<li>Pojmenuj např. <code>Deny All Other Publishers</code></li>
+					<li><strong>POZOR:</strong> pravidlo Allow musí být výše než Deny</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔄 Aplikace a test pravidel</h2>
+				<ul>
+					<li><strong>Aktualizace Group Policy:</strong> <code>gpupdate /force</code></li>
+					<li><strong>Test:</strong>
+						<ol>
+							<li>Thunderbird se musí spustit</li>
+							<li>Jiné aplikace musí být zablokovány</li>
+						</ol>
 					</li>
-					<li>
-						<strong>AppLocker musí být aktivní (služba Application Identity spuštěná)</strong>
-					</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🔧 Nastavení AppLocker pravidel pomocí GUI</h2>
+				<h2>🧰 Řešení problémů</h2>
 				<ul>
-					<li><strong>1. Otevření Editoru skupinových politik</strong></li>
-					<ol>Doména: gpmc.msc (Group Policy Management Console)</ol>
-					<ol>Lokální počítač: secpol.msc (Local Security Policy)</ol>
-					<li><strong>2. Navigace k AppLocker</strong></li>
-					<ol>
-						Cesta: Computer Configuration > Windows Settings > Security Settings > Application
-						Control Policies > AppLocker
-					</ol>
-					<li><strong>3. Inicializace AppLockeru</strong></li>
-					<ol>
-						Aktivuj typy pravidel: Executable, Installer, Script, Packaged App Nastav enforcement
-						(vynucení)
-					</ol>
+					<li>Zkontroluj, že běží služba <code>Application Identity</code> (<code>services.msc</code>)</li>
+					<li>Auditní logy: Event Viewer → <code>Windows Logs → Security → AppLocker → EXE and DLL</code></li>
+					<li>Audit Mode: Sleduj bez vynucení pravidla (před ostrým nasazením)</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>⚙️ Vytvoření pravidla pro Povolování (Allow) – Mozilla Thunderbird</h2>
+				<h2>💡 Tipy pro administrátory</h2>
 				<ul>
-					<li><strong>1.Executable Rules > Create New Rule</strong></li>
-					<li><strong>2.Vybrat Allow</strong></li>
-					<li><strong>3.Vybrat uživatele/skupinu (např. Everyone)</strong></li>
-					<li><strong>4.Zvolit podmínku Publisher</strong></li>
-					<li><strong>5.Vyhledat thunderbird.exe</strong></li>
-					<li><strong>6.Ověřit informace o vydavateli</strong></li>
-					<li><strong>7.(Volitelně) přidat výjimky</strong></li>
-					<li><strong>8.Pojmenovat pravidlo (např. Allow Mozilla Thunderbird)</strong></li>
+					<li><strong>Zálohuj pravidla</strong> před každou změnou</li>
+					<li><strong>Testuj v režimu auditování</strong> pro ověření bez omezení</li>
+					<li><strong>Pravidelně aktualizuj</strong> seznam povolených aplikací dle změn ve firmě</li>
+					<li><strong>Správně řaď pravidla:</strong> povolující pravidla výše než zakazující</li>
 				</ul>
 			</section>
 
-			<section class="note">
-				<h2>⚙️ Vytvoření pravidla pro Zakázání (Deny) – ostatní aplikace</h2>
-				<ul>
-					<li>
-						<strong>Cíl:</strong> Zakázat aplikace mimo důvěryhodného vydavatele (např. mimo Mozilla)
-					</li>
-					<li>Stejný postup jako výše, ale akce je Deny</li>
-					<li><strong>Název:</strong> Deny All Other Publishers</li>
-					<li>Pravidlo Allow musí být výše než Deny v seznamu</li>
-				</ul>
-			</section>
-
-			<section class="note">
-				<h2>🌐 Aktualizace a Testování pravidel</h2>
-				<ul>
-					<li><strong>Aktualizace:</strong> gpupdate /force</li>
-					<li><strong>Test:</strong></li>
-					<ol>Spustit Mozilla Thunderbird – musí fungovat</ol>
-					<ol>Spustit jinou aplikaci – musí být blokována</ol>
-				</ul>
-			</section>
-
-			<section class="note">
-				<h2>📜 Řešení problémů</h2>
-				<ul>
-					<li>Zkontrolovat, že běží Application Identity (AppIDSvc)</li>
-					<li>Pravidla nefungují? Spusť službu ručně (services.msc)</li>
-					<li><strong>Auditování:</strong></li>
-					<ol>Advanced Audit Policy Configuration > Object Access > Audit Application Control</ol>
-					<ol>Sleduj v Event Vieweru</ol>
-				</ul>
-			</section>
-			<section class="note">
-				<h2>📋 Tipy</h2>
-				<ul>
-					<li><strong>Zálohuj pravidla</strong> před změnami</li>
-					<li>Testuj v <strong>Audit Mode</strong></li>
-					<li>Pravidelně <strong>aktualizuj</strong> pravidla dle změn v síti</li>
-				</ul>
-			</section>
 			<a href="/PDF/Operacni_systemy_Win_8_Sprava_aplikaci_1.pdf" class="ButtonExam" download>
 				📄 Stáhnout PDF
 			</a>
 		</div>
 	</div>
 </main>
+
 
 <style>
 	/* stejné styly jako v předchozím kódu */
