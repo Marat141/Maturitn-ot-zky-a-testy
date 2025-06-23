@@ -200,41 +200,124 @@
 			<section class="note">
 				<h2>📌 Klíčové pojmy a technologie</h2>
 				<ul>
-					<li><strong>Active Directory (AD):</strong> správa účtů a zdrojů</li>
-					<li><strong>Hyper-V:</strong> virtualizace operačních systémů</li>
-					<li><strong>Failover Clustering:</strong> vysoká dostupnost služeb</li>
-					<li><strong>Storage Spaces Direct (S2D):</strong> softwarově definované úložiště</li>
-					<li><strong>Shielded Virtual Machines:</strong> chráněné VM s TPM a BitLocker</li>
-					<li><strong>Windows Admin Center:</strong> webová správa serverů</li>
-					<li><strong>Defender for Endpoint:</strong> EDR ochrana v podnikové síti</li>
-					<li><strong>Just Enough Administration (JEA):</strong> bezpečné delegování práv</li>
+					<li><strong>Významné rysy systému:</strong> Virtualizace, vysoká dostupnost, bezpečnost, centralizovaná správa, cloud-ready řešení.</li>
+					<li><strong>Active Directory (AD):</strong> Centrální správa uživatelů, skupin, počítačů a zásad v doménovém prostředí.</li>					
+					<li><strong>Hyper-V:</strong> Virtualizační technologie pro běh více operačních systémů (VM) na jednom fyzickém serveru.</li>					
+					<li><strong>Failover Clustering:</strong> Vysoká dostupnost služeb – automatické přesunutí služby na jiný uzel při výpadku.</li>					
+					<li><strong>Storage Spaces Direct (S2D):</strong> Softwarově definované úložiště – spojuje disky z více serverů do jednoho svazku.</li>					
+					<li><strong>Windows Admin Center:</strong> Webové rozhraní pro správu serverů, clusterů a dalších komponent bez nutnosti RDP.</li>					
+					<li><strong>Šifrování zařízení (BitLocker):</strong> Ochrana dat na discích šifrováním – chrání proti krádeži nebo zneužití.</li>					
+					<li><strong>Shielded Virtual Machines:</strong> Zabezpečené VM, které chrání před přístupem administrátorů hostitele, využívá TPM a BitLocker.</li>					
+					<li><strong>Microsoft Defender for Endpoint:</strong> Podniková ochrana proti hrozbám, EDR, správa zranitelností, automatizované reakce.</li>					
+					<li><strong>Active Directory Domain Services (AD DS):</strong> Role zajišťující autentizaci uživatelů a správu identit v síti.</li>					
+					<li><strong>Active Directory Certificate Services (AD CS):</strong> Správa digitálních certifikátů pro autentizaci a šifrování.</li>					
+					<li><strong>DHCP Server:</strong> Automatické přidělování IP adres a síťových konfigurací klientům v síti.</li>					
+					<li><strong>DNS Server:</strong> Překlad názvů domén na IP adresy (např. seznam.cz → 77.75.x.x).</li>					
+					<li><strong>File and Storage Services:</strong> Sdílení souborů, správa disků, kvót, deduplikace a pokročilé možnosti ukládání.</li>					
+					<li><strong>Web Server (IIS):</strong> Hostování webových aplikací a služeb – běží na Internet Information Services (IIS).</li>					
+					<li><strong>Remote Desktop Services (RDS):</strong> Vzdálený přístup k desktopům a aplikacím – řešení pro terminálové prostředí.</li>				
+					<li><strong>Print and Document Services:</strong> Správa tiskáren, tiskových úloh a dokumentů v síti – centrální tiskový server.</li>					
+					<li><strong>Windows Deployment Services (WDS):</strong> Nasazení OS po síti – automatická instalace Windows na nové počítače.</li>					
+					<li><strong>Network Policy and Access Services (NPAS):</strong> Autentizace a autorizace přístupu do sítě – využívá RADIUS (NPS).</li>					
+					<li><strong>Windows Server Update Services (WSUS):</strong> Centrální distribuce a správa aktualizací systému Windows a dalšího softwaru.</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🛠️ Role vs Funkce</h2>
+				<h2>🪟 Windows Server</h2>
 				<ul>
-					<li><strong>Role:</strong> hlavní funkce (např. DHCP, AD DS)</li>
-					<li><strong>Funkce:</strong> podpůrné komponenty (např. .NET, PowerShell)</li>
-					<li>Instalace pomocí Server Manager nebo PowerShell</li>
+					<li>Windows Server je řada serverových operačních systémů vyvinutých společností Microsoft</li>
+					<li>Je navržena pro podporu podnikových potřeb, jako je správa sítí, hostování webových serverů, databázových služeb, virtualizace a další kritické úlohy</li>
+					<li>Windows Server poskytuje spolehlivou a škálovatelnou platformu pro podniky všech velikostí</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>📋 Důležité role</h2>
+				<h2>🧰 Významné vlastnosti Windows Serveru</h2>
 				<ul>
-					<li><strong>AD CS:</strong> certifikace, šifrování, SSL</li>
-					<li><strong>WDS:</strong> síťová instalace OS</li>
-					<li><strong>NPAS:</strong> přístupové politiky, VPN, RADIUS</li>
-					<li><strong>Failover Clustering:</strong> dostupnost SQL, Hyper-V atd.</li>
-					<li><strong>RAS:</strong> VPN, vzdálený přístup (DirectAccess)</li>
-					<li><strong>WSUS:</strong> centrální správa aktualizací</li>
-					<li><strong>Print Services:</strong> správa tiskových úloh</li>
-					<li><strong>DFS:</strong> sjednocené sdílení souborů mezi servery</li>
-					<li><strong>DHCP Failover:</strong> dostupnost přidělování IP adres</li>
-					<li><strong>S2D:</strong> dostupné a škálovatelné úložiště pro VM</li>
+					<li><strong>Active Directory:</strong> Centrální služba pro správu uživatelských účtů, skupin, počítačů a dalších síťových zdrojů</li>
+					<li><strong>Virtualizace (Hyper-V):</strong> umožňuje efektivní využití hardwaru</li>
+					<li><strong>PowerShell:</strong> pokročilé skriptování a automatizace správy</li>
+					<li><strong>Failover Clustering:</strong></li>
+					<ul>
+						<li> Funkce pro zajištění vysoké dostupnosti aplikací a služeb prostřednictvím klastrů</li>
+						<li>Umožňuje seskupit dva nebo více serverů (tzv. uzly) do jednoho clusteru pro zajištění vysoké dostupnosti služeb a aplikací</li>
+					</ul>
+					<li><strong>Bezpečnost:</strong> Shielded VM, Defender, BitLocker, JEA</li>
+					<li><strong>Storage Spaces Direct:</strong> Řešení pro softwarově definované ukládání dat, umožňující vytváření vysoce dostupných a škálovatelných úložných řešení</li>
+					<li><strong>Windows Admin Center: </strong>Webové uživatelské rozhraní pro správu serverů, clusterů, hyperkonvergované infrastruktury a Windows klientských počítačů</li>
+					<li><strong>Vylepšená Bezpečnost:</strong> Funkce jako Shielded Virtual Machines, Microsoft Defender for Endpoint a Just Enough Administration pro zvýšení bezpečnosti systému</li>
 				</ul>
 			</section>
+
+			<section class="note">
+				<h2>⚙️ Role vs Funkce</h2>
+				<ul>
+					<li><strong>Role:</strong> hlavní funkční oblast / hlavní služby – např. DNS, AD DS, Web Server</li>
+					<li><strong>Funkce:</strong> dodatečné komponenty / podpůrné – .NET, PowerShell, Management nástroje</li>
+					<li><strong>Instalace:</strong> pomocí Server Manager nebo PowerShell (např. <code>Install-WindowsFeature</code>)</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🧱 Postup instalace rolí</h2>
+				<ul>
+					<li>Analýza potřeb: zjistit závislosti a požadavky prostředí</li>
+					<li>Instalace přes Server Manager:
+						<ul>
+							<li>Add Roles and Features → výběr cílového serveru</li>
+							<li>Výběr role a nezbytných funkcí</li>
+							<li>Potvrzení a instalace</li>
+						</ul>
+					</li>
+					<li>Instalace přes PowerShell:
+						<code>Install-WindowsFeature -Name Web-Server -IncludeManagementTools</code>
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔐 Detailní bezpečnostní funkce</h2>
+				<ul>
+					<li><strong>Shielded VM:</strong> šifrované VM, hostitel je nevidí, vyžaduje TPM a Host Guardian Service</li>
+					<li><strong>Defender for Endpoint:</strong> EDR s EDR/XDR ochranou, správou zranitelností a integrací s dalšími Microsoft nástroji</li>
+					<li><strong>Just Enough Administration:</strong> definování přesných oprávnění pomocí Role Capability File a Session Configuration</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📋 Přehled klíčových rolí</h2>
+				<ul>
+					<li><strong>Active Directory Domain Services (AD DS):</strong> centrální správa domény, účtů, politik a replikace</li>
+					<li><strong>Active Directory Certificate Services (AD CS):</strong> správa certifikátů (SSL, šifrování, autentizace)</li>					
+					<li><strong>DHCP Server:</strong> automatické přidělování IP adres a síťových parametrů klientům</li>					
+					<li><strong>DHCP Failover:</strong> zálohování DHCP, zajišťuje vysokou dostupnost přidělování adres</li>					
+					<li><strong>DNS Server:</strong> překlad názvů domén na IP adresy</li>					
+					<li><strong>File and Storage Services:</strong> správa sdílení souborů, diskových kvót, deduplikace atd.</li>					
+					<li><strong>Distributed File System (DFS):</strong> jednotný přístup k datům na více serverech, replikace souborů</li>					
+					<li><strong>Web Server (IIS):</strong> hostování webových aplikací a služeb (.NET, PHP, HTTP/S)</li>					
+					<li><strong>Remote Desktop Services (RDS):</strong> poskytuje vzdálený přístup ke vzdálené ploše nebo aplikacím</li>					
+					<li><strong>Windows Deployment Services (WDS):</strong> nasazení OS přes síť (PXE boot, bez fyzického média)</li>					
+					<li><strong>Network Policy and Access Services (NPAS):</strong> RADIUS server, politiky připojení, ověřování VPN</li>					
+					<li><strong>Failover Clustering:</strong> zajištění dostupnosti – automatický přesun služeb mezi servery</li>					
+					<li><strong>Windows Server Update Services (WSUS):</strong> centrální správa a schvalování aktualizací</li>					
+					<li><strong>Print and Document Services:</strong> centrální správa tiskáren a tiskových front</li>					
+					<li><strong>Remote Access Services (RAS):</strong> umožňuje vzdálený přístup pomocí VPN nebo DirectAccess</li>					
+					<li><strong>Storage Spaces Direct (S2D):</strong> softwarově definované úložiště pro vysokou dostupnost a škálování</li>
+				</ul>
+			</section>
+
+
+			<section class="note">
+				<h2>🧠 Technologie a závislosti</h2>
+				<ul>
+					<li><strong>Failover Clustering:</strong> závislý na specifické síťové infrastruktuře</li>
+					<li><strong>S2D:</strong> vyžaduje Failover Cluster; určen pro úložiště a Hyper-V</li>
+					<li><strong>RDS:</strong> obsahuje více komponent, např. Gateway, Broker, Session Host</li>
+					<li><strong>Web Server (IIS):</strong> může vyžadovat .NET, ASP.NET, WebSockets</li>
+				</ul>
+			</section>
+
 			<a href="/PDF/Operacni_systemy_Win_7_Windows_Server.pdf" class="ButtonExam" download>
 				📄 Stáhnout PDF
 			</a>

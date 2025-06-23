@@ -198,63 +198,117 @@
 			</div>
 
 			<section class="note">
-				<h2>📶 Příkaz <code>ping</code></h2>
+				<h2>📶 Příkaz <code>ping</code> – test dostupnosti sítě</h2>
 				<ul>
-					<li>Slouží k ověření dosažitelnosti cílového zařízení</li>
-					<li>
-						Využívá protokol ICMP – zprávy <code>Echo Request</code> a <code>Echo Reply</code>
+					<li>Slouží ke zjištění, zda je cílový počítač (host) dosažitelný</li>
+					<li>Odesílá pakety ICMP(na určitou IP adresu v síti) zprávy typu <code>Echo Request</code> a čeká na <code>Echo Reply</code></li>
+					<li><strong>Užitečný pro:</strong>
+						<ul>
+							<li>Diagnostiku síťových problémů</li>
+							<li>Zjištění latence (odezvy v ms)</li>
+							<li>Kontrolu ztráty paketů</li>
+						</ul>
 					</li>
-					<li>Zjišťuje: latenci, ztrátu paketů, stabilitu spojení</li>
-					<li>Příklad: <code>ping www.seznam.cz</code></li>
+					<li>Příklad: <code>ping www.seznam.cz</code> nebo <code>ping 8.8.8.8</code></li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>⚙️ Parametry příkazu ping</h2>
+				<h2>Poznámky k <code>ping</code></h2>
 				<ul>
-					<li><code>-t</code> – nekonečné pingování, ukončíš Ctrl+C</li>
-					<li><code>-4</code> – použije IPv4</li>
-					<li><code>-6</code> – použije IPv6</li>
-					<li>Lze kombinovat: <code>ping -4 -t seznam.cz</code></li>
-					<li><code>ping /?</code> – zobrazí nápovědu</li>
+					<li><strong>ICMP (Internet Control Message Protocol)</strong> je protokol sítě TCP/IP používaný pro odesílání chybových a stavových zpráv (např. „hostitel nedostupný“)</li>
+					<li>Na rozdíl od TCP/UDP není určen pro přenos dat, ale pro diagnostiku a řízení sítě</li>
+					<li>Příkaz <code>ping</code> využívá ICMP zprávy <code>Echo Request</code> a <code>Echo Reply</code> ke zjištění:
+						<ul>
+							<li>zda je cílový počítač dosažitelný</li>
+							<li>jak dlouho trvá doručení a návrat paketů (latence)</li>
+						</ul>
+					</li>
+					<li>Funguje podobně jako sonar: pošle "ozvěnu" a čeká na odpověď</li>
+					<li>Používá se pro testování připojení v místní síti i na internetu</li>
+					<li><strong>Odezva</strong> ukáže rychlost spojení a případnou ztrátu paketů</li>
+					<li>Lze použít ve Windows (CMD, PowerShell), macOS (Terminál) i Linuxu</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>📈 Význam výstupu příkazu ping</h2>
+				<h2>⚙️ Pokročilé použití <code>ping</code></h2>
 				<ul>
-					<li><strong>Odezva (latence):</strong> čas v ms</li>
-					<li><strong>Ztráta paketů:</strong> vyjádřena v %</li>
-					<li><strong>TTL:</strong> určuje maximální počet "skoků" (hops)</li>
+					<li><code>-t</code> – pingování bez konce (zastavíš Ctrl + C)</li>
+					<li><code>-4</code> – použije protokol IPv4</li>
+					<li><code>-6</code> – použije protokol IPv6</li>
+					<li>Kombinace parametrů: <code>ping seznam.cz -4 -t</code></li>
+					<li><code>/?</code> – zobrazí dostupné parametry příkazu <code>ping</code></li>
+					<li>Přesměrování výstupu do souboru: <code>ping seznam.cz > vysledek.txt</code></li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🔍 Příkaz <code>tracert</code></h2>
+				<h2>📈 Význam výstupu příkazu <code>ping</code></h2>
 				<ul>
-					<li>Sleduje cestu paketu přes jednotlivé směrovače (hops)</li>
-					<li>Pomáhá lokalizovat zpoždění nebo výpadky v síti</li>
-					<li>Příklad: <code>tracert www.google.com</code></li>
+					<li><strong>Odezva:</strong> měří čas (v ms), za který paket dorazí zpět</li>
+					<li><strong>Ztráta paketů:</strong> vyjádřena v % – např. 25 % = 1 z 4 paketů nedošel</li>
+					<li><strong>TTL (Time To Live):</strong> určuje počet "hopů", které paket může projít</li>
+					<li><strong>Vysoké RTT</strong> nebo <strong>ztráta paketů</strong> = slabá nebo přetížená síť</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🧾 Parametry příkazu tracert</h2>
+				<h2>📊 Analýza ztráty paketů</h2>
 				<ul>
-					<li><code>-d</code> – nezobrazuje názvy hostitelů (rychlejší)</li>
-					<li><code>-h X</code> – maximální počet hops</li>
-					<li><code>-w X</code> – timeout v ms</li>
-					<li><code>-4</code> / <code>-6</code> – IPv4 / IPv6</li>
+					<li><strong>32 % ztráta</strong> = velmi špatné spojení</li>
+					<li>Možné příčiny:
+						<ul>
+							<li>Slabý Wi-Fi signál nebo rušení</li>
+							<li>Vadné kabely nebo síťové karty</li>
+							<li>Přetížená síť (např. v určitou denní dobu)</li>
+							<li>Vadný nebo přetížený router</li>
+						</ul>
+					</li>
+					<li>Testuj na různých místech, s různými zařízeními a v různý čas</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>💡 TTL a Hops</h2>
+				<h2>📡 Příkaz <code>tracert</code> – sledování cesty paketů</h2>
 				<ul>
-					<li><strong>TTL:</strong> omezuje počet přeskoků, snižuje se o 1 na každém routeru</li>
-					<li>Tracert zvyšuje TTL od 1 nahoru a sleduje odpovědi z každého routeru</li>
+					<li>Ukazuje cestu, kterou paket urazí přes směrovače až ke svému cíli</li>
+					<li>Pomáhá identifikovat:
+						<ul>
+							<li>kde dochází ke zpoždění</li>
+							<li>kde se pakety ztrácí</li>
+							<li>jak dlouho trvá překonat jednotlivé routery (latence)</li>
+						</ul>
+					</li>
+					<li>Příklad: <code>tracert google.com</code></li>
 				</ul>
 			</section>
+
+			<section class="note">
+				<h2>🧾 Parametry příkazu <code>tracert</code></h2>
+				<ul>
+					<li><code>-d</code> – nezobrazuje názvy hostitelů, jen IP adresy (rychlejší)</li>
+					<li><code>-h X</code> – nastaví maximální počet skoků (např. <code>-h 20</code>)</li>
+					<li><code>-w X</code> – nastaví timeout v milisekundách (např. <code>-w 2000</code>)</li>
+					<li><code>-4</code> / <code>-6</code> – vynutí použití IPv4 nebo IPv6</li>
+					<li>Příklad kombinace: <code>tracert -h 15 -w 2000 example.com</code></li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔁 Co jsou hops (skoky) a TTL</h2>
+				<ul>
+					<li><strong>Hop:</strong> jeden router, přes který paket projde</li>
+					<li><strong>TTL (Time To Live):</strong> každým hopem se TTL sníží o 1</li>
+					<ul>
+						<li>Omezuje životnost paketů v síti</li>
+					</ul>
+					<li>Když TTL dosáhne 0, paket je zahozen → Tracert z toho získá odezvu</li>
+					<li>Tracert zvyšuje TTL po jednom a tím mapuje cestu přes všechny routery</li>
+					<li><strong>Příklad:</strong> TTL=1 → 1. router odpoví; TTL=2 → 2. router odpoví atd.</li>
+				</ul>
+			</section>
+
 			<a href="/PDF/Operacni_systemy_Win_7_1_sit_3_cz.pdf" class="ButtonExam" download>
 				📄 Stáhnout PDF
 			</a>

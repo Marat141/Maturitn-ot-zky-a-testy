@@ -198,70 +198,148 @@
 			</div>
 
 			<section class="note">
-				<h2>🌐 Základní pojmy</h2>
+				<h2>📡 Úvod do sítí</h2>
 				<ul>
-					<li><strong>Hostitel</strong> – zařízení připojené k síti (PC, mobil, tiskárna...)</li>
-					<li><strong>Server</strong> – poskytuje služby klientům (např. web, e-mail)</li>
-					<li><strong>Klient</strong> – využívá služby serveru</li>
-					<li><strong>Směrovač (router)</strong> – propojuje sítě, umožňuje přístup k internetu</li>
-					<li><strong>Wi-Fi</strong> – bezdrátové připojení</li>
+					<li>Síťová konektivita je základní součástí každého moderního operačního systému</li>
+					<li>Umožňuje přístup k internetu, e-mailům, sdílení souborů a další komunikaci</li>
+					<li>Pro zajištění těchto funkcí je nutné mít správně <strong>nastavenou síťovou konfiguraci</strong></li>
+					<li>Windows nabízí nástroje ke <strong>sledování a správě sítě</strong></li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🔢 Síťové adresování</h2>
+				<h2>🧠 Základní síťová terminologie</h2>
 				<ul>
-					<li><strong>IP adresa:</strong> identifikuje zařízení v síti</li>
-					<li><strong>Maska sítě:</strong> určuje rozsah sítě</li>
-					<li><strong>Hostname:</strong> jméno hostitele (překládané na IP)</li>
-					<li><strong>DHCP:</strong> přiděluje IP adresy automaticky</li>
-					<li><strong>DNS:</strong> překládá názvy na IP adresy</li>
+					<li><strong>Hostitel:</strong> jakékoli zařízení připojené do sítě (PC, mobil, tiskárna...)</li>
+					<li><strong>Síť:</strong> skupina dvou a více hostitelů propojených kabelem nebo bezdrátově</li>
+					<li><strong>Internet:</strong> veřejná globální síť spojující miliony zařízení</li>
+					<li><strong>Wi-Fi:</strong> bezdrátová síťová technologie</li>
+					<li><strong>Server:</strong> zařízení poskytující služby klientům (např. webový, e-mailový server)</li>
+					<li><strong>Služba:</strong> konkrétní funkce serveru (např. zobrazení webu, odeslání e-mailu)</li>
+					<li><strong>Klient:</strong> zařízení, které službu využívá (např. prohlížeč, který načítá web)</li>
+					<li><strong>Směrovač (router):</strong> propojuje různé sítě a umožňuje přístup do internetu</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🌍 IPv4 vs IPv6</h2>
+				<h2>📦 Síťové pojmy a protokoly</h2>
 				<ul>
-					<li><strong>IPv4:</strong> 32bitová, např. 192.168.0.1</li>
-					<li><strong>IPv6:</strong> 128bitová, např. 2001:0db8::1</li>
-					<li>IPv6 řeší nedostatek adres a má další výhody</li>
-					<li><strong>NAT:</strong> umožňuje sdílení jedné veřejné IP adresy</li>
+					<li><strong>Paket:</strong> datová jednotka pro přenos přes síť</li>
+					<li><strong>IP adresa:</strong> jedinečný číselný identifikátor zařízení v síti</li>
+					<li><strong>Maska sítě:</strong> určuje, které IP adresy patří do stejné podsítě</li>
+					<li><strong>Hostname:</strong> srozumitelný název zařízení (např. <code>server1</code>) překládán přes DNS</li>
+					<li><strong>URL:</strong> webová adresa pro přístup ke zdrojům (<code>https://www.example.com</code>)</li>
+					<li><strong>DHCP:</strong> server automaticky přiděluje IP adresy a další informace klientům</li>
+					<li><strong>DNS:</strong> systém pro převod názvů na IP adresy</li>
+					<li><strong>Ethernet:</strong> standard kabelového propojení zařízení v síti (např. 100 Mbps, 1 Gbps)</li>
+					<li><strong>TCP/IP:</strong> základní sada protokolů pro síťovou komunikaci</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🛠️ Konfigurace sítě</h2>
+				<h2>🌍 IP adresování – IPv4 vs. IPv6</h2>
 				<ul>
-					<li>
-						<strong>GUI:</strong> Ovládací panely &rarr; Centrum síťových připojení &rarr; vlastnosti
-						adaptéru
+					<li><strong>IPv4:</strong> 32bitová adresa, běžně např. <code>192.168.1.100</code></li>
+					<li><strong>IPv6:</strong> 128bitová adresa např. <code>2001:0db8::1</code>, řeší nedostatek adres</li>
+					<li>IPv6 nabízí větší adresní prostor a další výhody (efektivita, bezpečnost, správa)</li>
+					<li><strong>NAT (Network Address Translation):</strong> sdílení jedné veřejné IP pro více zařízení</li>
+					<li><strong>Portování:</strong> postupný přechod ze starší IPv4 na modernější IPv6</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🛠️ Konfigurace síťových zařízení</h2>
+				<ul>
+					<li><strong>Typ připojení:</strong> kabelové vs. bezdrátové (Wi-Fi)</li>
+					<li><strong>DHCP:</strong> automatická konfigurace (běžné u Wi-Fi a mobilních zařízení)</li>
+					<li><strong>Statická IP:</strong> ručně zadané IP adresy (často u serverů a sítí LAN)</li>
+					<li><strong>Bezdrátová zařízení:</strong> často vyžadují dodatečné nastavení (např. zabezpečení WPA2)</li>
+					<li>Stolní PC většinou používají <strong>Ethernet + statická IP</strong> nebo <strong>DHCP</strong></li>
+					<li>Notebooky typicky používají <strong>Wi-Fi + DHCP</strong></li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>💻 Rychlý přehled – co si pamatovat</h2>
+				<ul>
+					<li>Každé zařízení v síti má svou IP adresu (statickou nebo přidělenou přes DHCP)</li>
+					<li>DNS překládá jména na IP adresy (např. <code>seznam.cz</code> → <code>77.75.77.53</code>)</li>
+					<li>IPv4 je nejrozšířenější, ale IPv6 je budoucnost</li>
+					<li>Přes NAT může více zařízení používat jednu IP adresu</li>
+					<li>Konfigurace sítě se může lišit podle typu zařízení a účelu</li>
+				</ul>
+			</section>
+
+
+			<section class="note">
+				<h2>🖥️ Konfigurace sítě přes grafické rozhraní</h2>
+				<ol>
+					<li>Otevři <strong>Centrum síťových připojení a sdílení</strong></li>
+					<li>Klikni na <strong>Změnit nastavení adaptéru</strong></li>
+					<li>Vyber síťové připojení, klikni pravým a zvol <strong>Vlastnosti</strong></li>
+					<li>Vyber <strong>Protokol IP verze 4 (TCP/IPv4)</strong> a klikni na <strong>Vlastnosti</strong></li>
+					<li>Nastavení IP a DNS:
+						<ul>
+							<li><strong>DHCP (automaticky):</strong> získat IP a DNS automaticky</li>
+							<li><strong>Statické DNS:</strong> IP automaticky, DNS zadat ručně</li>
+							<li><strong>Statická IP:</strong> IP a DNS zadat ručně</li>
+						</ul>
 					</li>
-					<li><strong>Volby:</strong> DHCP vs statická IP</li>
-				</ul>
+				</ol>
 			</section>
 
 			<section class="note">
-				<h2>📜 Příkazy netsh</h2>
+				<h2>📟 Netsh – konfigurace v příkazovém řádku</h2>
 				<ul>
-					<li><code>netsh interface ip set address ...</code> – statická IP</li>
-					<li><code>netsh interface ip set dns ...</code> – nastavení DNS</li>
-					<li>
-						<code>netsh advfirewall set allprofiles state on/off</code> – zapnout/vypnout firewall
+					<li><code>netsh interface ip set address "NÁZEV" static IP MASKA BRÁNA 1</code><br />
+						<span style="font-size: 14px;">Nastavení statické IP, např.:
+							<code>netsh interface ip set address name="Ethernet" static 192.168.1.100 255.255.255.0 192.168.1.1 1</code></span>
 					</li>
-					<li><code>netsh -c interface dump > ...</code> – export nastavení</li>
-					<li><code>netsh -f config.txt</code> – import nastavení</li>
+					<li><code>netsh interface ip set address "NÁZEV" dhcp</code> – přepne síťovou kartu na DHCP</li>
+					<li><code>netsh interface ip set dns "NÁZEV" static 8.8.8.8</code> – nastaví statický DNS server</li>
+					<li><code>netsh interface ip set dns "NÁZEV" dhcp</code> – DNS automaticky přes DHCP</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🚫 Brána firewall</h2>
+				<h2>🧾 Import a export nastavení sítě</h2>
 				<ul>
-					<li>Povolení: <code>netsh advfirewall set allprofiles state on</code></li>
-					<li>Zakázání: <code>netsh advfirewall set allprofiles state off</code></li>
-					<li>Povolení pingu: <code>action=allow protocol=icmpv4</code></li>
-					<li>Blokování IP: <code>remoteip=192.168.2.1-192.168.2.10</code></li>
+					<li><code>netsh -c interface dump > C:\MySettings.txt</code> – exportuje konfiguraci sítě</li>
+					<li><code>netsh -f C:\MySettings.txt</code> – načte konfiguraci zpět (import)</li>
 				</ul>
 			</section>
+
+			<section class="note">
+				<h2>🧱 Brána firewall – řízení přes netsh</h2>
+				<ul>
+					<li><strong>Zapnout:</strong> <code>netsh advfirewall set allprofiles state on</code></li>
+					<li><strong>Vypnout:</strong> <code>netsh advfirewall set allprofiles state off</code></li>
+					<li><strong>Zkontrolovat stav:</strong> <code>netsh advfirewall show all</code></li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🗂️ Export/import brány firewall</h2>
+				<ul>
+					<li><code>netsh advfirewall export "C:\backup\firewall.wfw"</code> – export pravidel</li>
+					<li><code>netsh advfirewall import "C:\backup\firewall.wfw"</code> – import pravidel</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🛑 Příkazy pro blokování/povolení provozu</h2>
+				<ul>
+					<li><strong>Blokovat ping:</strong>
+						<code>netsh advfirewall firewall add rule name="Blok ping" dir=in action=block protocol=icmpv4</code></li>
+					<li><strong>Povolit ping:</strong>
+						<code>netsh advfirewall firewall add rule name="Povolit ping" dir=in action=allow protocol=icmpv4</code></li>
+					<li><strong>Blok IP rozsah (IN):</strong>
+						<code>netsh advfirewall firewall add rule name="Blok IN" dir=in action=block remoteip=192.168.2.1-192.168.2.10</code></li>
+					<li><strong>Blok IP rozsah (OUT):</strong>
+						<code>netsh advfirewall firewall add rule name="Blok OUT" dir=out action=block remoteip=192.168.2.1-192.168.2.10</code></li>
+				</ul>
+			</section>
+
 			<a href="/PDF/Operacni_systemy_Win_7_1_sit_1_cz.pdf" class="ButtonExam" download>
 				📄 Stáhnout PDF
 			</a>
