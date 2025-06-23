@@ -137,6 +137,7 @@
 			<section class="note">
 				<h2>📑 Aliasy</h2>
 				<ul>
+					<li>Aliasy jsou alternativní názvy pro příkazy, které můžete použít ke zkrácení dlouhých příkazů nebo vytvoření vlastních zkratek</li>
 					<li>Alias pomocí <code>doskey</code>: <code>doskey dirlist=dir /B</code></li>
 					<li>Zkrácení často používaných příkazů</li>
 				</ul>

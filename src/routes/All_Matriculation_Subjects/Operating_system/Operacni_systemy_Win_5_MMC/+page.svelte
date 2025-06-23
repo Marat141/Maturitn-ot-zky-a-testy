@@ -200,28 +200,126 @@
 			<section class="note">
 				<h2>🧩 Co je MMC</h2>
 				<ul>
-					<li>MMC je framework pro správu systému Windows pomocí nástrojů zvaných snap-ins</li>
-					<li>Umožňuje centralizovanou, přizpůsobitelnou správu systému</li>
-					<li>Podporuje jak interní, tak i nástroje třetích stran</li>
+					<li><strong>Microsoft Management Console (MMC)</strong> je rámec (framework) pro správu systému Windows</li>
+					<li>Slouží k otevírání a vytváření tzv. <strong>konzol</strong> – přehledných nástrojů pro správu systému</li>
+					<li>Není to samotný nástroj, ale prostředí, do kterého se přidávají <strong>moduly (snap-ins)</strong></li>
+					<li>Snap-in = specializovaný nástroj pro konkrétní oblast systému (např. uživatelé, disky, služby)</li>
+					<li>Pomocí MMC lze <strong>spravovat hardware, software i síťové komponenty</strong> systému Windows</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>📦 Klíčové vlastnosti MMC</h2>
 				<ul>
-					<li><strong>Modularita:</strong> přidávání a odebírání snap-ins podle potřeby</li>
-					<li><strong>Flexibilita:</strong> vytváření vlastních konzol</li>
-					<li><strong>Centralizace:</strong> správa z jednoho rozhraní</li>
+					<li><strong>Modularita:</strong> Umožňuje přidávání a odebírání snap-ins podle potřeby</li>
+					<li><strong>Flexibilita:</strong> Uživatelé si mohou vytvářet vlastní konzoly pro specifické úkoly</li>
+					<li><strong>Centralizace:</strong> Přístup k různým správním nástrojům z jednoho místa</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🔧 Příklady Snap-ins</h2>
+				<h2>🧰 Příklady běžných snap-ins</h2>
 				<ul>
-					<li>Správce zařízení (Device Manager)</li>
-					<li>Správa disků (Disk Management)</li>
-					<li>Prohlížeč událostí (Event Viewer)</li>
-					<li>Místní uživatelé a skupiny (Local Users and Groups)</li>
+					<li><strong>Device Manager</strong> – Správa zařízení</li>
+					<li><strong>Disk Management</strong> – Správa disků a oddílů</li>
+					<li><strong>Event Viewer</strong> – Prohlížení systémových událostí a chyb</li>
+					<li><strong>Local Users and Groups</strong> – Správa místních uživatelů a skupin</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🛡️ Výhody použití MMC konzole</h2>
+				<ul>
+					<li><strong>Flexibilita a přizpůsobitelnost:</strong>
+						<ul>
+							<li>Možnost vytvořit si vlastní konzoly s vybranými snap-ins</li>
+							<li>Export a přenos konzol mezi počítači</li>
+						</ul>
+					</li>
+					<li><strong>Centralizace správy:</strong>
+						<ul>
+							<li>Jednotné rozhraní pro všechny správní nástroje</li>
+							<li>Usnadňuje dohled nad systémem</li>
+						</ul>
+					</li>
+					<li><strong>Rozšířenost snap-ins:</strong>
+						<ul>
+							<li>Široká podpora integrovaných i externích nástrojů</li>
+							<li>Snadná integrace do prostředí MMC</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>⚠️ Nevýhody MMC konzole</h2>
+				<ul>
+					<li><strong>Složitost pro začátečníky:</strong>
+						<ul>
+							<li>Vyšší křivka učení</li>
+							<li>Méně přívětivé rozhraní než moderní GUI nástroje</li>
+						</ul>
+					</li>
+					<li><strong>Omezená funkcionalita:</strong>
+						<ul>
+							<li>Některé moderní nástroje nejsou dostupné v MMC</li>
+							<li>Některé snap-ins mohou být zastaralé nebo nefunkční v nových Windows</li>
+						</ul>
+					</li>
+					<li><strong>Bezpečnostní rizika:</strong>
+						<ul>
+							<li>Přístup ke správě systému může být nebezpečný bez správného zabezpečení</li>
+							<li>Nesprávná oprávnění u snap-ins mohou otevřít rizika</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔁 Alternativy k MMC</h2>
+				<ul>
+					<li><strong>Control Panel (Ovládací panely):</strong>
+						<ul>
+							<li><strong>Popis:</strong> Tradiční rozhraní pro správu různých nastavení systému, jako je hardware, uživatelské účty, síťové připojení a další</li>
+							<li><strong>Výhody:</strong> Intuitivní a přístupné pro běžné uživateleu</li>
+							<li><strong>Nevýhody:</strong> Postupně nahrazován modernějšími nastaveními a některé funkce jsou omezené</li>
+						</ul>
+					</li>
+					<li><strong>Settings App (Nastavení):</strong>
+						<ul>
+							<li><strong>Popis:</strong> Moderní GUI nástroj pro správu nastavení systému, který nahrazuje některé funkce Ovládacích Panelů</li>
+							<li><strong>Výhody:</strong> Přehledné a uživatelsky přívětivé rozhraní, optimalizované pro dotykové ovládání</li>
+							<li><strong>Nevýhody:</strong> Omezená funkcionalita ve srovnání s MMC, některé pokročilé nastavení nejsou dostupné</li>
+						</ul>
+					</li>
+					<li><strong>Administrative Tools (Administrativní nástroje):</strong>
+						<ul>
+							<li><strong>Popis:</strong> Sada nástrojů dostupných v Ovládacích panelech pro správce systému, včetně Event Viewer, Task Scheduler, Disk Management a dalších</li>
+							<li><strong>Výhody:</strong> Přístup k pokročilým správním nástrojům</li>
+							<li><strong>Nevýhody:</strong> Méně centralizované než MMC, každý nástroj je samostatný</li>
+						</ul>
+					</li>
+					<li><strong>Windows Admin Center:</strong>
+						<ul>
+							<li><strong>Popis:</strong> Moderní webová správcovská platforma od Microsoftu, která umožňuje správu serverů, clusterů a zařízení z jednoho rozhraní</li>
+							<li><strong>Výhody:</strong> Pokročilé funkce, podpora cloudových služeb, snadná integrace s Azure</li>
+							<li><strong>Nevýhody:</strong> Vyžaduje instalaci a konfiguraci, závisí na síťové infrastruktuře</li>
+						</ul>
+					</li>
+					<li><strong>PowerShell ISE / Visual Studio Code:</strong>
+						<ul>
+							<li><strong>Popis:</strong> Výkonné nástroje pro skriptování a automatizaci úloh pomocí PowerShellu</li>
+							<li><strong>Výhody:</strong> Pokročilé skriptovací schopnosti, podpora rozšíření a ladění skriptů</li>
+							<li><strong>Nevýhody:</strong> Vyšší křivka učení, méně intuitivní pro běžné uživatele</li>
+						</ul>
+					</li>
+					<li><strong>Třetí strany (např. SolarWinds, ManageEngine):</strong>
+						<ul>
+							<li><strong>Popis:</strong> Různé správcovské nástroje od třetích stran, jako je SolarWinds, ManageEngine, a další</li>
+							<li><strong>Výhody:</strong> Specifické funkce a pokročilé možnosti správy, často s lepšími uživatelskými rozhraními</li>
+							<li><strong>Nevýhody:</strong> Náklady na licenci, potenciální bezpečnostní rizika, závislost na poskytovateli</li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 

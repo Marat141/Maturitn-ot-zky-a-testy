@@ -56,17 +56,38 @@
 			<section class="note">
 				<h2>🔡 Zástupné znaky v PowerShellu</h2>
 				<ul>
+					<li><strong>Zástupné znaky (wildcards)</strong> v PowerShellu umožňují flexibilní a efektivní hledání, filtrování a manipulaci se soubory a složkami na základě vzorů</li>
 					<li><strong>*</strong> – libovolný počet znaků (<code>Get-ChildItem -Path *.txt</code>)</li>
+					<ul>
+						<li style="font-size: 14px;"><strong>Popis:</strong> Reprezentuje libovolný počet znaků, včetně žádného znaku. Používá se pro široké vyhledávání souborů a složek.</li>
+					</ul>
 					<li><strong>?</strong> – jeden libovolný znak (<code>Get-ChildItem -Path ?????.txt</code>)</li>
+					<ul>
+						<li style="font-size: 14px;"><strong>Popis:</strong> Reprezentuje libovolný počet znaků, včetně žádného znaku. Používá se pro široké vyhledávání souborů a složek.</li>
+					</ul>
 					<li><strong>[]</strong> – jeden znak z množiny (<code>Get-ChildItem -Path ?[abc]*.txt</code>)</li>
+					<ul>
+						<li style="font-size: 14px;"><strong>Popis:</strong> Reprezentují libovolný jeden znak ze specifikovaného rozsahu nebo množiny znaků</li>
+					</ul>
 					<li><strong>[! ] nebo [^ ]</strong> – negace, znak který <em>není</em> ve specifikované množině (<code>Get-ChildItem -Path ??[!xy]*.txt</code>)</li>
+					<ul>
+						<li style="font-size: 14px;"><strong>Popis:</strong> Reprezentují libovolný jeden znak, který není ve specifikované množině.</li>
+					</ul>
+					<li> <strong>&#123;&#125;</strong> – složené závorky pro výběr z více možností (např. <code>Get-ChildItem -Path &quot;*.&#123;jpg,png&#125;&quot;</code>)</li>
+						<ul>
+							<li style="font-size: 14px;"><strong>Popis:</strong> Umožňují zadat více možností najednou. Například <code>report&#123;1..3&#125;.docx</code> expanduje na <code>report1.docx</code>, <code>report2.docx</code>, <code>report3.docx</code>.</li>
+						</ul>
 					<li><strong>`</strong> – escape znak (<code>Get-ChildItem -Path "Data`[2024`].txt"</code>)</li>
+					<ul>
+						<li style="font-size: 14px;"><strong>Popis:</strong> Používá se k úniku speciálních znaků, které mají v PowerShellu speciální význam, aby byly interpretovány doslovně</li>
+					</ul>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🔁 Kombinace zástupných znaků</h2>
 				<ul>
+					<li><strong>Popis:</strong> Kombinací různých zástupných znaků můžete vytvořit složitější vzory pro vyhledávání</li>
 					<li><code>Get-ChildItem -Path "*2023*.txt", "*2024*.txt"</code> – více vzorů</li>
 					<li><code>Get-ChildItem -Path "Report?.docx"</code> – libovolný znak mezi</li>
 				</ul>
@@ -75,6 +96,7 @@
 			<section class="note">
 				<h2>⚙️ Wildcardy v parametrech cmdletů</h2>
 				<ul>
+					<li><strong>Popis:</strong> Zástupné znaky mohou být použity v různých parametrech PowerShell cmdletů pro filtrování výsledků</li>
 					<li><code>Get-ChildItem -Path "C:\Logs\*.log" -Recurse</code> – hledání včetně podadresářů</li>
 					<li><code>Select-String -Path "C:\Logs\*.log" -Pattern "Error"</code> – hledání textu ve více souborech</li>
 				</ul>

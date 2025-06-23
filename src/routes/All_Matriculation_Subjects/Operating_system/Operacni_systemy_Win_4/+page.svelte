@@ -198,8 +198,26 @@
 			</div>
 
 			<section class="note">
+				<h2>🔑 Klíčové pojmy</h2>
+				<ul>
+					<li>Windows Powershell</li>
+					<li>Argumentypříkazů</li>
+					<li>Options</li>
+					<li>Historie v powershell</li>
+					<li>Místní proměnné</li>
+					<li>Proměnné prostředí</li>
+					<li>Proměnná Path</li>
+					<li>Interní příkazy</li>
+					<li>Externí příkazy </li>
+					<li>Aliasy</li>
+					<li>Nejpoužívanější cmdlety</li>
+				</ul>
+			</section>
+
+			<section class="note">
 				<h2>🖥️ Co je PowerShell</h2>
 				<ul>
+					<li>PowerShell je pokročilé příkazové řádkové rozhraní a skriptovací prostředí vyvinuté společností Microsoft</li>
 					<li>PowerShell je objektově orientovaný shell a skriptovací prostředí</li>
 					<li>Umožňuje automatizaci administrativních úloh na platformě Windows</li>
 					<li>Využívá cmdlety (např. <code>Get-Process</code>, <code>Set-Date</code>)</li>
@@ -210,49 +228,117 @@
 			</section>
 
 			<section class="note">
-				<h2>⚙️ Argumenty a volby</h2>
+				<h2>⚙️ Cmdlety – příkazy</h2>
 				<ul>
-					<li>Argumenty určují vstupy příkazů (<code>Get-Process -Name notepad</code>)</li>
-					<li>Volby (options) upravují chování příkazů – např. <code>-Name</code></li>
+					<li><code>Get-Process</code> – zobrazí běžící procesy</li>
+					<li><code>Set-Date</code> – nastaví systémové datum a čas</li>
+					<li><code>New-Item</code> – vytvoří soubor nebo složku</li>
+					<li><code>Remove-Item</code> – odstraní soubor nebo složku</li>
+					<li><code>Get-Command</code> – najde dostupné cmdlety</li>
+					<li><code>Get-Help</code> – zobrazí nápovědu k příkazu (např. <code>Get-Help Get-Process -Detailed</code>)</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔡 Argumenty a volby v PowerShell</h2>
+				<ul>
+					<li>
+						<strong>Argumenty</strong> jsou hodnoty, které cmdlet přijímá jako vstup. Můžou být zadány:
+						<ul>
+							<li><strong>pozičně</strong>: <code>Get-Process notepad</code></li>
+							<li><strong>pomocí parametru</strong>: <code>Get-Process -Name notepad</code></li>
+						</ul>
+					</li>
+					<li>
+						<strong>Volby (parametry)</strong> začínají pomlčkou a mění chování příkazu.
+						<ul>
+							<li>Např. <code>-Name</code> u <code>Get-Process</code> filtruje podle názvu procesu</li>
+							<li>Parametr může mít <strong>hodnotu</strong> (<code>-Name "notepad"</code>) nebo být samostatný přepínač (<code>-Force</code>)</li>
+						</ul>
+					</li>
+					<li>Cmdlety často podporují více parametrů najednou</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>📜 Historie příkazů</h2>
 				<ul>
-					<li><code>Get-History</code> – zobrazí historii příkazů</li>
-					<li><code>Invoke-History -Id X</code> – spustí příkaz z historie dle ID</li>
+					<li><code>Get-History</code> – zobrazí všechny dříve zadané příkazy v relaci</li>
+					<li><code>Invoke-History -Id 3</code> – znovu spustí příkaz s ID 3 z historie</li>
+					<li>Šipky nahoru/dolů fungují pro rychlé procházení historie</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>💾 Proměnné</h2>
 				<ul>
-					<li>Proměnné začínají <code>$</code> (např. <code>$jmeno = "Petr"</code>)</li>
-					<li><strong>Místní proměnné</strong>: platí pouze v aktuální relaci</li>
-					<li>
-						<strong>Proměnné prostředí</strong>: např. <code>$env:PATH</code>,
-						<code>$env:USERNAME</code>
+					<li>Proměnné začínají znakem <code>$</code> (např. <code>$x = 5</code>)</li>
+					<li><strong>Místní proměnné</strong>: platné jen v rámci aktuální relace nebo skriptu</li>
+					<li><strong>Prostředí (environment)</strong> proměnné: <code>$env:NAZEV</code>
+						<ul>
+							<li><code>$env:USERNAME</code>, <code>$env:PATH</code></li>
+							<li>Změna např. <code>$env:PATH += ";C:\NovaCesta"</code></li>
+							<li>Trvalá změna pro uživatele:
+								<pre><code>[Environment]::SetEnvironmentVariable("PATH", "$env:PATH;C:\NovaCesta", "User")</code></pre>
+							</li>
+						</ul>
 					</li>
-					<li><code>[Environment]::SetEnvironmentVariable()</code> – trvalé změny</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>📛 Aliasy</h2>
+				<h2>📛 Aliasy v PowerShell</h2>
 				<ul>
-					<li>
-						<code>Set-Alias zkratka cmdlet</code> (např. <code>Set-Alias ll Get-ChildItem</code>)
-					</li>
-					<li>Usnadňují a zkracují zadávání často používaných příkazů</li>
+					<li><strong>Alias</strong> je zkrácené jméno cmdletu</li>
+					<li>Příklad: <code>Set-Alias ll Get-ChildItem</code></li>
+					<li>Voláním <code>ll</code> získáš výpis souborů (jako <code>ls</code>)</li>
+					<li>Aliasy se hodí pro pohodlnější psaní příkazů nebo skriptů</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🔧 Interní vs. externí příkazy</h2>
+				<h2>🌐 Proměnná PATH</h2>
 				<ul>
-					<li><strong>Interní:</strong> cmdlety PowerShellu (např. <code>Get-Process</code>)</li>
-					<li><strong>Externí:</strong> spustitelné soubory (např. <code>notepad.exe</code>)</li>
+					<li><code>$env:PATH</code> obsahuje seznam složek, kde PowerShell hledá programy</li>
+					<li><strong>Dočasné přidání složky:</strong> <code>$env:PATH += ";C:\MyTools"</code></li>
+					<li><strong>Trvalé přidání pro uživatele:</strong>
+						<pre><code>[Environment]::SetEnvironmentVariable("PATH", "$env:PATH;C:\MyTools", "User")</code></pre>
+					</li>
+					<li><strong>Trvalé přidání pro všechny uživatele (vyžaduje práva):</strong>
+						<pre><code>[Environment]::SetEnvironmentVariable("PATH", "$env:PATH;C:\MyTools", "Machine")</code></pre>
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📂 Interní vs. externí příkazy</h2>
+				<ul>
+					<li><strong>Interní příkazy (cmdlety):</strong> PowerShell funkce (např. <code>Get-Process</code>, <code>Set-Location</code>)</li>
+					<li><strong>Externí příkazy:</strong> Spustitelné programy mimo PowerShell (např. <code>notepad.exe</code>, <code>ping.exe</code>)</li>
+					<li>PowerShell automaticky rozpozná typ a spustí odpovídající příkaz</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🧠 Nejčastější cmdlety (prakticky)</h2>
+				<ul>
+					<li><code>Get-Process</code> – vypíše běžící procesy</li>
+					<li><code>Stop-Process -Name notepad</code> – ukončí proces</li>
+					<li><code>Get-Service</code>, <code>Start-Service</code>, <code>Stop-Service</code> – správa služeb</li>
+					<li><code>New-Item</code>, <code>Copy-Item</code>, <code>Move-Item</code>, <code>Remove-Item</code> – práce se soubory</li>
+					<li><code>Set-Location</code>, <code>Get-ChildItem</code> – pohyb v adresáři</li>
+					<li><code>Get-Content</code>, <code>Set-Content</code>, <code>Add-Content</code> – práce s obsahem souborů</li>
+					<li><code>Set-Variable</code>, <code>Get-Variable</code>, <code>Clear-Variable</code> – práce s proměnnými</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📚 Nejpoužívanější cmdlety</h2>
+				<ul>
+					<li><code>Get-Process</code>, <code>Stop-Process</code>, <code>Get-Service</code></li>
+					<li><code>Copy-Item</code>, <code>Move-Item</code>, <code>Remove-Item</code>, <code>New-Item</code></li>
+					<li><code>Set-Location</code> (změna adresáře), <code>Get-Content</code>, <code>Set-Content</code>, <code>Add-Content</code></li>
+					<li><code>Get-Variable</code>, <code>Set-Variable</code>, <code>Clear-Variable</code></li>
 				</ul>
 			</section>
 
