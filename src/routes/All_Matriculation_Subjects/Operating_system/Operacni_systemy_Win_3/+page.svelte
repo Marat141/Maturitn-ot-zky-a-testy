@@ -56,15 +56,17 @@
 			<section class="note">
 				<h2>📟 Základy CMD</h2>
 				<ul>
+					<li><strong>CLI (Command Line Interface)</strong> v systému Windows je textové rozhraní, které umožňuje uživatelům zadávat příkazy přímo systému a tím provádět různé operace, jako je práce se soubory, správou systému, skriptováním a automatizací úloh</li>
 					<li>Příkazový řádek (cmd.exe) je textové rozhraní pro zadávání příkazů</li>
-					<li>Interní příkazy (např. <code>cd</code>, <code>dir</code>, <code>echo</code>)</li>
-					<li>Externí příkazy (např. <code>ping</code>, <code>ipconfig</code>, <code>notepad</code>)</li>
+					<li><strong>Interní příkazy:</strong> Příkazy zabudované přímo do příkazového shellu (např. <code>cd</code>, <code>dir</code>, <code>echo</code>)</li>
+					<li><strong>Externí příkazy:</strong> Samostatné programy nebo nástroje, které jsou spouštěny prostřednictvím CLI (např. <code>ping</code>, <code>ipconfig</code>, <code>notepad</code>)</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>🧾 Argumenty a volby (options)</h2>
 				<ul>
+					<li>Argumenty jsou hodnoty, které se přidávají za příkaz a určují, nad čím má příkaz pracovat</li>
 					<li>Argumenty specifikují vstup (např. <code>copy zdroj cíl</code>)</li>
 					<li>Options mění chování příkazu – např. <code>dir /w</code>, <code>ping /n 4</code></li>
 				</ul>
@@ -82,24 +84,86 @@
 			<section class="note">
 				<h2>📦 Proměnné a PATH</h2>
 				<ul>
-					<li><strong>Místní proměnné</strong>: platí jen pro aktuální relaci – <code>set Jmeno=Hodnota</code></li>
-					<li><strong>Proměnné prostředí</strong>: globální (např. <code>PATH</code>, <code>USERNAME</code>)</li>
-					<li><code>setx</code> vytvoří globální proměnnou dostupnou i po restartu</li>
-					<li><code>echo %PATH%</code> – zobrazí systémové cesty</li>
+					<li><strong>Místní proměnné:</strong> <code>set PROM=hodnota</code> — platné pouze pro aktuální relaci CLI</li>
+					<li><strong>Globální proměnné prostředí:</strong> např. <code>PATH</code>, <code>TEMP</code>, <code>USERNAME</code></li>
+					<li><code>setx</code> uloží proměnnou trvale pro budoucí relace — <code>setx PROM "hodnota"</code></li>
+					<li><code>echo %PROM%</code> — zobrazí obsah proměnné</li>
+				</ul>
+				<h3>🧭 Nastavení přes GUI:</h3>
+				<ol>
+					<li>Otevři <em>Vlastnosti systému</em> &rarr; <em>Pokročilé</em> &rarr; <em>Proměnné prostředí</em></li>
+					<li>V sekci <strong>Systémové proměnné</strong> klikni na <code>Nová...</code></li>
+					<li>Zadej jméno a hodnotu proměnné a potvrď</li>
+				</ol>
+			</section>
+
+			<section class="note">
+				<h2>🗑️ Odstranění proměnné</h2>
+				<ul>
+					<li><code>setx PROMENNA ""</code> — trvalé odstranění z prostředí</li>
+					<li><code>set PROMENNA=</code> — odstranění pouze pro aktuální relaci</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>⚙️ Speciální znaky v cmd</h2>
+				<h2>📂 Proměnná PATH</h2>
 				<ul>
-					<li><strong>"</strong> – uvozovky pro cesty s mezerami (<code>cd "C:\Program Files"</code>)</li>
-					<li><strong>%</strong> – pro proměnné (<code>echo %USERNAME%</code>)</li>
-					<li><strong>|</strong> – propojení příkazů (<code>dir | find "soubor"</code>)</li>
-					<li><strong>&gt;, &gt;&gt;</strong> – přesměrování výstupu do souboru</li>
-					<li><strong>&amp;&amp;, ||</strong> – podmíněné vykonání příkazů</li>
-					<li><strong>^</strong> – escape znak pro speciální znaky</li>
+					<li>PATH určuje, kde se hledají spustitelné soubory</li>
+					<li><code>echo %PATH%</code> — vypíše obsah</li>
+					<li><code>set PATH=%PATH%;C:\NovaCesta</code> — přidá novou složku</li>
 				</ul>
 			</section>
+
+			<section class="note">
+				<h2>🔎 Interní a externí příkazy</h2>
+				<ul>
+					<li><strong>Interní:</strong> Příkazy, které jsou přímo zabudované do shellu (cmd.exe). Nevyžadují žádné externí programy pro jejich spuštění. Příklady:</li>
+					<ul>
+						<li><code>dir:</code> Zobrazí seznam souborů a složek</li>
+						<li><code>cd:</code> Změní aktuální adresář</li>
+						<li><code>copy:</code> Kopíruje soubory</li>
+						<li><code>echo:</code> Zobrazuje zprávy nebo hodnoty proměnných</li>
+						<li><code>set:</code> Správa proměnných</li>
+					</ul>
+					<li><strong>Externí:</strong> Externí příkazy jsou samostatné programy nebo nástroje, které nejsou přímo integrovány do příkazového řádku. Aby mohly být spuštěny, musí být v cestě systému nebo zadány s plnou cestou. Příklady:</li>
+					<ul>
+						<li><code>notepad:</code> Spouští aplikaci Poznámkový blok</li>
+						<li><code>ping:</code> Testuje dosah síťových připojení</li>
+						<li><code>ipconfig:</code> Zobrazuje konfiguraci sítě</li>
+					</ul>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📑 Aliasy</h2>
+				<ul>
+					<li>Alias pomocí <code>doskey</code>: <code>doskey dirlist=dir /B</code></li>
+					<li>Zkrácení často používaných příkazů</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔣 Řídicí a speciální znaky v CMD</h2>
+				<ul>
+					<li><code>" "</code> — uvozovky pro cesty s mezerami (<code>cd "C:\Program Files"</code>)</li>
+					<li><code>' '</code> — nemá speciální význam (jen znak)</li>
+					<li><code>%</code> — přístup k proměnným (<code>%USERNAME%</code>, <code>%1</code> v dávkových souborech)</li>
+					<li><code>/</code> — přepínač (např. <code>dir /w</code>)</li>
+					<li><code>\</code> — oddělovač složek (<code>C:\Windows</code>), <code>\\</code> pro síťové cesty</li>
+					<li><code>|</code> — pipe: výstup → vstup (<code>dir | find "txt"</code>)</li>
+					<li><code>&gt;</code>, <code>&gt;&gt;</code> — přesměrování výstupu (<code>echo text &gt; soubor.txt</code>)</li>
+					<li><code>&lt;</code> — přesměrování vstupu (<code>sort &lt; soubor.txt</code>)</li>
+					<li><code>&</code> — více příkazů na řádce (<code>echo A & echo B</code>)</li>
+					<li><code>&&</code> — druhý příkaz jen při úspěchu prvního</li>
+					<li><code>||</code> — druhý příkaz při chybě prvního</li>
+					<li><code>^</code> — escape znak (<code>echo Toto je ^|</code>)</li>
+					<li><code>:</code> — štítek v dávkových souborech (<code>:start</code>)</li>
+					<li><code>?</code> — zástupný znak pro jeden znak (<code>soubor?.txt</code>)</li>
+					<li><code>*</code> — zástupný znak pro více znaků (<code>*.txt</code>)</li>
+					<li><code>@</code> — potlačení výpisu příkazu (<code>@echo off</code>)</li>
+				</ul>
+			</section>
+
 
 			<a href="/PDF/Operacni_systemy_Win_3.pdf" class="ButtonExam" download>
 				📄 Stáhnout PDF
