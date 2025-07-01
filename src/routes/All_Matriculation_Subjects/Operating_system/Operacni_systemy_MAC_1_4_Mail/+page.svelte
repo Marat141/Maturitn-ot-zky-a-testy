@@ -181,10 +181,7 @@
 		<div class="content">
 			<div class="header-with-button">
 				<h1>Mac OS – část 1.4: Aplikace Mail</h1>
-				<a
-					href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_4_Mail/Exam_Operacni_systemy_MAC_1_4_Mail"
-					class="ButtonExam"
-				>
+				<a href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_4_Mail/Exam_Operacni_systemy_MAC_1_4_Mail" class="ButtonExam">
 					Napsat si test
 				</a>
 			</div>
@@ -192,68 +189,77 @@
 			<section class="note">
 				<h2>📨 Funkce aplikace Mail</h2>
 				<ul>
-					<li>Podpora IMAP, POP, Exchange, iCloud, Gmail atd.</li>
-					<li>Správa více účtů a složek (včetně Smart Mailbox)</li>
-					<li>Filtrování, pravidla, podpisy, notifikace</li>
-					<li>Markup příloh, vyhledávání, Handoff, Kalendář</li>
-					<li>Zabezpečení: SSL/TLS, Gatekeeper, firewall</li>
+					<li><strong>Více typů účtů:</strong> Podpora IMAP, POP3, Exchange, iCloud, Gmail, Outlook a dalších poskytovatelů</li>
+					<li><strong>Správa více účtů:</strong> Přepínání mezi účty v jedné aplikaci, neomezený počet účtů</li>
+					<li><strong>Pořádek v poště:</strong> Možnost vytvářet složky, inteligentní schránky (Smart Mailboxy), pravidla pro třídění</li>
+					<li><strong>Přílohy:</strong> Náhledy, úprava přes Markup (např. PDF, obrázky)</li>
+					<li><strong>Kontinuita:</strong> Handoff – psaní mailu na iPhonu, dokončení na Macu</li>
+					<li><strong>Vyhledávání:</strong> Výkonné a rychlé hledání podle odesílatele, obsahu, příloh aj.</li>
+					<li><strong>Podpisy:</strong> Vytváření různých podpisů pro jednotlivé účty</li>
+					<li><strong>Ochrana:</strong> Spam filtr, blokace odesílatelů, nastavitelná pravidla</li>
+					<li><strong>Notifikace:</strong> Přizpůsobitelné upozornění, různé zvuky a styly</li>
+					<li><strong>Integrace:</strong> Automatické rozpoznání událostí v e-mailech, přidání do Kalendáře/Připomínek</li>
+					<li><strong>Zabezpečení:</strong> Šifrování přes SSL/TLS, podpora Kerberos/NTLM, integrace s Gatekeeperem</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>📬 Nastavení účtů</h2>
+				<h2>⚙️ Nastavení účtů</h2>
 				<ul>
-					<li><strong>iCloud:</strong> Apple ID + heslo (často automaticky)</li>
-					<li><strong>IMAP/POP:</strong> Adresy serverů, porty, SSL, autentizace</li>
-					<li><strong>Exchange:</strong> EWS podpora, doména, heslo, server</li>
+					<li><strong>iCloud:</strong> Stačí Apple ID a heslo, často se vše nastaví automaticky. Podporuje dvoufaktorové ověření</li>
+					<li><strong>IMAP:</strong> Potřebuje adresy serverů (IMAP a SMTP), porty (993, 465/587), SSL a autentizaci</li>
+					<li><strong>POP:</strong> Stahuje poštu na zařízení, nastavení podobné jako IMAP. Možnost zachování kopie na serveru</li>
+					<li><strong>Exchange:</strong> EWS podpora, doména, server (Autodiscover nebo ručně), často Kerberos/NTLM autentizace</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>⚙️ Příklad: Konfigurace IMAP</h2>
+				<h2>🧪 Příklad – Nastavení IMAP účtu</h2>
 				<ul>
 					<li>Mail → Předvolby → Účty → „+“ → Jiný poštovní účet</li>
-					<li>Zadat jméno, e-mail, heslo → pokus o připojení</li>
-					<li>Při chybě: ruční zadání serverů, portů, SSL</li>
-					<li>Otestovat příchozí a odchozí poštu</li>
+					<li>Zadat jméno, e-mailovou adresu a heslo</li>
+					<li>Při chybě → ruční zadání serverů (IMAP/SMTP), porty, SSL a typ ověřování</li>
+					<li>IMAP server: např. <code>imap.gmail.com</code>, SMTP: <code>smtp.gmail.com</code></li>
+					<li>Porty: 993 (IMAP-SSL), 465/587 (SMTP-SSL/TLS)</li>
+					<li>Ověřit → stáhnout zprávy → odeslat testovací e-mail</li>
 				</ul>
 			</section>
 
 			<section class="note">
 				<h2>📂 Smart Mailbox (chytrá schránka)</h2>
 				<ul>
-					<li>Dynamický filtr – např. zprávy od určitého odesílatele</li>
-					<li>Nevytváří novou složku – jen zobrazuje podle pravidel</li>
-					<li>Mailbox → Nová chytrá schránka → definuj kritéria</li>
+					<li>Virtuální složka zobrazující e-maily na základě zadaných kritérií (např. odesílatel, příznak, slovo v předmětu)</li>
+					<li>Nejde o fyzické přesunutí zpráv – jen dynamický výběr</li>
+					<li>Vytvoření: Mailbox → Nová chytrá schránka → nastavení pravidel</li>
+					<li>Příklady: Nepřečtené e-maily, zprávy s příznakem, zprávy od určité osoby</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🔗 Užitečné odkazy</h2>
+				<h2>🔐 Zabezpečení a doporučení</h2>
 				<ul>
-					<li>
-						<a
-							href="https://support.apple.com/cs-cz/guide/mail/mlhlp1193/16.0/mac/15.0"
-							target="_blank">Oficiální návod</a
-						>
-					</li>
-					<li>
-						<a href="https://support.apple.com/cs-cz/guide/mail/mail35803/mac" target="_blank"
-							>Mail – přehled</a
-						>
-					</li>
-					<li>
-						<a href="https://support.apple.com/cs-cz/102088" target="_blank">Nápověda k účtům</a>
-					</li>
+					<li><strong>Dvoufaktorové ověření:</strong> Doporučeno u všech poskytovatelů (např. Gmail)</li>
+					<li><strong>SSL/TLS:</strong> Zabezpečení přenosu zpráv a hesel</li>
+					<li><strong>Pozor na autentizaci:</strong> Někteří poskytovatelé vyžadují „app-specific“ hesla nebo povolení méně zabezpečených aplikací</li>
 				</ul>
 			</section>
 
-			<a href="/PDF/Operacni_systemy_MAC_1_4_Mail.pdf" class="ButtonExam" download
-				>📄 Stáhnout PDF</a
-			>
+			<section class="note">
+				<h2>📌 Tipy</h2>
+				<ul>
+					<li>Pokud selže připojení, ověřte porty, server a zabezpečení</li>
+					<li>Pravidelně zálohujte pomocí Time Machine</li>
+					<li>Pro test použijte jednoduchý e-mail s předmětem „Test“</li>
+				</ul>
+			</section>
+
+			<a href="/PDF/Operacni_systemy_MAC_1_4_Mail.pdf" class="ButtonExam" download>
+				📄 Stáhnout PDF
+			</a>
 		</div>
 	</div>
 </main>
+
 
 <style>
 	.layout {

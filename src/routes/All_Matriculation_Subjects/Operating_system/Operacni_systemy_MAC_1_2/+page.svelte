@@ -193,11 +193,61 @@
 				<h2>🧭 Způsoby spouštění aplikací v macOS</h2>
 				<ul>
 					<li><strong>Dock:</strong> Kliknutí na ikonu ve spodní části obrazovky</li>
+					<ul>
+						<li><strong>Co to je:</strong> Řada ikon aplikací ve spodní (nebo boční) části obrazovky. Standardně tam Apple umisťuje ikony základních aplikací</li>
+						<li><strong>Jak to funguje:</strong> Stačí kliknout na ikonu aplikace v Docku a ta se otevře</li>
+						<li><strong>Tip:</strong> Ikony lze z Docku odebírat nebo do něj přidávat přetažením (drag & drop) aplikací z/na Dock</li>
+					</ul>
 					<li><strong>Launchpad:</strong> Přehled všech aplikací (ikona nebo F4)</li>
+					<ul>
+						<li><strong>Co to je:</strong> Rozhraní s ikonami všech nainstalovaných aplikací</li>
+						<li><strong>Jak ho vyvolat:</strong></li>
+						<ol>
+							<li>Ikonou „Launchpad“ v Docku</li>
+							<li>Na některých klávesnicích Apple bývá vyhrazená klávesa (F4) s ikonou Launchpadu</li>
+						</ol>
+						<li><strong>Jak spustit aplikaci:</strong> Kliknete na Launchpad, vyhledáte ikonu aplikace a tu otevřete kliknutím</li>
+					</ul>
 					<li><strong>Finder:</strong> Aplikace → dvojklik (zkratka: ⌘ + Shift + A)</li>
+					<ul>
+						<li><strong>Co to je:</strong> Základní aplikace macOS pro správu souborů</li>
+						<li><strong>Jak aplikace spouštět:</strong></li>
+						<ol>
+							<li>Otevřít Finder(ikona „usmívající se tváře“ v Docku)</li>
+							<li>V levé části okna vybrat Applications(Aplikace) nebo použít zkratku Command+Shift+A(pokud jste již v aktivním okně Finderu)</li>
+							<li>V seznamu aplikací najít požadovanou aplikaci a dvojitým kliknutím ji spustit</li>
+						</ol>
+					</ul>
 					<li><strong>Spotlight:</strong> ⌘ + mezerník → název aplikace → Enter</li>
+					<ul>
+						<li><strong>Co to je:</strong> Vestavěný vyhledávací nástroj macOS (lupa vpravo nahoře na liště)</li>
+						<li><strong>Jak ho vyvolat:</strong></li>
+						<ol>
+							<li><strong>Zkratka:</strong> Command + mezerník (Space)</li>
+							<li>Nebo kliknout na ikonu lupy v pravém horním rohu obrazovky</li>
+						</ol>
+						<li><strong>Spuštění aplikace:</strong></li>
+						<ol>
+							<li>Vyvolat Spotlight</li>
+							<li>Začít psát název aplikace (např. „Safari“, „Mail“, „Notes“ atd.)</li>
+							<li>Ve výsledcích vyhledávání stisknout Enter na zvolené aplikaci</li>
+						</ol>
+					</ul>
 					<li><strong>Apple menu:</strong> Nedávné položky – rychlý přístup</li>
+					<ul>
+						<li>Zde se aplikace přímo nespouštějí, nicméně přes Apple menu > Nedávné položky (Recent Items)je možné rychle otevřít naposledy používané aplikace</li>
+						<li>Také je zde „O tomto Macu“ (About This Mac) či „Nastavení systému“ (System Settings), ale ty jsou spíš pro informace a konfigurac</li>
+					</ul>
 					<li><strong>Lišta & zkratky:</strong> Např. Siri, Time Machine, vlastní zkratky</li>
+					<ul>
+						<li>Některé aplikace mají v macOS určité zkratky nebo ikony na liště (menu bar) nahoře na obrazovce</li>
+						<ul>
+							<li><strong>Time Machine:</strong> Může mít ikonu hodin vpravo na liště, odkud lze spouštět zálohování nebo otevřít rozhraní pro obnovu</li>
+							<li><strong>Siri</strong> (pokud je zapnutá): Má ikonu napravo na liště, případně lze používat nastavenou klávesovou zkratku</li>
+							<li><strong>FaceTime, Zprávy, Mail:</strong> Tyto aplikace běžně žádnou univerzální klávesovou zkratku k okamžitému spuštění nemají. Otevírají se z Docku, Launchpadu, Finderu či Spotlightu</li>
+						</ul>
+					</ul>
+					<li>Většina vestavěných aplikací (např. Mail, Safari, atd.) nemá výchozí univerzální klávesovou zkratku pro spuštění. Pokud chcete, můžete si ale v Nastavení systému > Klávesnice > Zkratky vytvořit vlastní, která konkrétní aplikaci otevře</li>
 				</ul>
 			</section>
 
