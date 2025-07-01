@@ -192,62 +192,151 @@
 			<section class="note">
 				<h2>🖥️ Úvod do Terminálu</h2>
 				<ul>
-					<li>Terminál umožňuje komunikaci se systémem přes příkazovou řádku</li>
-					<li>Vychází z UNIXového systému (používá zsh, dříve bash)</li>
-					<li>Od macOS Catalina je výchozí shell Zsh</li>
-				</ul>
-			</section>
-
-			<section class="note">
-				<h2>📜 Historie terminálu v macOS</h2>
-				<ul>
-					<li>Klasický Mac OS: bez plnohodnotného terminálu</li>
-					<li>Mac OS X (2001): zaveden UNIX základ (Darwin)</li>
-					<li>macOS Catalina (2019): přechod z bash na zsh</li>
-					<li>Podpora více shellů: zsh, bash, fish</li>
-				</ul>
-			</section>
-
-			<section class="note">
-				<h2>🚀 Spuštění Terminálu</h2>
-				<ul>
-					<li>Spotlight: <kbd>Cmd</kbd> + <kbd>Mezerník</kbd> → "Terminal"</li>
-					<li>Launchpad > Other > Terminal</li>
-					<li>Finder: /Applications/Utilities/Terminal</li>
-					<li>Vlastní klávesová zkratka: např. přes Automator</li>
-				</ul>
-			</section>
-
-			<section class="note">
-				<h2>🗂️ Práce s adresáři a soubory</h2>
-				<ul>
-					<li><code>cd</code>, <code>ls</code>, <code>pwd</code> – navigace a výpis</li>
-					<li><code>mv</code>, <code>cp</code>, <code>ditto</code> – přesun a kopírování</li>
+					<li>Terminál je příkazová řádka pro komunikaci se systémem v macOS.</li>
+					<li>Vychází z UNIXového prostředí, je kompatibilní s Linuxovým shellem.</li>
 					<li>
-						<code>nano</code>, <code>open</code>, <code>man</code> – editace, otevření, manuál
+						Od macOS Catalina je výchozí shell <strong>Zsh</strong>, dříve <strong>Bash</strong>.
 					</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🌐 Síť a diagnostika</h2>
+				<h2>📜 Historie Terminálu v macOS</h2>
 				<ul>
-					<li><code>ping</code>, <code>traceroute</code>, <code>dig</code> – testování sítě</li>
+					<li><strong>Před Mac OS X:</strong> chyběla příkazová řádka, pouze GUI.</li>
 					<li>
-						<code>ifconfig</code>, <code>ps</code>, <code>top</code>, <code>kill</code> – správa procesů
+						<strong>Mac OS X (2001):</strong> přechod na UNIX (Darwin), první verze Terminálu.
 					</li>
-					<li><code>grep</code>, <code>df</code> – vyhledávání, info o disku</li>
+					<li><strong>Catalina (2019):</strong> změna výchozího shellu z Bash na Zsh.</li>
+					<li><strong>Dnes:</strong> podpora více shellů: Zsh, Bash, Fish.</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>💻 Skriptování</h2>
+				<h2>🚀 Jak spustit Terminál</h2>
 				<ul>
-					<li>Skript je soubor s příkazy: např. <code>myscript.sh</code></li>
-					<li>Používá se <code>#!/bin/bash</code> nebo <code>#!/bin/zsh</code></li>
-					<li>Obsahuje proměnné, podmínky, smyčky a funkce</li>
-					<li>Příklady: zálohování, test připojení, hledání v souborech</li>
+					<li><kbd>Cmd</kbd> + <kbd>Mezerník</kbd> → „Terminal“ (Spotlight)</li>
+					<li>Launchpad → Other → Terminal</li>
+					<li>Finder: <code>/Applications/Utilities/Terminal</code></li>
+					<li>Volitelně: vlastní klávesová zkratka přes Automator</li>
 				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔠 Základní příkazy</h2>
+				<ul>
+					<li><code>cd</code> – změna adresáře</li>
+					<li><code>ls</code> – výpis obsahu složky</li>
+					<li><code>pwd</code> – zobrazí aktuální složku</li>
+					<li><code>whoami</code> – aktuální uživatel</li>
+					<li><code>mv</code>, <code>cp</code>, <code>ditto</code> – přesun, kopie</li>
+					<li>
+						<code>nano</code>, <code>open</code>, <code>man</code> – editace, otevření souboru, nápověda
+					</li>
+				</ul>
+				<details class="details-block">
+					<summary>📌 Příklady použití</summary>
+					<div class="details-content">
+						<ul style="margin-left: 2em;">
+							<li><code>cd ~/Documents</code> – přechod do složky Dokumenty</li>
+							<li><code>ls -la</code> – výpis všech souborů včetně skrytých</li>
+							<li><code>nano poznamky.txt</code> – otevře soubor v textovém editoru</li>
+							<li><code>open -a Safari www.apple.com</code> – otevře web v Safari</li>
+						</ul>
+					</div>
+				</details>
+			</section>
+
+			<section class="note">
+				<h2>🌐 Síťové a diagnostické příkazy</h2>
+				<ul>
+					<li><code>ping</code>, <code>traceroute</code>, <code>dig</code> – test sítě a DNS</li>
+					<li><code>ifconfig</code> – informace o síťových rozhraních</li>
+					<li>
+						<code>ps</code>, <code>top</code>, <code>kill</code> – sledování a ukončení procesů
+					</li>
+				</ul>
+				<details class="details-block">
+					<summary>📌 Příklad: zabití aplikace Safari</summary>
+					<div class="details-content">
+						<ul style="margin-left: 2em;">
+							<li><code>kill $(pgrep Safari)</code> – zavře všechny procesy aplikace Safari</li>
+						</ul>
+					</div>
+				</details>
+			</section>
+
+			<section class="note">
+				<h2>💻 Skriptování v Terminálu</h2>
+				<ul>
+					<li>Skript = soubor s příkazy, které se spustí naráz (např. <code>zaloha.sh</code>)</li>
+					<li>Začíná direktivou <code>#!/bin/bash</code> nebo <code>#!/bin/zsh</code></li>
+					<li>Obsahuje proměnné, podmínky, smyčky, funkce</li>
+				</ul>
+				<details class="details-block">
+					<summary>📌 Příklad: jednoduchý skript</summary>
+					<div class="details-content">
+						<pre style="margin-left: 2em;"><code
+								>#!/bin/bash
+echo "Ahoj"
+ls -l</code
+							></pre>
+						<p style="margin-left: 2em;">
+							Nastavení jako spustitelného souboru: <code>chmod +x skript.sh</code>
+						</p>
+					</div>
+				</details>
+			</section>
+
+			<section class="note">
+				<h2>🧠 Uživatelské tipy a rozdíly Bash vs Zsh</h2>
+				<ul>
+					<li><strong>Bash:</strong> standardní, kompatibilní</li>
+					<li><strong>Zsh:</strong> modernější, podporuje pluginy (např. Oh My Zsh)</li>
+					<li>
+						<strong>Doporučení:</strong> běžné skripty piš v Bash, pokud nepotřebuješ pokročilé funkce
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📌 Užitočné skripty (příklady)</h2>
+				<details class="details-block">
+					<summary>🗂️ 1. Záloha složky</summary>
+					<pre style="margin-left: 2em;"><code
+							>#!/bin/bash
+src="$1"
+dest="$2"
+
+if [ -d "$src" ]; then
+	cp -r "$src" "$dest"
+	echo "Záloha hotova."
+else
+	echo "Zdroj nenalezen."
+fi</code
+						></pre>
+				</details>
+
+				<details class="details-block">
+					<summary>🌐 2. Test připojení k internetu</summary>
+					<pre style="margin-left: 2em;"><code
+							>#!/bin/bash
+ping -c 1 google.com > /dev/null && echo "Internet OK" || echo "Internet nefunguje"</code
+						></pre>
+				</details>
+
+				<details class="details-block">
+					<summary>🔍 3. Vyhledání textu ve všech souborech</summary>
+					<pre style="margin-left: 2em;"><code
+							>#!/bin/bash
+if [ -z "$1" ]; then
+	echo "Zadej hledaný text"
+	exit 1
+fi
+
+grep -rnw . -e "$1"</code
+						></pre>
+				</details>
 			</section>
 
 			<a href="/PDF/Operacni_systemy_MAC_1_7_Terminal.pdf" class="ButtonExam" download>
@@ -338,6 +427,45 @@
 	.note:hover {
 		background-color: #e5e7eb;
 	}
+
+	.details-block summary {
+		cursor: pointer;
+		font-weight: 600;
+		color: #2563eb;
+		margin-top: 12px;
+		margin-bottom: 8px;
+		user-select: none;
+		transition: color 0.2s ease;
+	}
+
+	.details-block[open] summary {
+		color: #1d4ed8;
+	}
+
+	.details-content {
+		margin-left: 20px;
+		padding: 10px 0 0 8px;
+		border-left: 2px solid #cbd5e1;
+		font-size: 15px;
+	}
+
+	.details-content h3 {
+		margin-top: 12px;
+		margin-bottom: 6px;
+		color: #111827;
+		font-size: 15px;
+	}
+
+	.details-content ul {
+		list-style: disc;
+		padding-left: 24px;
+		margin-bottom: 8px;
+	}
+
+	.details-content li {
+		margin-bottom: 6px;
+	}
+
 	@media (max-width: 768px) {
 		.layout {
 			flex-direction: column;

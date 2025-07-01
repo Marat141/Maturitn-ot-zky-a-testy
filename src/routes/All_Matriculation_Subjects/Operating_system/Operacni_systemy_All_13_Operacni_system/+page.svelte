@@ -190,15 +190,37 @@
 			<section class="note">
 				<h2>🔑 Klíčové pojmy</h2>
 				<ul>
-					<li><strong>Proces:</strong> Program v běhu, zahrnuje aktuální stav programu a data</li>
-					<li><strong>Vlákno (Thread):</strong> Menší jednotka procesu, může běžet paralelně</li>
-					<li><strong>Správa paměti:</strong> Alokace a dealokace paměti operačním systémem</li>
-					<li><strong>Souborový systém:</strong> Struktura pro ukládání a organizaci souborů</li>
-					<li><strong>I/O systémy:</strong> Komunikace mezi počítačem a periferiemi</li>
-					<li><strong>Plánování procesů:</strong> Určuje pořadí vykonávání procesů</li>
-					<li><strong>Synchronizace:</strong> Řízení přístupu ke sdíleným prostředkům</li>
 					<li>
-						<strong>Deadlock:</strong> Blokace, kdy se procesy vzájemně čekají na uvolnění zdrojů
+						<strong>Proces:</strong> Běžící instance programu. Má vlastní paměť, identifikátor (PID)
+						a může obsahovat jedno nebo více vláken.
+					</li>
+					<li>
+						<strong>Vlákno (Thread):</strong> Nejmenší jednotka provádění uvnitř procesu. Sdílí paměť
+						s ostatními vlákny téhož procesu.
+					</li>
+					<li>
+						<strong>Správa paměti:</strong> Řídí přidělování a uvolňování paměti pro aplikace a jádro
+						OS.
+					</li>
+					<li>
+						<strong>Souborový systém:</strong> Umožňuje ukládání a organizaci dat na disku (např. NTFS,
+						ext4, ZFS).
+					</li>
+					<li>
+						<strong>I/O systémy:</strong> Komunikace mezi OS a zařízeními – pomocí ovladačů a plánovače
+						vstupně-výstupních operací.
+					</li>
+					<li>
+						<strong>Plánování procesů:</strong> Určuje, který proces běží kdy, podle algoritmů jako Round-Robin,
+						FIFO atd.
+					</li>
+					<li>
+						<strong>Synchronizace:</strong> Zajišťuje bezpečný přístup více procesů/vláken ke sdíleným
+						zdrojům (pomocí mutexů, semaforů...)
+					</li>
+					<li>
+						<strong>Deadlock:</strong> Situace, kdy procesy navzájem čekají na uvolnění zdrojů a systém
+						se zacyklí.
 					</li>
 				</ul>
 			</section>
@@ -206,34 +228,141 @@
 			<section class="note">
 				<h2>👨‍💻 Významné osobnosti vývoje OS</h2>
 				<ul>
-					<li>Ken Thompson – „You can't trust code…“</li>
-					<li>Dennis Ritchie – „UNIX is basically a simple…“</li>
-					<li>Bill Gates, Paul Allen, Andrew S. Tanenbaum</li>
-					<li>Linus Torvalds – „Talk is cheap…“</li>
-					<li>Steve Jobs</li>
+					<li>
+						<strong>Ken Thompson:</strong> Spolutvůrce Unixu. Citát:
+						<em>"You can't trust code you did not totally create yourself..."</em>
+					</li>
+					<li>
+						<strong>Dennis Ritchie:</strong> Spoluautor Unixu a jazyka C.
+						<em>"UNIX is simple, but requires genius to understand its simplicity."</em>
+					</li>
+					<li>
+						<strong>Bill Gates:</strong> Zakladatel Microsoftu.
+						<em>"Your most unhappy customers are your greatest source of learning."</em>
+					</li>
+					<li><strong>Paul Allen:</strong> Spoluzakladatel Microsoftu.</li>
+					<li>
+						<strong>Andrew S. Tanenbaum:</strong> Autor knihy <em>Modern Operating Systems</em>,
+						tvůrce systému MINIX.
+					</li>
+					<li>
+						<strong>Linus Torvalds:</strong> Autor Linuxu.
+						<em>"Talk is cheap. Show me the code."</em>
+					</li>
+					<li><strong>Steve Jobs:</strong> Apple, macOS a GUI revoluce.</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🖥️ Operační systémy</h2>
+				<h2>🖥️ Přehled operačních systémů</h2>
 				<ul>
-					<li>UNIX – první víceuživatelský, multitaskingový systém</li>
-					<li>MS-DOS – dominantní v 80. letech</li>
-					<li>Windows – standardní OS pro osobní počítače</li>
-					<li>Linux – open-source alternativa k UNIXu</li>
-					<li>Mac OS – intuitivní GUI, od Apple</li>
+					<li>
+						<strong>UNIX:</strong> Víceuživatelský, multitaskingový systém z 60. let. Základ pro Linux,
+						macOS atd.
+					</li>
+					<li><strong>MS-DOS:</strong> Textový OS Microsoftu, rozšířený v 80. letech.</li>
+					<li>
+						<strong>Windows:</strong> GUI systém od Microsoftu – dominantní na osobních počítačích.
+					</li>
+					<li>
+						<strong>Linux:</strong> Open-source alternativa, inspirována UNIXem. Běžný na serverech a
+						nově i desktopu.
+					</li>
+					<li><strong>macOS:</strong> Od Apple. UNIXový základ + moderní grafické prostředí.</li>
 				</ul>
 			</section>
 
 			<section class="note">
-				<h2>🎯 Cíle studia OS</h2>
+				<h2>🎯 Cíl studia OS</h2>
 				<p>
-					Pochopení základních funkcí a mechanismů OS pro efektivní využití a správu výpočetních
-					systémů.
+					Získat porozumění základním principům fungování operačních systémů (procesy, paměť, I/O,
+					souborové systémy atd.) a dovednosti nutné k jejich efektivní správě a využívání.
 				</p>
 			</section>
+
+			<section class="note">
+				<h2>⚙️ Procesy vs. vlákna</h2>
+				<ul>
+					<li>
+						<strong>Proces:</strong> Izolovaná jednotka s vlastní pamětí. Komunikace mezi procesy je
+						složitější (pipes, sockets...)
+					</li>
+					<li>
+						<strong>Vlákno:</strong> Běží v rámci procesu, sdílí paměť. Komunikace je rychlá, ale méně
+						bezpečná.
+					</li>
+					<li><strong>Vytvoření vlákna je levnější</strong> než spuštění procesu.</li>
+				</ul>
+
+				<details class="details-block">
+					<summary>📄 Příklad – vícevláknové stahování v Pythonu</summary>
+					<div class="details-content">
+						<pre><code
+								>import threading
+			import requests
+
+			def download(url, filename):
+				r = requests.get(url)
+				with open(filename, 'wb') as f:
+					f.write(r.content)
+
+			urls = [("http://example.com/f1.zip", "f1.zip")]
+			threads = [threading.Thread(target=download, args=(u, f)) for u, f in urls]
+
+			for t in threads: t.start()
+			for t in threads: t.join()</code
+							></pre>
+					</div>
+				</details>
+			</section>
+
+			<section class="note">
+				<h2>🧠 Správa paměti</h2>
+				<ul>
+					<li>
+						<strong>Virtuální paměť:</strong> Procesy vidí větší paměť, než ve skutečnosti je. Podporováno
+						stránkováním a swapem.
+					</li>
+					<li>
+						<strong>Windows:</strong> pagefile.sys, RAMMap, <code>tasklist</code>,
+						<code>resmon</code>
+					</li>
+					<li>
+						<strong>Linux:</strong> <code>free -h</code>, <code>vmstat</code>, <code>htop</code>
+					</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>📂 Souborové systémy</h2>
+				<ul>
+					<li>
+						<strong>Windows:</strong> NTFS (šifrování, komprese), exFAT (externí disky), FAT32 (kompatibilita)
+					</li>
+					<li><strong>Linux:</strong> ext4 (standard), XFS (výkon), Btrfs (snapshoty, RAID)</li>
+					<li><strong>Unix:</strong> UFS, FFS, ZFS (komprese, kontrolní součty)</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🛠️ I/O subsystém</h2>
+				<ul>
+					<li><strong>Windows:</strong> I/O Manager, Plug and Play, power management, async I/O</li>
+					<li><strong>Linux:</strong> VFS (abstrakce FS), aio_read, ovladače, buffer cache</li>
+				</ul>
+			</section>
+
+			<section class="note">
+				<h2>🔒 Synchronizace</h2>
+				<ul>
+					<li><strong>Mutex:</strong> Zajišťuje exkluzivní přístup ke zdroji</li>
+					<li><strong>Semafor:</strong> Umožňuje více přístupů (omezený počet)</li>
+					<li><strong>Podmínkové proměnné:</strong> Vlákna čekají na určitou podmínku</li>
+					<li><strong>Read/Write Lock:</strong> Mnoho čtenářů, jen jeden zapisovač</li>
+				</ul>
+			</section>
 			<a href="/PDF/Operacni_systemy_All_13_Operacni_system.pdf" class="ButtonExam" download>
-				📄 Stáhnout PDF
+					📄 Stáhnout PDF
 			</a>
 		</div>
 	</div>
@@ -327,6 +456,44 @@
 
 	.ButtonExam:hover {
 		background-color: #1d4ed8;
+	}
+
+	.details-block summary {
+		cursor: pointer;
+		font-weight: 600;
+		color: #2563eb;
+		margin-top: 12px;
+		margin-bottom: 8px;
+		user-select: none;
+		transition: color 0.2s ease;
+	}
+
+	.details-block[open] summary {
+		color: #1d4ed8;
+	}
+
+	.details-content {
+		margin-left: 20px;
+		padding: 10px 0 0 8px;
+		border-left: 2px solid #cbd5e1;
+		font-size: 15px;
+	}
+
+	.details-content h3 {
+		margin-top: 12px;
+		margin-bottom: 6px;
+		color: #111827;
+		font-size: 15px;
+	}
+
+	.details-content ul {
+		list-style: disc;
+		padding-left: 24px;
+		margin-bottom: 8px;
+	}
+
+	.details-content li {
+		margin-bottom: 6px;
 	}
 
 	@media (max-width: 768px) {
