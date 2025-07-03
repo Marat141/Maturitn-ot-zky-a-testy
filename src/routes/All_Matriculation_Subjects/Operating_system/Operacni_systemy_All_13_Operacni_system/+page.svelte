@@ -166,13 +166,28 @@
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Souborove_systemy_1_Windows'
 		},
+                {
+            id: 25,
+            level: 2,
+            text: 'Linux DHCP',
+            parent: 2,
+            path: '/All_Matriculation_Subjects/Operating_system/LinuxOp_20_1_DHCP'
+        },
+        {
+            id: 26,
+            level: 2,
+            text: 'Windows Server DHCP',
+            parent: 2,
+            path:  '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_Server_14_DHCP',       
+        },
 		{
-			id: 25,
+			id: 27,
 			level: 1,
 			text: 'Opravné zkoušky',
 			path: '/All_Matriculation_Subjects/Operating_system/Opravne-Zkousky-OS'
-		}
-	]);
+		},
+
+        ]);
 </script>
 
 <main>
@@ -477,23 +492,6 @@
 		padding: 10px 0 0 8px;
 		border-left: 2px solid #cbd5e1;
 		font-size: 15px;
-	}
-
-	.details-content h3 {
-		margin-top: 12px;
-		margin-bottom: 6px;
-		color: #111827;
-		font-size: 15px;
-	}
-
-	.details-content ul {
-		list-style: disc;
-		padding-left: 24px;
-		margin-bottom: 8px;
-	}
-
-	.details-content li {
-		margin-bottom: 6px;
 	}
 
 	@media (max-width: 768px) {

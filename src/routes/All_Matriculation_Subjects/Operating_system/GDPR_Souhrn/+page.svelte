@@ -166,13 +166,28 @@
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Souborove_systemy_1_Windows'
 		},
+                {
+            id: 25,
+            level: 2,
+            text: 'Linux DHCP',
+            parent: 2,
+            path: '/All_Matriculation_Subjects/Operating_system/LinuxOp_20_1_DHCP'
+        },
+        {
+            id: 26,
+            level: 2,
+            text: 'Windows Server DHCP',
+            parent: 2,
+            path:  '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_Server_14_DHCP',       
+        },
 		{
-			id: 25,
+			id: 27,
 			level: 1,
 			text: 'Opravné zkoušky',
 			path: '/All_Matriculation_Subjects/Operating_system/Opravne-Zkousky-OS'
-		}
-	]);
+		},
+
+        ]);
 </script>
 
 <main>
@@ -194,7 +209,7 @@
 					<li>Posiluje práva subjektů nad osobními údaji (Lidé (tzv. subjekty údajů) mají větší kontrolu a práva nad tím, jak jsou jejich osobní údaje zpracovávány.)</li>
 					<li>Vyžaduje transparentnost a informovaný souhlas</li>
 					<li>Stanovuje přísné sankce (až 20 mil. EUR nebo 4 % obratu)</li>
-					<li>Zásady zpracování údajů: zákonnost, účelnost, minimalizace, bezpečnost</li>
+					<li><strong>Zásady zpracování údajů:</strong> zákonnost, účelnost, minimalizace, bezpečnost</li>
 				</ul>
 			</section>
 
