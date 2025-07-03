@@ -196,10 +196,7 @@
 		<div class="content">
 			<div class="header-with-button">
 				<h1 id="gdpr">GDPR: Souhrn</h1>
-				<a
-					href="/All_Matriculation_Subjects/Operating_system/GDPR_Souhrn/Exam_GDPR_Souhrn"
-					class="ButtonExam">Napsat si test</a
-				>
+				<a href="/All_Matriculation_Subjects/Operating_system/GDPR_Souhrn/Exam_GDPR_Souhrn" class="ButtonExam">Napsat si test</a>
 			</div>
 
 			<section id="principy" class="note">

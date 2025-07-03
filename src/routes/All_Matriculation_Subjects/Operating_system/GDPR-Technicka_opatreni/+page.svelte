@@ -196,7 +196,7 @@
 		<div class="content">
 			<div class="header-with-button">
 				<h1 id="gdpr-opatreni">GDPR: Technická a organizační opatření</h1>
-				<a href="/PDF/GDPR-Technicka_opatreni.pdf" class="ButtonExam" download>📄 Stáhnout PDF</a>
+				<a href="/All_Matriculation_Subjects/Operating_system/GDPR-Technicka_opatreni/Exam_GDPR-Technicka-opatreni" class="ButtonExam">Napsat si test</a>
 			</div>
 
 			<section id="uvod" class="note">
@@ -264,7 +264,7 @@
 							</ul>
 							<li><strong>Vztah k GDPR:</strong></li>
 							<ul>
-								<li><strong>Organizační opatření:</strong> Ačkoliv nepředstavují přímý požadavek GDPR, mohou pomoci v rámci správy dat, na říklad zamezením nekontrolovaného shromažďování velkého množství osobních údajů</li>
+								<li><strong>Organizační opatření:</strong> Ačkoliv nepředstavují přímý požadavek GDPR, mohou pomoci v rámci správy dat, například zamezením nekontrolovaného shromažďování velkého množství osobních údajů</li>
 								<li><strong>Minimalizace údajů (data minimization):</strong> GDPR vyžaduje zpracovávat jen nezbytné množství dat. Nastavení kvót může motivovat k tomu, aby se zbytečně nehromadila nepotřebná data</li>
 							</ul>
 						</ul>
@@ -491,6 +491,7 @@
 					</div>
 				</details>
 			</section>
+			<a href="/PDF/GDPR-Technicka_opatreni.pdf" class="ButtonExam" download>📄 Stáhnout PDF</a>
 		</div>
 	</div>
 </main>
