@@ -168,6 +168,20 @@
 		},
 		{
 			id: 25,
+			level: 2,
+			text: 'Linux DHCP',
+			parent: 2,
+			path: '/All_Matriculation_Subjects/Operating_system/LinuxOp_20_1_DHCP'
+		},
+		{
+			id: 26,
+			level: 2,
+			text: 'Windows Server DHCP',
+			parent: 2,
+			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_Server_14_DHCP'
+		},
+		{
+			id: 27,
 			level: 1,
 			text: 'Opravné zkoušky',
 			path: '/All_Matriculation_Subjects/Operating_system/Opravne-Zkousky-OS'

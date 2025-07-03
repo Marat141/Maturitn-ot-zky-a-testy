@@ -196,12 +196,7 @@
 		<div class="content">
 			<div class="header-with-button">
 				<h1>Windows – část 4: PowerShell – zástupné znaky</h1>
-				<a
-					href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_4_2/Exam-Operacni_systemy_Win_4_2"
-					class="ButtonExam"
-				>
-					Napsat si test
-				</a>
+				<a href="/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_4_2/Exam-Operacni_systemy_Win_4_2" class="ButtonExam"> Napsat si test</a>
 			</div>
 
 			<section class="note">
