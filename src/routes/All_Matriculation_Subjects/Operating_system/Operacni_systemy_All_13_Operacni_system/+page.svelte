@@ -310,42 +310,93 @@
 				</ul>
 
 				<details class="details-block">
-					<summary>📄 Příklad – vícevláknové stahování v Pythonu</summary>
+					<summary>📄 Podrobnější zápisky</summary>
 					<div class="details-content">
-						<pre><code
-								>import threading
-			import requests
+						<h2>⚙️ Proces x vlákno</h2>
+						<h3>Procesy:</h3>
+						<ul>
+							<li><strong>Izolace:</strong> Každý proces běží ve svém vlastním paměťovém prostoru, což znamená, že procesy jsou izolované od sebe navzájem. To zvyšuje bezpečnost a stabilitu, protože chyby v jednom procesu neovlivní ostatní procesy.</li>
+							<li><strong>Přepínání kontextu:</strong> Přepínání mezi procesy (context switching) je náročnější na zdroje, protože zahrnuje změnu celého paměťového prostoru a registrů procesoru.</li>
+							<li><strong>Komunikace:</strong> Procesy komunikují mezi sebou pomocí mechanismů jako jsou roury (pipes), fronty zpráv (message queues) nebo sdílená paměť (shared memory), což může být složitější a pomalejší než komunikace mezi vlákny</li>
+							<li><strong>Vytváření:</strong>  Vytvoření nového procesu je náročnější na zdroje, protože zahrnuje alokaci nového paměťového prostoru a inicializaci všech potřebných struktur.</li>
+						</ul>
+						<h3>Vlákna:</h3>
+						<ul>
+							<li><strong>Sdílení paměti:</strong> Vlákna v rámci jednoho procesu sdílejí stejný paměťový prostor, což umožňuje rychlejší a jednodušší komunikaci mezi vlákny. To však také znamená, že chyby v jednom vlákně mohou ovlivnit ostatní vlákna v rámci stejného procesu.</li>
+							<li><strong>Přepínání kontextu:</strong> Přepínání mezi vlákny je méně náročné na zdroje než přepínání mezi procesy, protože vlákna sdílejí stejný paměťový prostor a mnoho systémových prostředků.</li>
+							<li><strong>Komunikace:</strong> Vlákna mohou snadno komunikovat a synchronizovat se pomocí mechanismů jako jsou mutexy, semafory a podmínkové proměnné.</li>
+							<li><strong>Vytváření:</strong> Vytvoření nového vlákna je méně náročné na zdroje než vytvoření nového procesu, protože vlákna sdílejí mnoho systémových prostředků.</li>
 
-			def download(url, filename):
-				r = requests.get(url)
-				with open(filename, 'wb') as f:
-					f.write(r.content)
-
-			urls = [("http://example.com/f1.zip", "f1.zip")]
-			threads = [threading.Thread(target=download, args=(u, f)) for u, f in urls]
-
-			for t in threads: t.start()
-			for t in threads: t.join()</code
-							></pre>
+						</ul>
 					</div>
 				</details>
+			</section>
+
+			<section class="note">
+				<h2>🎞️ Procesy</h2>
+				<p>V <strong>MS Windows</strong> je správa procesů zajišťována několika nástroji a mechanismy:</p>
+				<ul>
+					<li><strong>Správce úloh:</strong> : Tento nástroj umožňuje uživatelům sledovat a spravovat běžící procesy. Můžete jej spustit pomocí klávesové zkratky Ctrl+Shift+Esc nebo přes kontextovou nabídku hlavního panelu. Správce úloh zobrazuje využití procesoru, paměti, disku a sítě jednotlivými procesy</li>
+					<li><strong>PowerShell:</strong> : Pomocí PowerShellu lze spravovat procesy pomocí příkazů jako <em>GetProcess,Stop-Process</em> a <em>Start-Process</em>. Tyto příkazy umožňují získávat informace o procesech, zastavovat je a spouštět nové procesy</li>
+					<li><strong>Process Explorer:</strong> Tento nástroj od Sysinternals poskytuje detailní informace o procesech a umožňuje sledovat problémy s knihovnami DLL nebo úniky paměti</li>
+				</ul>
+				<p>V <strong>Linuxu</strong> je správa procesů prováděna pomocí různých příkazů a nástrojů:</p>
+				<ul>
+					<li><strong>ps:</strong> Tento příkaz zobrazuje seznam běžících procesů. Můžete jej použít s různými přepínači, jako je <em>ps -e</em> pro zobrazení všech procesů nebo <em>ps -u</em> pro zobrazení procesů konkrétního uživatele</li>
+					<li><strong>top:</strong> Tento interaktivní nástroj zobrazuje aktuální stav systému, včetně běžících procesů, využití CPU a paměti. Umožňuje také ukončovat procesy</li>
+					<li><strong>htop:</strong> Vylepšená verze příkazu <em>top</em>, která poskytuje barevné rozhraní a další funkce pro správu procesů </li>
+					<li><strong>nice a renice:</strong> Tyto příkazy slouží k nastavení a změně priority procesů. Příkaz <em>nice</em> spouští proces s upravenou prioritou, zatímco <em>renice</em> mění prioritu již běžícího procesu</li>
+					<li><strong>kill:</strong> Tento příkaz slouží k zasílání signálů procesům, například k jejich ukončení. Příkaz <em>kill -9 PID</em> ukončí proces s daným PID</li>
+				</ul>
+				<p>V <strong>Unixu</strong> jsou procesy spravovány podobně jako v Linuxu, protože Linux je odvozen od Unixu</p>
 			</section>
 
 			<section class="note">
 				<h2>🧠 Správa paměti</h2>
 				<ul>
 					<li>
-						<strong>Virtuální paměť:</strong> Procesy vidí větší paměť, než ve skutečnosti je. Podporováno
-						stránkováním a swapem.
+						<strong>Virtuální paměť:</strong> Windows používá virtuální paměť, která umožňuje programům používat více paměti, než je fyzicky dostupné. Podporováno stránkováním a swapem.
 					</li>
 					<li>
-						<strong>Windows:</strong> pagefile.sys, RAMMap, <code>tasklist</code>,
-						<code>resmon</code>
+						Správa paměti v <strong>MS Windows</strong> zahrnuje několik klíčových mechanismů:
+						<ul>
+							<li>Virtuální paměť</li>
+							<li>Správce paměti</li>
+							<li>Správce úloh</li>
+							<li>Optimalizace paměti</li>
+						</ul>
 					</li>
 					<li>
-						<strong>Linux:</strong> <code>free -h</code>, <code>vmstat</code>, <code>htop</code>
+						<strong>Linux:</strong>
+						<ul>
+							<li>Virtuální paměť</li>
+							<li>Alokace paměti</li>
+							<li>Správa paměti jádra</li>
+							<li>Ochrana paměti</li>
+						</ul>
 					</li>
 				</ul>
+				<details class="details-block">
+					<summary>📄 Podrobnější zápisky</summary>
+					<div class="details-content">
+						<h2>Správa paměti v OS</h2>
+						<p><strong>MS Windows</strong></p>
+						<p>Správa paměti v MS Windows zahrnuje několik klíčových mechanismů:</p>
+						<ul>
+							<li><strong>Virtuální paměť:</strong>  Windows používá virtuální paměť, která umožňuje programům používat více paměti, než je fyzicky dostupné. Toho je dosaženo pomocí stránkovacího souboru (page file) na disku.</li>
+							<li><strong>Správce paměti:</strong> Windows má správce paměti, který přiděluje a uvolňuje paměť pro procesy a aplikace. Tento správce také monitoruje využití paměti a optimalizuje její rozdělení.</li>
+							<li><strong>Správce úloh:</strong> Nástroj, který umožňuje uživatelům sledovat a spravovat využití paměti jednotlivými procesy. Uživatelé mohou ukončovat procesy, které spotřebovávají příliš mnoho paměti.</li>
+							<li><strong>Optimalizace paměti:</strong> Windows poskytuje nástroje jako RAMMap a CleanMem, které pomáhají optimalizovat využití paměti a uvolňovat zbytečně obsazenou paměť</li>
+						</ul>
+						<p><strong>Linux</strong></p>
+						<ul>
+							<li><strong>Virtuální paměť:</strong> Linux používá virtuální paměť, která umožňuje procesům používat více paměti, než je fyzicky dostupné. To je dosaženo pomocí stránkování a swapování</li>
+							<li><strong>Alokace paměti:</strong> Linux poskytuje dvě hlavní metody pro alokaci paměti: statickou a dynamickou. Dynamická alokace umožňuje procesům získat paměť podle potřeby</li>
+							<li><strong>Správa paměti jádra:</strong>  Linuxové jádro má vlastní mechanismy pro správu paměti, včetně alokátorů paměti a algoritmů pro stránkování</li>
+							<li><strong>Ochrana paměti:</strong>  Linux zajišťuje, že každý proces má přístup pouze k paměti, která mu byla přidělena, což zvyšuje bezpečnost a stabilitu systému</li>
+						</ul>
+					</div>
+				</details>
 			</section>
 
 			<section class="note">
@@ -357,6 +408,30 @@
 					<li><strong>Linux:</strong> ext4 (standard), XFS (výkon), Btrfs (snapshoty, RAID)</li>
 					<li><strong>Unix:</strong> UFS, FFS, ZFS (komprese, kontrolní součty)</li>
 				</ul>
+				<details class="details-block">
+					<summary>📄 Podrobnější zápisky</summary>
+					<div class="details-content">
+						<h3>Souborové systémy</h3>
+						<p><strong>MS Windows</strong></p>
+						<ul>
+							<li><strong>FAT (File Allocation Table):</strong> Starší souborový systém, který se používá hlavně na menších discích a vyměnitelných médiích. Má omezení velikosti souborů a diskových oddílů</li>
+							<li><strong>NTFS (New Technology File System):</strong> Moderní souborový systém, který nabízí pokročilé funkce jako šifrování, kompresi, kvóty a podporu velkých souborů a diskových oddílů. NTFS je standardním souborovým systémem pro většinu verzí Windows</li>
+							<li><strong>exFAT</strong>  (Extended File Allocation Table): Navržený pro flash disky a externí úložiště. Podporuje větší soubory než FAT32 a je kompatibilní s více operačními systémy</li>
+						</ul>
+						<p><strong>Linux</strong></p>
+						<ul>
+							<li><strong>ext4 (Fourth Extended Filesystem):</strong> Nejrozšířenější souborový systém v Linuxu, který nabízí vysoký výkon, spolehlivost a podporu velkých souborů a diskových oddílů</li>
+							<li><strong>XFS:</strong>  Vysoce výkonný souborový systém, který je vhodný pro servery a aplikace náročné na I/O operace. Podporuje velké soubory a diskové oddíly</li>
+							<li><strong>Btrfs (B-tree File System):</strong>  Moderní souborový systém s pokročilými funkcemi jako snapshoty, kontrolní součty a podpora RAID. Je navržen pro vysokou spolehlivost a snadnou správu</li>
+						</ul>
+						<p><strong>Unix</strong></p>
+						<ul>
+							<li><strong>UFS (Unix File System):</strong> : Tradiční souborový systém používaný v mnoha Unixových systémech. Nabízí spolehlivost a výkon, ale má omezenou podporu pro moderní funkce</li>
+							<li><strong>ZFS (Zettabyte File System):</strong> Pokročilý souborový systém s funkcemi jako snapshoty, kontrolní součty, komprese a podpora velkých souborů a diskových oddílů. Je navržen pro vysokou spolehlivost a snadnou správu</li>
+							<li><strong>FFS (Fast File System):</strong>  Vylepšená verze UFS, která byla vyvinuta pro zvýšení výkonu a snížení fragmentace</li>
+						</ul>
+					</div>
+				</details>
 			</section>
 
 			<section class="note">
@@ -365,6 +440,26 @@
 					<li><strong>Windows:</strong> I/O Manager, Plug and Play, power management, async I/O</li>
 					<li><strong>Linux:</strong> VFS (abstrakce FS), aio_read, ovladače, buffer cache</li>
 				</ul>
+				<details class="details-block">
+					<summary>📄 Podrobnější zápisky</summary>
+					<div class="details-content">
+						<h3>Vstupně-výstupní (I/O) systémy</h3>
+						<p><strong>MS Windows</strong></p>
+						<ul>
+							<li><strong>I/O Manager:</strong> Spravuje všechny I/O operace a poskytuje jednotné rozhraní pro komunikaci s hardwarem. Zajišťuje, že I/O požadavky jsou správně směrovány a zpracovány</li>
+							<li><strong>Asynchronní I/O:</strong> Windows podporuje asynchronní I/O, což umožňuje aplikacím pokračovat v práci, zatímco I/O operace probíhá na pozadí. To zvyšuje výkon a efektivitu aplikací</li>
+							<li><strong>Plug and Play (PnP):</strong> Umožňuje automatickou detekci a konfiguraci nově připojených zařízení bez nutnosti restartu systému</li>
+							<li><strong>Power Management:</strong> Správa napájení umožňuje systému a jednotlivým zařízením přecházet do nízkopříkonových stavů, což šetří energii</li>
+						</ul>
+						<p><strong>Linux</strong></p>
+						<ul>
+							<li><strong>Virtuální souborový systém (VFS):</strong> Abstraktní vrstva, která poskytuje jednotné rozhraní pro různé souborové systémy. Umožňuje aplikacím pracovat s různými typy souborových systémů bez nutnosti specifických úprav</li>
+							<li><strong>Asynchronní I/O:</strong> Linux podporuje asynchronní I/O pomocí systémových volání jako aio_read a aio_write, což umožňuje efektivní zpracování I/O operací na pozadí</li>
+							<li><strong>Device Drivers:</strong>  Ovladače zařízení v Linuxu jsou modulární a mohou být načítány a uvolňovány za běhu systému, což zvyšuje flexibilitu a rozšiřitelnost</li>
+							<li><strong>Buffer Cache:</strong>  Linux používá buffer cache pro ukládání často přistupovaných dat, což zvyšuje výkon systému tím, že minimalizuje počet přístupů na disk</li>
+						</ul>
+					</div>
+				</details>
 			</section>
 
 			<section class="note">

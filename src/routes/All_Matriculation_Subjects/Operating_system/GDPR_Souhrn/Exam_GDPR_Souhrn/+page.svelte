@@ -74,7 +74,29 @@
 			type: 'fill',
 			text: 'Jaké právo umožňuje jedinci žádat smazání jeho údajů?',
 			answer: ['právo na výmaz', 'být zapomenut']
+		},
+		{
+			id: 7,
+			type: 'fill',
+			text: 'Napiš mi něco o Zákonnosti, korektnosti a transaparentnosti zpracování osobních údajů.',
+			answer: [
+				'Osobní údaje musí být zpracovávány zákonným způsobem, férově a transparentně. Subjekt údajů musí být informován, kdo a proč údaje zpracovává'
+			]
+		},
+		{
+			id: 8,
+			type: 'choice',
+			text: 'Co je správně posaná definice Právo na informace?',
+			options:[
+				'Subjekt může žádat smazání údajů',
+				'Subjekt může kdykoli vznést námitku proti zpracování na základě oprávněného zájmu správce nebo při přímém marketingu',
+				'Subjekt musí být informován, kdo, jak a proč jeho údaje zpracovává. To zahrnuje např. dobu uchování, zdroj údajů a příjemce',
+				'Subjekt má právo žádat jejich opravu nebo doplnění'
+			],
+			answer: 2
 		}
+		
+
 	]);
 
 	let userAnswers = $state<(number | string)[]>([]);
@@ -248,14 +270,6 @@ h1 {
 .result:before {
 	display: inline-block;
 	margin-right: 6px;
-}
-
-.result:has(> .correct) {
-	color: #22c55e;
-}
-
-.result:has(> .wrong) {
-	color: #ef4444;
 }
 
 h2 {

@@ -199,14 +199,68 @@
 				<a href="/All_Matriculation_Subjects/Operating_system/GDPR_Souhrn/Exam_GDPR_Souhrn" class="ButtonExam">Napsat si test</a>
 			</div>
 
-			<section id="principy" class="note">
-				<h2>📋 Hlavní principy GDPR</h2>
+			<section id="bezpecnost" class="note">
+				<h2>🔐 Informační bezpečnost</h2>
+				<p><strong>Informační bezpečnost</strong> je soubor procesů, opatření, technologií a organizačních postupů, jejichž cílem je chránit důvěrnost, integritu a dostupnost informací a systémů.</p>
 				<ul>
-					<li>Platí v celé EU, účinné od 25. května 2018</li>
-					<li>Posiluje práva subjektů nad osobními údaji (Lidé (tzv. subjekty údajů) mají větší kontrolu a práva nad tím, jak jsou jejich osobní údaje zpracovávány.)</li>
-					<li>Vyžaduje transparentnost a informovaný souhlas</li>
-					<li>Stanovuje přísné sankce (až 20 mil. EUR nebo 4 % obratu)</li>
-					<li><strong>Zásady zpracování údajů:</strong> zákonnost, účelnost, minimalizace, bezpečnost</li>
+					<li>Zabránění neoprávněnému přístupu – silná hesla, šifrování, řízení přístupu.</li>
+					<li>Zajištění, že data nejsou nechtěně změněna nebo zničena – zálohování, kontrolní mechanismy.</li>
+					<li>Zajištění dostupnosti dat oprávněným uživatelům – např. vysoká dostupnost, obnova po havárii.</li>
+				</ul>
+				<p>Vzhledem k rostoucí hodnotě dat (např. osobní údaje, duševní vlastnictví, finanční informace) a rostoucí hrozbě (ransomware, phishing, APT) se informační bezpečnost neustále vyvíjí.</p>
+				<p><strong>Informační bezpečnost je důležitá i z hlediska GDPR</strong>, protože zabezpečení zpracování osobních údajů je jednou ze základních zásad tohoto nařízení.</p>
+			</section>
+
+			<section id="gdpr" class="note">
+				<h2>📚 GDPR – Obecné nařízení o ochraně osobních údajů</h2>
+				
+				<p><strong>GDPR</strong> je právní předpis Evropské unie (Nařízení (EU) 2016/679), který sjednocuje pravidla ochrany osobních údajů v celé EU a zvyšuje práva občanů na ochranu jejich dat.</p>
+				
+				<h3>🎯 Hlavní cíle GDPR</h3>
+				<ul>
+					<li>Rozšířená definice osobních údajů – vše, co může vést k identifikaci osoby (např. IP adresa, GPS, biometrie).</li>
+					<li>Transparentnost a informovaný souhlas – subjekt musí vědět, proč a jak jsou jeho údaje zpracovávány.</li>
+					<li>Silnější práva subjektů údajů – přístup, oprava, výmaz, přenositelnost, námitka.</li>
+					<li>Zásady zpracování údajů – zákonnost, minimalizace, přesnost, omezená doba uchování, bezpečnost, odpovědnost.</li>
+					<li>Povinnost hlásit úniky dat – do 72 hodin u incidentu s rizikem pro práva subjektů.</li>
+					<li>Významné sankce – až 20 mil. EUR nebo 4 % celosvětového obratu.</li>
+					<li>Zásada „privacy by design and by default“ – ochrana dat má být integrována od začátku návrhu systému a procesů.</li>
+				</ul>
+
+				<h3>⚙️ Základní podmínky pro zpracování údajů</h3>
+				<p>Zpracování osobních údajů je možné jen pokud je splněna alespoň jedna z těchto podmínek:</p>
+				<ul>
+					<li>Souhlas subjektu údajů</li>
+					<li>Plnění smlouvy</li>
+					<li>Právní povinnost</li>
+					<li>Ochrana životně důležitých zájmů</li>
+					<li>Veřejný zájem / výkon veřejné moci</li>
+					<li>Oprávněný zájem správce (pokud nepřevažují práva subjektu)</li>
+				</ul>
+
+				<h3>🧾 Souhlas se zpracováním údajů</h3>
+				<ul>
+					<li>Musí být svobodný, konkrétní, informovaný a jednoznačný.</li>
+					<li>Nesmí být podmínkou pro poskytnutí služby, pokud není nutný.</li>
+					<li>Musí být možné jej kdykoli odvolat.</li>
+				</ul>
+
+				<h3>👤 Subjekt údajů – práva podle GDPR</h3>
+				<ul>
+					<li><strong>Právo na informace:</strong> kdo, proč a jak zpracovává jeho data.</li>
+					<li><strong>Právo na přístup:</strong> zjištění, jaké údaje o něm organizace uchovává.</li>
+					<li><strong>Právo na opravu:</strong> opravení nepřesných údajů.</li>
+					<li><strong>Právo na výmaz („být zapomenut“):</strong> pokud už nejsou údaje potřeba nebo byl odvolán souhlas.</li>
+					<li><strong>Právo na omezení zpracování:</strong> např. pokud subjekt napadne správnost údajů.</li>
+					<li><strong>Právo na přenositelnost údajů:</strong> převod údajů k jinému správci.</li>
+					<li><strong>Právo vznést námitku:</strong> proti zpracování na základě oprávněného zájmu nebo pro marketing.</li>
+					<li><strong>Právo nebýt předmětem automatizovaného rozhodování:</strong> včetně profilování, pokud má významný dopad.</li>
+				</ul>
+
+				<h3>🌍 Kde se GDPR uplatní?</h3>
+				<ul>
+					<li>Pro všechny organizace v EU, které zpracovávají osobní údaje.</li>
+					<li>Také pro organizace mimo EU, pokud zpracovávají údaje osob v EU (např. online služby, e-shopy).</li>
 				</ul>
 			</section>
 
@@ -216,7 +270,7 @@
 					<li><strong>„Zásady zpracování osobních údajů“</strong> jsou pravidla, která říkají, jak se mají osobní údaje správně, bezpečně a poctivě zpracovávat.</li>
 					<li><strong>Zákonnost, korektnost a transparentnost:</strong> Osobní údaje musí být zpracovávány zákonným způsobem, férově a transparentně. Subjekt údajů musí být informován, kdo a proč údaje zpracovává.</li>
 					<li><strong>Účelové omezení:</strong> Údaje smí být shromažďovány jen pro konkrétní a legitimní účely. Nesmí být následně zpracovávány způsobem, který s těmito účely není slučitelný.</li>
-					<li><strong>Učelové omezení lajdsky:</strong> Když někdo sbírá tvoje osobní údaje, musí přesně říct, k čemu je potřebuje – a použít je jen na to. Ne na něco úplně jiného</li>
+					<li><strong>Učelové omezení lajdsky:</strong> Když někdo sbírá moje osobní údaje, musí přesně říct, k čemu je potřebuje – a použít je jen na to. Ne na něco úplně jiného</li>
 					<li><strong>Minimalizace údajů:</strong> Sbírají se pouze údaje, které jsou nezbytné pro dosažení daného účelu.</li>
 					<li><strong>Přesnost:</strong> Údaje musí být aktuální a přesné. Nepřesné údaje musí být bez prodlení opraveny nebo vymazány.</li>
 					<li><strong>Omezené uložení:</strong> Údaje nesmí být uchovávány déle, než je nutné pro daný účel.</li>
@@ -240,32 +294,104 @@
 			</section>
 			<section id="zpracovani" class="note">
 				<h2>⚙️ Zpracování údajů & Profilování</h2>
-				<p><strong>Zpracování údajů</strong> znamená jakoukoli operaci, kterou provádíš s osobními údaji – nejen jejich ukládání, ale i získávání, organizování, úpravu, použití, přenos, omezení nebo výmaz.</p>
+				
+				<p><strong>Zpracování údajů</strong> <i>znamená jakoukoli operaci nebo soubor operací, kterou provádíš s osobními údaji – nejen jejich ukládání, ale také získávání, zaznamenávání, organizování, strukturování, úpravu, použití, předání, zpřístupnění, omezení nebo výmaz.</i> Týká se to manuálních (např. papírových) i elektronických prostředků. Zpracování může být prováděno automatizovaně nebo manuálně.</p>
+				
+				<p>Příklady činností, které se považují za zpracování:</p>
 				<ul>
-					<li>Příklady: shromažďování údajů ve formuláři, uložení do databáze, změna adresy, zpřístupnění třetí straně.</li>
-					<li>Zpracování se týká jak manuálních (papírových), tak elektronických prostředků.</li>
+					<li>Shromažďování údajů (např. získávání kontaktních informací ve formuláři)</li>
+					<li>Zaznamenání a ukládání údajů (např. do databáze nebo archivu)</li>
+					<li>Uspořádání, strukturování a třídění údajů</li>
+					<li>Úprava nebo změna údajů (např. aktualizace adresy)</li>
+					<li>Vyhledávání nebo nahlížení do údajů</li>
+					<li>Použití údajů (např. při poskytování služeb)</li>
+					<li>Předání nebo zpřístupnění údajů třetím osobám</li>
+					<li>Kombinování nebo sdružování údajů</li>
+					<li>Omezení zpracování (např. omezení přístupu k údajům)</li>
+					<li>Výmaz nebo zničení údajů</li>
 				</ul>
-				<p><strong>Profilování</strong> je specifický typ automatizovaného zpracování, který využívá osobní údaje k hodnocení určitých aspektů osoby – např. chování, preference, ekonomická situace apod.</p>
+
+				<p><strong>Profilování</strong> je specifický typ automatizovaného zpracování osobních údajů, jehož cílem je vyhodnocování určitých osobních aspektů fyzické osoby. Může se jednat o analýzu nebo předvídání chování, ekonomické situace, zdraví, osobních preferencí, zájmů, spolehlivosti, polohy nebo pohybu.</p>
+				
 				<ul>
-					<li>Probíhá pomocí algoritmů a AI.</li>
-					<li>Cílem je analyzovat nebo předvídat např. pracovní výkon, zdraví nebo chování.</li>
-					<li>Profilování může vést k diskriminaci nebo nespravedlivým rozhodnutím, pokud není regulováno.</li>
+					<li>Probíhá automaticky, pomocí algoritmů nebo umělé inteligence</li>
+					<li>Slouží k analýze nebo predikci pracovního výkonu, chování, zdraví apod.</li>
+					<li>Může vést k nespravedlivému zacházení nebo diskriminaci, pokud není správně regulováno</li>
 				</ul>
-				<p><strong>GDPR vyžaduje:</strong> transparentnost a možnost lidského zásahu u profilování, pokud má zásadní dopad na subjekt údajů.</p>
+				<p><strong>Charakteristické rysy profilování:</strong></p>
+				<ul>
+					<li>Automatizované zpracování: Profilování probíhá převážně pomocí softwarových nástrojů, algoritmůa umělé inteligence.</li>
+					<li>Hodnotící a předpovídací prvek: Profilování není jen prosté zpracování dat, ale snaha odvodit z nich určité vlastnosti, kategorie, rizikové faktory či pravděpodobné chování jednotlivce.</li>
+					<li>Rizika: Profilování může vést k nepřiměřeným zásahům do soukromí, diskriminaci nebo nespravedlivým rozhodnutím, pokud není prováděno transparentně a za dodržení pravidel na ochranu osobních údajů.</li>
+				</ul>
+
+				<p><strong>GDPR vyžaduje:</strong> transparentnost, právo být informován a možnost lidského zásahu v případě, že profilování má zásadní dopad na subjekt údajů (např. automatické zamítnutí žádosti o úvěr).</p>
 			</section>
 
+			<section id="role-a-povinnosti" class="note">
+				<h2>📘 Role a povinnosti v ochraně osobních údajů</h2>
 
-			<section id="bezpecnost" class="note">
-				<h2>🔐 Informační bezpečnost</h2>
-				<p>Soubor technických a organizačních opatření k ochraně <strong>důvěrnosti</strong>, <strong>integrity</strong> a <strong>dostupnosti</strong> osobních údajů.</p>
+				<h3>🔑 Pseudonymizace</h3>
+				<p><strong>Pseudonymizace</strong> je proces, při kterém jsou identifikátory osobních údajů (např. jméno, rodné číslo) nahrazeny jinými prvky (např. kódem), které bez dodatečných informací nelze spojit s konkrétní osobou.</p>
 				<ul>
-					<li>Zabránění neoprávněnému přístupu – např. silná hesla, šifrování, přístupová práva.</li>
-					<li>Zajištění, že data nejsou upravena či zničena bez oprávnění.</li>
-					<li>Zajištění dostupnosti dat pro oprávněné uživatele, kdykoli je potřebují.</li>
+					<li><strong>Oddělení identifikátorů:</strong> Dodatečné informace (např. klíče) jsou uchovány zvlášť a chráněny.</li>
+					<li><strong>Zvýšení bezpečnosti:</strong> Snížení rizika zneužití údajů při neoprávněném přístupu.</li>
+					<li><strong>Rozdíl oproti anonymizaci:</strong> U pseudonymizace zůstává možnost zpětné identifikace, u anonymizace nikoliv.</li>
+					<li>Jde stále o <strong>zpracování osobních údajů</strong> dle GDPR.</li>
 				</ul>
-				<p>Vzhledem k rostoucí hodnotě dat a kybernetickým hrozbám (ransomware, phishing, APT) se informační bezpečnost neustále vyvíjí.</p>
-			</section>
 
+				<h3>📋 Záznam o činnostech zpracování (Records of Processing Activities, ROPA)</h3>
+				<p>Záznam o činnostech zpracování dle čl. 30 GDPR je dokument, který obsahuje přehled o tom, jaké osobní údaje organizace zpracovává, proč a jakým způsobem.</p>
+				<ul>
+					<li>Jméno a kontakt na správce, zpracovatele a DPO (pokud je jmenován)</li>
+					<li>Účely zpracování (např. účetnictví, marketing, smlouvy)</li>
+					<li>Kategorie subjektů údajů a údajů samotných</li>
+					<li>Kategorie příjemců</li>
+					<li>Předávání do třetích zemí a záruky</li>
+					<li>Lhůty pro výmaz údajů</li>
+					<li>Technická a organizační bezpečnostní opatření (např. šifrování, pseudonymizace)</li>
+				</ul>
+
+				<h3>👤 Správce (Controller)</h3>
+				<p><strong>Správce</strong> je subjekt, který určuje účely („proč“) a prostředky („jak“) zpracování osobních údajů.</p>
+				<ul>
+					<li>Odpovídá za soulad se GDPR</li>
+					<li>Může využívat zpracovatele, ale nese hlavní odpovědnost</li>
+					<li>Příklady: e-shop, škola, zaměstnavatel</li>
+				</ul>
+
+				<h3>🛠️ Zpracovatel (Processor)</h3>
+				<p><strong>Zpracovatel</strong> zpracovává údaje jménem správce a podle jeho pokynů.</p>
+				<ul>
+					<li>Nemůže rozhodovat o účelu a prostředcích zpracování</li>
+					<li>Musí mít uzavřenou zpracovatelskou smlouvu se správcem</li>
+					<li>Musí zajistit bezpečnost zpracování</li>
+					<li>Příklady: účetní firma, IT dodavatel, cloudový hosting</li>
+				</ul>
+
+				<h3>📨 Příjemce a třetí strana</h3>
+				<p><strong>Příjemce</strong> je subjekt, kterému jsou osobní údaje zpřístupněny. Může být i <strong>zpracovatel</strong> nebo <strong>správce</strong>, ale může jít i o <strong>třetí stranu</strong>.</p>
+				<ul>
+					<li><strong>Třetí strana</strong> není subjekt údajů, správce ani zpracovatel</li>
+					<li>Příklady třetí strany: policie, obchodní partner, který používá údaje pro vlastní účely</li>
+				</ul>
+
+				<h3>🧑‍⚖️ Pověřenec pro ochranu osobních údajů (DPO)</h3>
+				<p><strong>DPO</strong> je osoba, která dohlíží na dodržování GDPR v organizaci, poskytuje poradenství a je kontaktním bodem pro úřady i občany.</p>
+				<ul>
+					<li>Povinný u veřejných subjektů, rozsáhlého monitorování nebo zpracování citlivých údajů</li>
+					<li>Musí být nezávislý a mít odborné znalosti</li>
+					<li>Může být jmenován i dobrovolně</li>
+				</ul>
+
+				<h3>🚨 Ohlašovací povinnost</h3>
+				<p>Porušení zabezpečení osobních údajů (např. únik, ztráta, neoprávněný přístup) musí být oznámeno do 72 hodin Úřadu pro ochranu osobních údajů, pokud hrozí riziko pro fyzické osoby.</p>
+				<ul>
+					<li>Vysoké riziko → nutné informovat i dotčené osoby</li>
+					<li>Výjimky: např. pokud byly údaje šifrované</li>
+					<li>Hlášení musí obsahovat popis incidentu, počet dotčených osob, přijatá opatření apod.</li>
+				</ul>
+			</section>
 
 			<section id="zaklady" class="note">
 				<h2>✅ Právní základy pro zpracování údajů</h2>
