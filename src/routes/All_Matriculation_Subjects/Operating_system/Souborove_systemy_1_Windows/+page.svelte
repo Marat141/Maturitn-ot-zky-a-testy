@@ -69,6 +69,13 @@
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_7_Terminal'
 		},
 		{
+			id: 28,
+			level: 2,
+			text: 'Operační systémy Windows 6.1 Správce zařízení',
+			parent: 2,
+			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W10_6_1_device_manager'
+		},
+		{
 			id: 11,
 			level: 2,
 			text: 'Operační systémy Windows 6.2 Funkce zabezpečení ve Windows – přehled',
@@ -166,27 +173,28 @@
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Souborove_systemy_1_Windows'
 		},
-		{
-			id: 25,
-			level: 2,
-			text: 'Linux DHCP',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/LinuxOp_20_1_DHCP'
-		},
-		{
-			id: 26,
-			level: 2,
-			text: 'Windows Server DHCP',
-			parent: 2,
-			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_Server_14_DHCP'
-		},
+                {
+            id: 25,
+            level: 2,
+            text: 'Linux DHCP',
+            parent: 2,
+            path: '/All_Matriculation_Subjects/Operating_system/LinuxOp_20_1_DHCP'
+        },
+        {
+            id: 26,
+            level: 2,
+            text: 'Windows Server DHCP',
+            parent: 2,
+            path:  '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_Win_Server_14_DHCP',       
+        },
 		{
 			id: 27,
 			level: 1,
 			text: 'Opravné zkoušky',
 			path: '/All_Matriculation_Subjects/Operating_system/Opravne-Zkousky-OS'
-		}
-	]);
+		},
+
+        ]);
 </script>
 
 <main>

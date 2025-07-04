@@ -69,6 +69,13 @@
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_7_Terminal'
 		},
 		{
+			id: 28,
+			level: 2,
+			text: 'Operační systémy Windows 6.1 Správce zařízení',
+			parent: 2,
+			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W10_6_1_device_manager'
+		},
+		{
 			id: 11,
 			level: 2,
 			text: 'Operační systémy Windows 6.2 Funkce zabezpečení ve Windows – přehled',

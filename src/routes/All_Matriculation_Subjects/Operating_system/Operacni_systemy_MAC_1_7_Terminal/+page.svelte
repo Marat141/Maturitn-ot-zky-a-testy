@@ -69,6 +69,13 @@
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_7_Terminal'
 		},
 		{
+			id: 28,
+			level: 2,
+			text: 'Operační systémy Windows 6.1 Správce zařízení',
+			parent: 2,
+			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W10_6_1_device_manager'
+		},
+		{
 			id: 11,
 			level: 2,
 			text: 'Operační systémy Windows 6.2 Funkce zabezpečení ve Windows – přehled',
@@ -238,6 +245,15 @@
 			</section>
 
 			<section class="note">
+				<h2>🧮 Porovnání macOS vs. Linux v terminálu</h2>
+				<ul>
+					<li>macOS používá BSD varianty UNIX příkazů, zatímco Linux GNU varianty</li>
+					<li>Některé příkazy se liší v syntaxi nebo možnostech (např. <code>ls, ps</code>)</li>
+					<li>macOS má předinstalovaný Zsh, Linux obvykle Bash</li>
+				</ul>
+			</section>
+
+			<section class="note">
 				<h2>🔠 Základní příkazy</h2>
 				<ul>
 					<li><code>cd</code> – změna adresáře</li>
@@ -312,6 +328,42 @@ ls -l</code
 						<strong>Doporučení:</strong> běžné skripty piš v Bash, pokud nepotřebuješ pokročilé funkce
 					</li>
 				</ul>
+				<details class="details-block">
+					<summary>Podrobnější poznámky</summary>
+					<div class="div-content">
+						<table border="1">
+							<thead>
+								<tr>
+									<th>Vlastnost</th>
+									<th>Bash</th>
+									<th>Zsh</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Autocomplete</td>
+									<td>Jednoduché</td>
+									<td>Pokročilé</td>
+								</tr>
+								<tr>
+									<td>Konfigurovatelnost</td>
+									<td>Omezená</td>
+									<td>Vysoká</td>
+								</tr>
+								<tr>
+									<td>Podpora pluginů</td>
+									<td>Omezená</td>
+									<td>Oh-My-Zsh, atd.</td>
+								</tr>
+								<tr>
+									<td>Kompatibilita</td>
+									<td>Vysoká (GNU) </td>
+									<td>Vysoká (UNIX)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</details>
 			</section>
 
 			<section class="note">
@@ -479,6 +531,47 @@ grep -rnw . -e "$1"</code
 
 	.details-content li {
 		margin-bottom: 6px;
+	}
+
+	.content table {
+		border-collapse: collapse;
+		width: 100%;
+		margin: 16px 0;
+		background: #f8fafc;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	}
+
+	.content thead {
+		background-color: #2563eb;
+		color: #fff;
+	}
+
+	.content th,
+	.content td {
+		padding: 12px 16px;
+		text-align: left;
+		border-bottom: 1px solid #e5e7eb;
+		font-size: 15px;
+	}
+
+	.content th {
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+
+	.content tr:last-child td {
+		border-bottom: none;
+	}
+
+	.content tr:nth-child(even) td {
+		background-color: #f1f5f9;
+	}
+
+	.content tr:hover td {
+		background-color: #e0e7ef;
+		transition: background 0.2s;
 	}
 
 	@media (max-width: 768px) {

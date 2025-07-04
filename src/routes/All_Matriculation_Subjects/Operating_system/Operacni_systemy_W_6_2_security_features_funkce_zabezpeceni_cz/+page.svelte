@@ -8,7 +8,6 @@
 		parent?: number;
 		path?: string;
 	}
-
 	let headings: Heading[] = $state([
 		{ id: 1, level: 1, text: 'Úvod do OS', path: '/All_Matriculation_Subjects/Operating_system' },
 		{ id: 2, level: 1, text: 'IT3B PDF soubory' },
@@ -67,6 +66,13 @@
 			text: 'Mac OS část 1.7',
 			parent: 2,
 			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_MAC_1_7_Terminal'
+		},
+		{
+			id: 28,
+			level: 2,
+			text: 'Operační systémy Windows 6.1 Správce zařízení',
+			parent: 2,
+			path: '/All_Matriculation_Subjects/Operating_system/Operacni_systemy_W10_6_1_device_manager'
 		},
 		{
 			id: 11,
@@ -229,7 +235,7 @@
 					<li><strong>Klíčové Funkce:</strong></li>
 					<ul>
 						<li>Filtrace příchozího a odchozího provozu: Kontroluje data vstupující a opouštějící systém na základě předefinovaných pravidel</li>
-						<li>Profily: soukromá, veřejná, doménová síť</li>
+						<li>Profily:  Umožňuje nastavit různé úrovně zabezpečení pro soukromé, veřejné a doménové sítě</li>
 						<li>Pokročilá konfigurace přes rozhraní nebo GPO (Group Policy Object) </li>
 					</ul>
 					<li><strong>Možnosti Nastavení:</strong> Přístupné přes Windows Security nebo Windows Defender Firewall s pokročilým zabezpečením pro detailní konfiguraci</li>
